@@ -94,6 +94,7 @@ public class Config
     {
         [XmlElement] public bool CurrentConditions { get; set; } = true;
         [XmlElement] public bool MosquitoActivity { get; set; } = true;
+        [XmlElement] public bool DrySkin { get; set; } = true;
         [XmlElement] public bool DailyForecast { get; set; } = true;
         [XmlElement] public bool HourlyForecast { get; set; } = true;
         [XmlElement] public bool AirQuality { get; set; } = false;

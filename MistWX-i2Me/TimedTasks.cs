@@ -126,6 +126,14 @@ public class TimedTasks
                 string hfsRecord = await new HourlyForecastRecord().MakeRecord(hfs);
                 sender.SendFile(hfsRecord, "storeData(QGROUP=__HourlyForecast__,Feed=HourlyForecast)");
             }
+    
+            if (dataConfig.DrySkin)
+            {
+                Log.Info($"Building DrySkin I2 record for {locations.Length} locations..");
+                List<GenericResponse<DrySkinResponse>> hfs = await new DrySkinProduct().Populate(locations);
+                string hfsRecord = await new DrySkinRecord().MakeRecord(hfs);
+                sender.SendFile(hfsRecord, "storeData(QGROUP=__DrySkin__,Feed=DrySkin)");
+            }
 
             if (dataConfig.AirQuality)
             {
