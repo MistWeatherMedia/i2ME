@@ -127,6 +127,21 @@ public class Base
                 url = url.Replace("{zone}", location.zoneId);
             }
         }
+
+        if (url.Contains("{locId}"))
+        {
+            url = url.Replace("{locId}", location.locId);
+        }
+
+        if (url.Contains("{locType}"))
+        {
+            url = url.Replace("{locType}", location.locType);
+        }
+
+        if (url.Contains("{cntryCd}"))
+        {
+            url = url.Replace("{cntryCd}", location.cntryCd);
+        }
         
         return url;
     }
