@@ -135,8 +135,8 @@ public class Program
                 "MetroMapCity7",
                 "MetroMapCity8",
             };
-        if (config.LocationList != null) {
-            configLocationKeys = config.LocationList;
+        if (config.LocationConfig.LocationList != null) {
+            configLocationKeys = config.LocationConfig.LocationList;
         }
 
         foreach (ConfigItem i in mpc.ConfigDef.ConfigItems.ConfigItem)

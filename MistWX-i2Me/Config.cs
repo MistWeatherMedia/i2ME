@@ -14,14 +14,7 @@ public class Config
     [XmlElement] public string TwcApiKey { get; set; } = "REPLACE_ME";
     [XmlElement] public string LogLevel { get; set; } = "info";
     [XmlElement] public bool GetAlerts { get; set; } = true;
-    [XmlElement] public bool UseExecInstead { get; set; } = true;
-    [XmlElement] public bool UseTideLocs { get; set; } = false;
-    [XmlElement] public bool UseMapLocs { get; set; } = false;
-    [XmlElement] public bool UseTravelLocs { get; set; } = false;
-    [XmlElement] public bool UseWinterGLocs { get; set; } = false;
-    [XmlElement] public bool UseSummerGLocs { get; set; } = false;
-    [XmlElement] public bool UseSubset1Locs { get; set; } = false;
-    [XmlElement] public bool UseSubset2Locs { get; set; } = false;
+
 
 
     // Used to process what locations to generate
@@ -40,27 +33,7 @@ public class Config
     // Actual configuration setup \\
     
     public static Config config = new Config();
-    // Base locations.
-    public List<string> LocationList = new List<string> {
-            "PrimaryLocation",
-            "NearbyLocation1",
-            "NearbyLocation2",
-            "NearbyLocation3",
-            "NearbyLocation4",
-            "NearbyLocation5",
-            "NearbyLocation6",
-            "NearbyLocation7",
-            "NearbyLocation8",
-            "MetroMapCity1",
-            "MetroMapCity2",
-            "MetroMapCity3",
-            "MetroMapCity4",
-            "MetroMapCity5",
-            "MetroMapCity6",
-            "MetroMapCity7",
-            "MetroMapCity8",
 
-        };
 
 
     
@@ -99,10 +72,13 @@ public class Config
             if (deserializedConfig != null && deserializedConfig is Config cfg)
             {
                 config = cfg;
+
+                // Possibly bullshit code incoming! - PB
+
                 // Add tide locations
-                if (cfg.UseTideLocs)
+                if (cfg.LocationConfig.UseTideLocs)
                 {
-                    cfg.LocationList.AddRange(new List<string>
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
                     {
                         "TideStation1",
                         "TideStation2",
@@ -114,9 +90,9 @@ public class Config
                         "TideStation8",
                     }
                     );
-                    if (cfg.UseSubset1Locs)
+                    if (cfg.LocationConfig.UseSubset1Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "TideStation1_1",
                             "TideStation2_1",
@@ -129,9 +105,9 @@ public class Config
                         }
                         );
                     }
-                    if (cfg.UseSubset2Locs)
+                    if (cfg.LocationConfig.UseSubset2Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "TideStation1_2",
                             "TideStation2_2",
@@ -146,9 +122,9 @@ public class Config
                     }
                 }
                 // Add subset 1 locations
-                if (cfg.UseSubset1Locs)
+                if (cfg.LocationConfig.UseSubset1Locs)
                 {
-                    cfg.LocationList.AddRange(new List<string>
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
                     {
                         "PrimaryLocation_1",
                         "NearbyLocation1_1",
@@ -171,9 +147,9 @@ public class Config
                     );
                 }
                 // Add subset 2 locations
-                if (cfg.UseSubset2Locs)
+                if (cfg.LocationConfig.UseSubset2Locs)
                 {
-                    cfg.LocationList.AddRange(new List<string>
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
                     {
                         "PrimaryLocation_2",
                         "NearbyLocation1_2",
@@ -196,9 +172,9 @@ public class Config
                     );
                 }
                 // add map locations
-                if (cfg.UseMapLocs)
+                if (cfg.LocationConfig.UseMapLocs)
                 {
-                    cfg.LocationList.AddRange(new List<string>
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
                     {
                         "MapCity1",
                         "MapCity2",
@@ -210,9 +186,9 @@ public class Config
                         "MapCity8",
                     }
                     );
-                    if (cfg.UseSubset1Locs)
+                    if (cfg.LocationConfig.UseSubset1Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "MapCity1_1",
                             "MapCity2_1",
@@ -225,9 +201,9 @@ public class Config
                         }
                         );
                     }
-                    if (cfg.UseSubset2Locs)
+                    if (cfg.LocationConfig.UseSubset2Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "MapCity1_2",
                             "MapCity2_2",
@@ -242,9 +218,9 @@ public class Config
                     }
                 }
                 // add travel locations
-                if (cfg.UseTravelLocs)
+                if (cfg.LocationConfig.UseTravelLocs)
                 {
-                    cfg.LocationList.AddRange(new List<string>
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
                     {
                         "TravelCity1",
                         "TravelCity2",
@@ -256,9 +232,9 @@ public class Config
                         "TravelCity8",
                     }
                     );
-                    if (cfg.UseSubset1Locs)
+                    if (cfg.LocationConfig.UseSubset1Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "TravelCity1_1",
                             "TravelCity2_1",
@@ -271,9 +247,9 @@ public class Config
                         }
                         );
                     }
-                    if (cfg.UseSubset2Locs)
+                    if (cfg.LocationConfig.UseSubset2Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "TravelCity1_2",
                             "TravelCity2_2",
@@ -288,18 +264,18 @@ public class Config
                     }
                 }
                 // add winter getaway locations
-                if (cfg.UseWinterGLocs)
+                if (cfg.LocationConfig.UseWinterGLocs)
                 {
-                    cfg.LocationList.AddRange(new List<string>
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
                     {
                         "WinterGetawayLocation1",
                         "WinterGetawayLocation2",
                         "WinterGetawayLocation3",
                     }
                     );
-                    if (cfg.UseSubset1Locs)
+                    if (cfg.LocationConfig.UseSubset1Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "WinterGetawayLocation1_1",
                             "WinterGetawayLocation2_1",
@@ -307,9 +283,9 @@ public class Config
                         }
                         );
                     }
-                    if (cfg.UseSubset2Locs)
+                    if (cfg.LocationConfig.UseSubset2Locs)
                     {
-                        cfg.LocationList.AddRange(new List<string>
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
                         {
                             "WinterGetawayLocation2_1",
                             "WinterGetawayLocation2_2",
@@ -329,6 +305,16 @@ public class Config
     [XmlRoot("LocationConfig")]
     public class LocConfig
     {
+
+        [XmlElement] public bool UseTideLocs { get; set; } = false;
+        [XmlElement] public bool UseMapLocs { get; set; } = false;
+        [XmlElement] public bool UseTravelLocs { get; set; } = false;
+        [XmlElement] public bool UseWinterGLocs { get; set; } = false;
+        [XmlElement] public bool UseSummerGLocs { get; set; } = false;
+        [XmlElement] public bool UseSubset1Locs { get; set; } = false;
+        [XmlElement] public bool UseSubset2Locs { get; set; } = false;
+
+
         [XmlElement] public bool UseNationalLocations { get; set; } = false;
         [XmlArray("NationalLocations")] 
         [XmlArrayItem("Location")] 
@@ -342,6 +328,30 @@ public class Config
                 "USSD0283", "USNV0076", "USCA0967", "USUT0225", "USTX1200", "USCA0982", "USCA0987", "USWA0395",
                 "USWA0422", "USMO0787", "USFL0481", "USOK0537"
             };
+
+        [XmlArray("Locations")] 
+        [XmlArrayItem("Location")] 
+        // Base locations.
+        public List<string> LocationList = new List<string> {
+            "PrimaryLocation",
+            "NearbyLocation1",
+            "NearbyLocation2",
+            "NearbyLocation3",
+            "NearbyLocation4",
+            "NearbyLocation5",
+            "NearbyLocation6",
+            "NearbyLocation7",
+            "NearbyLocation8",
+            "MetroMapCity1",
+            "MetroMapCity2",
+            "MetroMapCity3",
+            "MetroMapCity4",
+            "MetroMapCity5",
+            "MetroMapCity6",
+            "MetroMapCity7",
+            "MetroMapCity8",
+
+        };
     }
 
     [XmlRoot("UnitConfig")]
@@ -351,6 +361,7 @@ public class Config
         [XmlElement] public int PriorityMsgPort { get; set; } = 7788;
         [XmlElement] public string I2MsgAddress { get; set; } = "224.1.1.77";
         [XmlElement] public string InterfaceAddress { get; set; } = "127.0.0.1";
+        [XmlElement] public bool UseExecInstead { get; set; } = true;
     }
 
     [XmlRoot("RadarConfig")]
