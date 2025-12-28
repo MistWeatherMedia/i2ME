@@ -36,7 +36,7 @@ public class UdpSender
     public void SendFile(string fileName, string command, bool gZipEncode = true, string headendId = null)
     {
         
-        if (!Config.config.UseExecInstead)
+        if (!Config.config.UnitConfig.UseExecInstead)
         {
 
             string tempFile = Path.Combine(_tempDirectory, Guid.NewGuid().ToString() + ".i2m");
