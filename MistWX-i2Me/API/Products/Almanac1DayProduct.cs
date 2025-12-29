@@ -13,6 +13,6 @@ public class Almanac1DayProduct : Base
 
     public async Task<List<GenericResponse<Almanac1DayResponse>>> Populate(string[] locations)
     {
-        return await GetData<Almanac1DayResponse>(locations);
+        return await GetJsonData<Almanac1DayResponse>(locations);
     }
 }
