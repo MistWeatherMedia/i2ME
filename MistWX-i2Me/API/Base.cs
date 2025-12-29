@@ -160,7 +160,7 @@ public class Base
 
         if (url.Contains("{month}"))
         {
-            url = url.Replace("{day}", DateTime.Now.Month.ToString());
+            url = url.Replace("{month}", DateTime.Now.Month.ToString());
         }
 
         return url;
