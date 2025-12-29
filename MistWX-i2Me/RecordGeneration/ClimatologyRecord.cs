@@ -18,12 +18,12 @@ public class ClimatologyRecord : I2Record
             ClimatologyRecordResponse cliRecRes = new ClimatologyRecordResponse();
             ClimatologyRec cliRec = new ClimatologyRec();
             cliRecRes.Key = result.Location.cliStn;
-            cliRec.AvgHigh = result.ParsedData.temperatureAverageMax.First();
-            cliRec.AvgLow = result.ParsedData.temperatureAverageMin.First();
-            cliRec.RecHigh = result.ParsedData.temperatureRecordMax.First();
-            cliRec.RecLow = result.ParsedData.temperatureRecordMin.First();
-            cliRec.RecHighYear = result.ParsedData.almanacRecordYearMax.First();
-            cliRec.RecLowYear = result.ParsedData.almanacRecordYearMin.First();
+            cliRec.AvgHigh = result.ParsedData.temperatureAverageMax.FirstOrDefault();
+            cliRec.AvgLow = result.ParsedData.temperatureAverageMin.FirstOrDefault();
+            cliRec.RecHigh = result.ParsedData.temperatureRecordMax.FirstOrDefault();
+            cliRec.RecLow = result.ParsedData.temperatureRecordMin.FirstOrDefault();
+            cliRec.RecHighYear = result.ParsedData.almanacRecordYearMax.FirstOrDefault();
+            cliRec.RecLowYear = result.ParsedData.almanacRecordYearMin.FirstOrDefault();
             cliRec.Year = System.DateTime.Now.Year;
             cliRec.Month = System.DateTime.Now.Month;
             cliRec.Day = System.DateTime.Now.Day;
@@ -42,6 +42,7 @@ public class ClimatologyRecord : I2Record
         }
         
         recordScript += "</Data>";
+        recordScript.Replace('<?xml version="1.0" encoding="utf-16"?>', String.Empty);
         
         await File.WriteAllTextAsync(recordPath, ValidateXml(recordScript));
 
