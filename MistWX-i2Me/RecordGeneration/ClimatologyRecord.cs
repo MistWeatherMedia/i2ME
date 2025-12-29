@@ -19,12 +19,31 @@ public class ClimatologyRecord : I2Record
             ClimatologyRecordResponse cliRecRes = new ClimatologyRecordResponse();
             ClimatologyRec cliRec = new ClimatologyRec();
             cliRecRes.Key = result.Location.cliStn;
-            cliRec.AvgHigh = result.ParsedData.temperatureAverageMax.FirstOrDefault();
-            cliRec.AvgLow = result.ParsedData.temperatureAverageMin.FirstOrDefault();
-            cliRec.RecHigh = result.ParsedData.temperatureRecordMax.FirstOrDefault();
-            cliRec.RecLow = result.ParsedData.temperatureRecordMin.FirstOrDefault();
-            cliRec.RecHighYear = result.ParsedData.almanacRecordYearMax.FirstOrDefault();
-            cliRec.RecLowYear = result.ParsedData.almanacRecordYearMin.FirstOrDefault();
+            if (result.ParsedData.temperatureAverageMax != null)
+            {
+                cliRec.AvgHigh = result.ParsedData.temperatureAverageMax.First();
+            }
+            if (result.ParsedData.temperatureAverageMin != null)
+            {
+               cliRec.AvgLow = result.ParsedData.temperatureAverageMin.First(); 
+            }
+            if (result.ParsedData.temperatureRecordMax != null)
+            {
+                cliRec.RecHigh = result.ParsedData.temperatureRecordMax.First();
+            }
+            if (result.ParsedData.temperatureRecordMin != null)
+            {
+                cliRec.RecLow = result.ParsedData.temperatureRecordMin.First();
+            }
+            if (result.ParsedData.almanacRecordYearMax != null)
+            {
+                cliRec.RecHighYear = result.ParsedData.almanacRecordYearMax.First();
+            }
+            if (result.ParsedData.almanacRecordYearMin != null)
+            {
+                cliRec.RecLowYear = result.ParsedData.almanacRecordYearMin.First();
+            }
+            
             cliRec.Year = System.DateTime.Now.Year;
             cliRec.Month = System.DateTime.Now.Month;
             cliRec.Day = System.DateTime.Now.Day;
