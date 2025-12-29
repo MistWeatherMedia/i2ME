@@ -175,7 +175,6 @@ public class AlertBulletin : I2Record
         { "EC_W", "HE037" },
         { "extremeCold_W", "HE037" }, // Canada
         { "TLT_W", "HE037" }, // Europe
-        { "TLT_W", "HE037" }, // Europe
 
         { "EH_W", "HE038" },
         { "EXTREMEHEAT-WARN_W", "HE038" }, // Australia
