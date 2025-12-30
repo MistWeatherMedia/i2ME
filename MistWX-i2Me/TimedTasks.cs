@@ -125,6 +125,12 @@ public class TimedTasks
                 List<GenericResponse<HourlyForecastResponse>> hfs = await new HourlyForecastProduct().Populate(locations);
                 string hfsRecord = await new HourlyForecastRecord().MakeRecord(hfs);
                 sender.SendFile(hfsRecord, "storeData(QGROUP=__HourlyForecast__,Feed=HourlyForecast)");
+                if (dataConfig.DHRecord)
+                {
+                    Log.Info($"Building DHRecord I2 record for {locations.Length} locations..");
+                    string dhRecord = await new DHRecord().MakeRecord(hfs);
+                    sender.SendFile(hfsRecord, "storeData(QGROUP=__DHRecord__,Feed=DHRecord)");
+                }
             }
     
             if (dataConfig.DrySkin)
