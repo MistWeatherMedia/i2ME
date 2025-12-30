@@ -57,7 +57,7 @@ public class HourlyForecast
     public string SubphrasePt2 { get; set; }
 
     [XmlElement(ElementName = "subphrase_pt3")]
-    public object SubphrasePt3 { get; set; }
+    public string SubphrasePt3 { get; set; }
 
     [XmlElement(ElementName = "pop")] public int Pop { get; set; }
 
