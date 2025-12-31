@@ -1,0 +1,3415 @@
+<Mapping id="635195079041220874" name="ObsIconMapping2">
+  <Entry key="400">
+    <DayIcon>Ts</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunderstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>T Storm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="401">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>rain</DayIconFile>
+    <NightIconFile>rain</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="402">
+    <DayIcon>TsSvr</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Hvy Thunderstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>T Storm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="422">
+    <DayIcon>FunnelCloud</DayIcon>
+    <NightIcon>NFunnelCloud</NightIcon>
+    <DayIconFile>tornado</DayIconFile>
+    <NightIconFile>tornado</NightIconFile>
+    <OneLineWxPhrase>Strong T Storm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Tornado</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="429">
+    <DayIcon>FunnelCloud</DayIcon>
+    <NightIcon>NFunnelCloud</NightIcon>
+    <DayIconFile>tornado</DayIconFile>
+    <NightIconFile>tornado</NightIconFile>
+    <OneLineWxPhrase>T Storm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Funnel</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Cloud</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="470">
+    <DayIcon>Ts</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>T Storm/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>T Storm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="471">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="472">
+    <DayIcon>TsSvr</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Hvy Thunderstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>T Storm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="480">
+    <DayIcon>Ts</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>T Storm/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>T Storm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="481">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>rain</DayIconFile>
+    <NightIconFile>rain</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="482">
+    <DayIcon>TsSvr</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Hvy T Storm/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>T Storm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="490">
+    <DayIcon>Ts</DayIcon>
+    <NightIcon>NTs</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>T Storm/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>T Storm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="491">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="492">
+    <DayIcon>TsSvr</DayIcon>
+    <NightIcon>NTsSvr</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Hvy Thunderstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>T Storm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="500">
+    <DayIcon>RaSn</DayIcon>
+    <NightIcon>NRaSn</NightIcon>
+    <DayIconFile>rainsnow</DayIconFile>
+    <NightIconFile>rainsnow</NightIconFile>
+    <OneLineWxPhrase>Rain/Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="570">
+    <DayIcon>RaSn</DayIcon>
+    <NightIcon>NRaSn</NightIcon>
+    <DayIconFile>rainsnow</DayIconFile>
+    <NightIconFile>rainsnow</NightIconFile>
+    <OneLineWxPhrase>Rain/Snow/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="580">
+    <DayIcon>RaSn</DayIcon>
+    <NightIcon>NRaSn</NightIcon>
+    <DayIconFile>rainsnow</DayIconFile>
+    <NightIconFile>rainsnow</NightIconFile>
+    <OneLineWxPhrase>Rain/Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="590">
+    <DayIcon>RaSn</DayIcon>
+    <NightIcon>NRaSn</NightIcon>
+    <DayIconFile>rainsnow</DayIconFile>
+    <NightIconFile>rainsnow</NightIconFile>
+    <OneLineWxPhrase>Rain/Snow/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="600">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>hailrain</DayIconFile>
+    <NightIconFile>hailrain</NightIconFile>
+    <OneLineWxPhrase>Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="610">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Sleet/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="640">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Sleet/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="650">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="660">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Sleet/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="670">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>hailrain</DayIconFile>
+    <NightIconFile>hailrain</NightIconFile>
+    <OneLineWxPhrase>Rain/Sleet/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="680">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Sleet/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet/Wind</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="690">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>hailrain</DayIconFile>
+    <NightIconFile>hailrain</NightIconFile>
+    <OneLineWxPhrase>Rain/Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="700">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="701">
+    <DayIcon>LtMix</DayIcon>
+    <NightIcon>NLtMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="705">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="706">
+    <DayIcon>LtMix</DayIcon>
+    <NightIcon>NLtMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet/Wind</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="710">
+    <DayIcon>FrzRaSn</DayIcon>
+    <NightIcon>NFrzRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="711">
+    <DayIcon>FrzRaSn</DayIcon>
+    <NightIcon>NFrzRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="715">
+    <DayIcon>FrzRaSn</DayIcon>
+    <NightIcon>NFrzRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="716">
+    <DayIcon>FrzRaSn</DayIcon>
+    <NightIcon>NFrzRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="720">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Wintry Mix</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Wintry</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Mix</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="725">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Wintry Mix/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Wintry Mix</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="730">
+    <DayIcon>MixTh</DayIcon>
+    <NightIcon>NMixTh</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Thunder/Mix</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Wintry Mix</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="735">
+    <DayIcon>MixTh</DayIcon>
+    <NightIcon>NMixTh</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Thunder/Mix/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Wintry Mix</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="750">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Sleet/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="751">
+    <DayIcon>LtMix</DayIcon>
+    <NightIcon>NLtMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="755">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="756">
+    <DayIcon>LtMix</DayIcon>
+    <NightIcon>NLtMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="760">
+    <DayIcon>FrzRaSn</DayIcon>
+    <NightIcon>NFrzRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="761">
+    <DayIcon>RaSn</DayIcon>
+    <NightIcon>NRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="765">
+    <DayIcon>FrzRaSn</DayIcon>
+    <NightIcon>NFrzRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="766">
+    <DayIcon>RaSn</DayIcon>
+    <NightIcon>NRaSn</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Snow/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="770">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Wintry Mix/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Wintry Mix</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="775">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon>NMix</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Wintry Mix/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Wintry Mix</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="780">
+    <DayIcon>MixTh</DayIcon>
+    <NightIcon>NMixTh</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Thunder/Mix/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Wintry Mix</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="785">
+    <DayIcon>MixTh</DayIcon>
+    <NightIcon>NMixTh</NightIcon>
+    <DayIconFile>snowice</DayIconFile>
+    <NightIconFile>snowice</NightIconFile>
+    <OneLineWxPhrase>Thunder/Mix/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Wintry Mix</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="800">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Freezing Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="801">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Frz</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="802">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Frz</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="810">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Freezing Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="815">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Drizzle/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="820">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Drizzle/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="825">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Drizzle/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="870">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Drizzle/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="871">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Frz</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="872">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Frz</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="880">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Drizzle/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="881">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="882">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="890">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Drizzle/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="891">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="892">
+    <DayIcon>FrzDrz</DayIcon>
+    <NightIcon>NFrzDrz</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Frz Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="900">
+    <DayIcon>Drz</DayIcon>
+    <NightIcon>NDrz</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drizzle</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="901">
+    <DayIcon>Drz</DayIcon>
+    <NightIcon>NDrz</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Light Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="902">
+    <DayIcon>Drz</DayIcon>
+    <NightIcon>NDrz</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Heavy Drizzle</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Drizzle</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="910">
+    <DayIcon>DrzFog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Drizzle/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drizzle</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="980">
+    <DayIcon>DrzFog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Drizzle/Fog/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drizzle</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="990">
+    <DayIcon>Drz</DayIcon>
+    <NightIcon>NDrz</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Drizzle/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drizzle</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="991">
+    <DayIcon>Drz</DayIcon>
+    <NightIcon>NDrz</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Lgt Drizzle/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drizzle</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="992">
+    <DayIcon>Drz</DayIcon>
+    <NightIcon>NDrz</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Hvy Drizzle/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drizzle</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1000">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Freezing Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Freezing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1001">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Light Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1002">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Heavy Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1010">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1040">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1050">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1060">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1070">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1071">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1072">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Frz Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1080">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1081">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1082">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Frz Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1090">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1091">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Frz Rain/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1092">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Heavy Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1100">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>showers</DayIconFile>
+    <NightIconFile>showers</NightIconFile>
+    <OneLineWxPhrase>Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1101">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>sctdshowers</DayIconFile>
+    <NightIconFile>sctdshowers</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1102">
+    <DayIcon>HvyRa</DayIcon>
+    <NightIcon>NHvyRa</NightIcon>
+    <DayIconFile>heavyrain</DayIconFile>
+    <NightIconFile>heavyrain</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1170">
+    <DayIcon>WndLtRa</DayIcon>
+    <NightIcon>NWndLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Rain Shower/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1171">
+    <DayIcon>WndLtRa</DayIcon>
+    <NightIcon>NWndLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1172">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1180">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Rain Shower/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1181">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1182">
+    <DayIcon>HvyRa</DayIcon>
+    <NightIcon>NHvyRa</NightIcon>
+    <DayIconFile>heavyrain</DayIconFile>
+    <NightIconFile>heavyrain</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1190">
+    <DayIcon>WndLtRa</DayIcon>
+    <NightIcon>NWndLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Rain Shower/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1191">
+    <DayIcon>WndLtRa</DayIcon>
+    <NightIcon>NWndLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1192">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1200">
+    <DayIcon>Ra</DayIcon>
+    <NightIcon>NRa</NightIcon>
+    <DayIconFile>rain</DayIconFile>
+    <NightIconFile>rain</NightIconFile>
+    <OneLineWxPhrase>Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1201">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>rain</DayIconFile>
+    <NightIconFile>rain</NightIconFile>
+    <OneLineWxPhrase>Light Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1202">
+    <DayIcon>HvyRa</DayIcon>
+    <NightIcon>NHvyRa</NightIcon>
+    <DayIconFile>heavyrain</DayIconFile>
+    <NightIconFile>heavyrain</NightIconFile>
+    <OneLineWxPhrase>Heavy Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1210">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1211">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1212">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1215">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1216">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1217">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1220">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet/Wind</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1221">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1222">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1225">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Frz Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1226">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1227">
+    <DayIcon>RaSlt</DayIcon>
+    <NightIcon>NRaSlt</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Frz Rain/Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1230">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1231">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1232">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1235">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1236">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1237">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1240">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1241">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1242">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Rain/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1245">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Rain/Frz Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1246">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1247">
+    <DayIcon>FrzRa</DayIcon>
+    <NightIcon>NFrzRa</NightIcon>
+    <DayIconFile>icy</DayIconFile>
+    <NightIconFile>icy</NightIconFile>
+    <OneLineWxPhrase>Hvy Rain/Frz Rain</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Frz Rain</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1270">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Rain/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1271">
+    <DayIcon>WndLtRa</DayIcon>
+    <NightIcon>NWndLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Lgt Rain/Wind/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1272">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Heavy Rain/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1280">
+    <DayIcon>Ra</DayIcon>
+    <NightIcon>NRa</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1281">
+    <DayIcon>LtRa</DayIcon>
+    <NightIcon>NLtRa</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Light Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1282">
+    <DayIcon>HvyRa</DayIcon>
+    <NightIcon>NHvyRa</NightIcon>
+    <DayIconFile>heavyrain</DayIconFile>
+    <NightIconFile>heavyrain</NightIconFile>
+    <OneLineWxPhrase>Heavy Rain/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1290">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Rain/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1291">
+    <DayIcon>WndLtRa</DayIcon>
+    <NightIcon>NWndLtRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Light Rain/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1292">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>rainwind</DayIconFile>
+    <NightIconFile>rainwind</NightIconFile>
+    <OneLineWxPhrase>Heavy Rain/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Rain</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1310">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1311">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1312">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Snow Showers</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1370">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1371">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1372">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Snow Showers/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1380">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1381">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1382">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Snow Showers/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1390">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1391">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Flurries</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Flurries</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1392">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Snow Showers/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1400">
+    <DayIcon>SnSh</DayIcon>
+    <NightIcon>NSnSh</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1401">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1402">
+    <DayIcon>HvySn</DayIcon>
+    <NightIcon>NHvySn</NightIcon>
+    <DayIconFile>heavysnow</DayIconFile>
+    <NightIconFile>heavysnow</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1470">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Snow Shower/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1471">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1472">
+    <DayIcon>WndSn</DayIcon>
+    <NightIcon>NWndSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1480">
+    <DayIcon>SnSh</DayIcon>
+    <NightIcon>NSnSh</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Snow Shower/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1481">
+    <DayIcon>SnFl</DayIcon>
+    <NightIcon>NSnFl</NightIcon>
+    <DayIconFile>snowshowers</DayIconFile>
+    <NightIconFile>snowshowers</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1482">
+    <DayIcon>HvySn</DayIcon>
+    <NightIcon>NHvySn</NightIcon>
+    <DayIconFile>heavysnow</DayIconFile>
+    <NightIconFile>heavysnow</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1490">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Snow Shower/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1491">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1492">
+    <DayIcon>WndSn</DayIcon>
+    <NightIcon>NWndSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1500">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1501">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Drifting Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drifting</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1509">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1570">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1571">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Drifting Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drifting</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1579">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1580">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1581">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Drifting Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drifting</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1589">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1590">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1591">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Drifting Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drifting</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1599">
+    <DayIcon>BlowSn</DayIcon>
+    <NightIcon>NBlowSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Blowing Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1600">
+    <DayIcon>Sn</DayIcon>
+    <NightIcon>NSn</NightIcon>
+    <DayIconFile>snow</DayIconFile>
+    <NightIconFile>snow</NightIconFile>
+    <OneLineWxPhrase>Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1601">
+    <DayIcon>LtSn</DayIcon>
+    <NightIcon>NLtSn</NightIcon>
+    <DayIconFile>snow</DayIconFile>
+    <NightIconFile>snow</NightIconFile>
+    <OneLineWxPhrase>Light Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1602">
+    <DayIcon>HvySn</DayIcon>
+    <NightIcon>NHvySn</NightIcon>
+    <DayIconFile>heavysnow</DayIconFile>
+    <NightIconFile>heavysnow</NightIconFile>
+    <OneLineWxPhrase>Heavy Snow</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Snow</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1630">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1631">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1632">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1640">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1641">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1642">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1650">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1651">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1652">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1660">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1661">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1662">
+    <DayIcon>TsSn</DayIcon>
+    <NightIcon>NTsSn</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1670">
+    <DayIcon>Sn</DayIcon>
+    <NightIcon>NSn</NightIcon>
+    <DayIconFile>snow</DayIconFile>
+    <NightIconFile>snow</NightIconFile>
+    <OneLineWxPhrase>Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1671">
+    <DayIcon>LtSn</DayIcon>
+    <NightIcon>NLtSn</NightIcon>
+    <DayIconFile>snow</DayIconFile>
+    <NightIconFile>snow</NightIconFile>
+    <OneLineWxPhrase>Light Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1672">
+    <DayIcon>HvySn</DayIcon>
+    <NightIcon>NHvySn</NightIcon>
+    <DayIconFile>heavysnow</DayIconFile>
+    <NightIconFile>heavysnow</NightIconFile>
+    <OneLineWxPhrase>Heavy Snow/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1680">
+    <DayIcon>WndSn</DayIcon>
+    <NightIcon>NWndSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Snow/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1681">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Snow/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1682">
+    <DayIcon>WndSn</DayIcon>
+    <NightIcon>NWndSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Snow/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1690">
+    <DayIcon>WndSn</DayIcon>
+    <NightIcon>NWndSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Snow/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1691">
+    <DayIcon>WndLtSn</DayIcon>
+    <NightIcon>NWndLtSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Lgt Snow/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1692">
+    <DayIcon>WndSn</DayIcon>
+    <NightIcon>NWndSn</NightIcon>
+    <DayIconFile>blowingsnow</DayIconFile>
+    <NightIconFile>blowingsnow</NightIconFile>
+    <OneLineWxPhrase>Hvy Snow/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1700">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hail</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hail</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1701">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Small Hail</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Small</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1730">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1731">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1740">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder &amp;</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1741">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder &amp;</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Small Hail</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1750">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1751">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>T Storm/Hail/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder &amp;</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Small Hail</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1760">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1761">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Thunder/Hail/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder &amp;</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Small Hail</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1770">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hail/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hail and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1771">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Small Hail/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Small</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1780">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hail/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hail</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1781">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Small Hail/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Small</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1790">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hail/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hail</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1791">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon>NHail</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Small Hail/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Small</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Hail/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1800">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1801">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Light Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1802">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Heavy Sleet</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sleet</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1810">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Snow Shower</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1811">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Light Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1816">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1821">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1826">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>snowthunder</DayIconFile>
+    <NightIconFile>snowthunder</NightIconFile>
+    <OneLineWxPhrase>Snow/Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1830">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1831">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Lgt Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1832">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1840">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1841">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Lgt Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1842">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hvy Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1850">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1851">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Light Sleet/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1852">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Heavy Sleet/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1860">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Snow Shower/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Shower/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1861">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Snow Shower/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1870">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Snow Shower/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Snow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Showers</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1880">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet/Wind</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1881">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Lgt Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1882">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet/</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1885">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1886">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Lgt Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1887">
+    <DayIcon>SltTh</DayIcon>
+    <NightIcon>NSltTh</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet/Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Thunder</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1890">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1891">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Lgt Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1892">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hvy Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1895">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Sleet/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1896">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Lgt Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Lgt Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1897">
+    <DayIcon>Slt</DayIcon>
+    <NightIcon>NSlt</NightIcon>
+    <DayIconFile>hail</DayIconFile>
+    <NightIconFile>hail</NightIconFile>
+    <OneLineWxPhrase>Hvy Sleet/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hvy Sleet</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1900">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Dust</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Widespread</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Dust</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1901">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Blowing Dust</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drifting</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Dust</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1902">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Blowing Dust</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Dust</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1910">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Sand</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1911">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Drifting Sand</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Drifting</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sand</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1912">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Sand</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sand</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1919">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Sand</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sand</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1920">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Sandstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sandstorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1922">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Heavy Sandstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Sandstorm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1929">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Sandstorm Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sandstorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1930">
+    <DayIcon>VolAsh</DayIcon>
+    <NightIcon>NVolAsh</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Dust</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Volcanic</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Ash</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1931">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Duststorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1932">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Heavy Duststorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Duststorm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1939">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Duststorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1960">
+    <DayIcon>VolAsh</DayIcon>
+    <NightIcon>NVolAsh</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Dust/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Volcanic</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Ash/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1961">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Duststorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1962">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Heavy Duststorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Heavy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Duststorm</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1969">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Duststorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1970">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Sandstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sandstorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1972">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Heavy Sandstorm</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sandstorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1979">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Duststorm</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1980">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Sand/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1981">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Sand/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1982">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Sand/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1989">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Sand/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1990">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Dust/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1991">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Blowing Dust/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="1992">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Blowing Dust/Wind</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2000">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2001">
+    <DayIcon>AMFogPMSun</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Patchy Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Patches</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>of Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2002">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fogdrizzle</DayIconFile>
+    <NightIconFile>fogdrizzle</NightIconFile>
+    <OneLineWxPhrase>Mist</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Mist</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2021">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Shallow Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Shallow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2022">
+    <DayIcon>AMFogPMSun</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Patchy Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Patchy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2081">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Shallow Fog/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Shallow</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2082">
+    <DayIcon>AMFogPMSun</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Patchy Fog/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Patchy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2090">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Fog/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2091">
+    <DayIcon>AMFogPMSun</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Patchy Fog/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Patchy Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2092">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>drizzle</DayIconFile>
+    <NightIconFile>drizzle</NightIconFile>
+    <OneLineWxPhrase>Mist/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Mist</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2100">
+    <DayIcon>Haze</DayIcon>
+    <NightIcon>NHaze</NightIcon>
+    <DayIconFile>haze</DayIconFile>
+    <NightIconFile>haze</NightIconFile>
+    <OneLineWxPhrase>Haze</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Haze</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2190">
+    <DayIcon>Haze</DayIcon>
+    <NightIcon>NHaze</NightIcon>
+    <DayIconFile>haze</DayIconFile>
+    <NightIconFile>haze</NightIconFile>
+    <OneLineWxPhrase>Haze/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Hazy and</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2200">
+    <DayIcon>Smoke</DayIcon>
+    <NightIcon>NSmoke</NightIcon>
+    <DayIconFile>smoke</DayIconFile>
+    <NightIconFile>smoke</NightIconFile>
+    <OneLineWxPhrase>Smoke</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Smoke</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2290">
+    <DayIcon>Smoke</DayIcon>
+    <NightIcon>NSmoke</NightIcon>
+    <DayIconFile>smoke</DayIconFile>
+    <NightIconFile>smoke</NightIconFile>
+    <OneLineWxPhrase>Smoke/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Smoke</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2410">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Spray</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Spray</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2420">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Dust</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand/Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Whirlwinds</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2429">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand/Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Whirlwinds</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2430">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2450">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2460">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Squalls</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2470">
+    <DayIcon>WndRa</DayIcon>
+    <NightIcon>NWndRa</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2480">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Dust/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand/Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2489">
+    <DayIcon>Sand</DayIcon>
+    <NightIcon>NSand</NightIcon>
+    <DayIconFile>dust</DayIconFile>
+    <NightIconFile>dust</NightIconFile>
+    <OneLineWxPhrase>Duststorm Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sand/Dust</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2490">
+    <DayIcon>Fog</DayIcon>
+    <NightIcon>NFog</NightIcon>
+    <DayIconFile>windy</DayIconFile>
+    <NightIconFile>windy</NightIconFile>
+    <OneLineWxPhrase>Blowing Spray</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Blowing</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Spray</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2510">
+    <DayIcon>IceCrystals</DayIcon>
+    <NightIcon>NIceCrystals</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Ice Crystals</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Ice</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Crystals</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2570">
+    <DayIcon>IceCrystals</DayIcon>
+    <NightIcon>NIceCrystals</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Ice Crystals/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Ice</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Crystals</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2580">
+    <DayIcon>IceCrystals</DayIcon>
+    <NightIcon>NIceCrystals</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Ice Crystals/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Ice</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Crystals</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2590">
+    <DayIcon>IceCrystals</DayIcon>
+    <NightIcon>NIceCrystals</NightIcon>
+    <DayIconFile>flurries</DayIconFile>
+    <NightIconFile>flurries</NightIconFile>
+    <OneLineWxPhrase>Ice Crystals/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Ice</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Crystals</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2600">
+    <DayIcon>Cld</DayIcon>
+    <NightIcon>NCld</NightIcon>
+    <DayIconFile>cloudy</DayIconFile>
+    <NightIconFile>cloudy</NightIconFile>
+    <OneLineWxPhrase>Cloudy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Cloudy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2680">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sctdshowers</DayIconFile>
+    <NightIconFile>sctdshowers</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2681">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2685">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sctdshowers</DayIconFile>
+    <NightIconFile>sctdshowers</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2686">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sctdshowers</DayIconFile>
+    <NightIconFile>sctdshowers</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2690">
+    <DayIcon>CldWnd</DayIcon>
+    <NightIcon>NCldWnd</NightIcon>
+    <DayIconFile>cloudywindy</DayIconFile>
+    <NightIconFile>cloudywindy</NightIconFile>
+    <OneLineWxPhrase>Cloudy/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Cloudy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2700">
+    <DayIcon>Mc</DayIcon>
+    <NightIcon>NMc</NightIcon>
+    <DayIconFile>cloudy</DayIconFile>
+    <NightIconFile>cloudy</NightIconFile>
+    <OneLineWxPhrase>Mostly Cloudy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Mostly</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Cloudy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2780">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2781">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2785">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2786">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2790">
+    <DayIcon>MCldWnd</DayIcon>
+    <NightIcon>NMCldWnd</NightIcon>
+    <DayIconFile>cloudywindy</DayIconFile>
+    <NightIconFile>cloudywindy</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2800">
+    <DayIcon>Mc</DayIcon>
+    <NightIcon>NMc</NightIcon>
+    <DayIconFile>cloudy</DayIconFile>
+    <NightIconFile>cloudy</NightIconFile>
+    <OneLineWxPhrase>Mostly Cloudy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Mostly</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Cloudy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2880">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2881">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2885">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2886">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2890">
+    <DayIcon>MCldWnd</DayIcon>
+    <NightIcon>NMCldWnd</NightIcon>
+    <DayIconFile>cloudywindy</DayIconFile>
+    <NightIconFile>cloudywindy</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>M Cloudy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2900">
+    <DayIcon>Pc</DayIcon>
+    <NightIcon>NPc</NightIcon>
+    <DayIconFile>partlycloudynight</DayIconFile>
+    <NightIconFile>partlycloudynight</NightIconFile>
+    <OneLineWxPhrase>Partly Cloudy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Partly</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Cloudy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2980">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2981">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2985">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2986">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="2990">
+    <DayIcon>PcWnd</DayIcon>
+    <NightIcon>NPcWnd</NightIcon>
+    <DayIconFile>partlycloudywindynight</DayIconFile>
+    <NightIconFile>partlycloudywindynight</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>P Cloudy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3000">
+    <DayIcon>Pc</DayIcon>
+    <NightIcon>NPc</NightIcon>
+    <DayIconFile>partlycloudyday</DayIconFile>
+    <NightIconFile>partlycloudyday</NightIconFile>
+    <OneLineWxPhrase>Partly Cloudy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Partly</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Cloudy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3080">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3081">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3085">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3086">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3090">
+    <DayIcon>PcWnd</DayIcon>
+    <NightIcon>NPcWnd</NightIcon>
+    <DayIconFile>partlycloudyday</DayIconFile>
+    <NightIconFile>partlycloudyday</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>P Cloudy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3100">
+    <DayIcon>Sun</DayIcon>
+    <NightIcon>NClr</NightIcon>
+    <DayIconFile>clearnight</DayIconFile>
+    <NightIconFile>clearnight</NightIconFile>
+    <OneLineWxPhrase>Clear</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Clear</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3180">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3181">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3185">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3186">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3190">
+    <DayIcon>SunWnd</DayIcon>
+    <NightIcon>NClrWnd</NightIcon>
+    <DayIconFile>clearwindynight</DayIconFile>
+    <NightIconFile>clearwindynight</NightIconFile>
+    <OneLineWxPhrase>Clear/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Clear</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3200">
+    <DayIcon>Sun</DayIcon>
+    <NightIcon>NClr</NightIcon>
+    <DayIconFile>sunnyday</DayIconFile>
+    <NightIconFile>sunnyday</NightIconFile>
+    <OneLineWxPhrase>Sunny</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sunny</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3280">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3281">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3285">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3286">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3290">
+    <DayIcon>SunWnd</DayIcon>
+    <NightIcon>NClrWnd</NightIcon>
+    <DayIconFile>sunnywindyday</DayIconFile>
+    <NightIconFile>sunnywindyday</NightIconFile>
+    <OneLineWxPhrase>Sunny/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Sunny</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3300">
+    <DayIcon>Pc</DayIcon>
+    <NightIcon>NPc</NightIcon>
+    <DayIconFile>clearnight</DayIconFile>
+    <NightIconFile>clearnight</NightIconFile>
+    <OneLineWxPhrase>Fair</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fair</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3380">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3381">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3385">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3386">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>moonshowernight</DayIconFile>
+    <NightIconFile>moonshowernight</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3390">
+    <DayIcon>PcWnd</DayIcon>
+    <NightIcon>NPcWnd</NightIcon>
+    <DayIconFile>clearwindynight</DayIconFile>
+    <NightIconFile>clearwindynight</NightIconFile>
+    <OneLineWxPhrase>Fair/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fair</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3400">
+    <DayIcon>MSun</DayIcon>
+    <NightIcon>NClr</NightIcon>
+    <DayIconFile>sunnyday</DayIconFile>
+    <NightIconFile>sunnyday</NightIconFile>
+    <OneLineWxPhrase>Fair</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fair</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3480">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3481">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3485">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3486">
+    <DayIcon>Sh</DayIcon>
+    <NightIcon>NSh</NightIcon>
+    <DayIconFile>sunshowerday</DayIconFile>
+    <NightIconFile>sunshowerday</NightIconFile>
+    <OneLineWxPhrase>Showers Nearby</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Showers</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3490">
+    <DayIcon>MSun</DayIcon>
+    <NightIcon>NClr</NightIcon>
+    <DayIconFile>sunnywindyday</DayIconFile>
+    <NightIconFile>sunnywindyday</NightIconFile>
+    <OneLineWxPhrase>Fair/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fair</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3540">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3549">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3570">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3579">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3580">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3589">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3590">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3599">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3840">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3849">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3870">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog/Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3879">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3880">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3889">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby/Fog</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3890">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="3899">
+    <DayIcon>Thun</DayIcon>
+    <NightIcon>NThun</NightIcon>
+    <DayIconFile>tstorm</DayIconFile>
+    <NightIconFile>tstorm</NightIconFile>
+    <OneLineWxPhrase>Thunder/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Thunder</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Nearby</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="4400">
+    <DayIcon>Blank</DayIcon>
+    <NightIcon>Blank</NightIcon>
+    <DayIconFile>na</DayIconFile>
+    <NightIconFile>na</NightIconFile>
+    <OneLineWxPhrase>
+    </OneLineWxPhrase>
+    <TwoLineWxPhrase1>N/A</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="4470">
+    <DayIcon>Blank</DayIcon>
+    <NightIcon>Blank</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Fog/Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>Windy</TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="4480">
+    <DayIcon>Blank</DayIcon>
+    <NightIcon>Blank</NightIcon>
+    <DayIconFile>na</DayIconFile>
+    <NightIconFile>na</NightIconFile>
+    <OneLineWxPhrase>Windy</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Windy</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+  <Entry key="4490">
+    <DayIcon>Blank</DayIcon>
+    <NightIcon>Blank</NightIcon>
+    <DayIconFile>fog</DayIconFile>
+    <NightIconFile>fog</NightIconFile>
+    <OneLineWxPhrase>Fog</OneLineWxPhrase>
+    <TwoLineWxPhrase1>Fog</TwoLineWxPhrase1>
+    <TwoLineWxPhrase2>
+    </TwoLineWxPhrase2>
+  </Entry>
+</Mapping>

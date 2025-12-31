@@ -1,0 +1,1973 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Mapping id="20101015000000" name="ObsQualMapping">
+	<Entry key="OQ0001">
+		<Qual32Text>Warmer than yesterday.</Qual32Text>
+		<Qual50Text>Warmer than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 15 degrees warmer than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0002">
+		<Qual32Text>Much warmer than yesterday.</Qual32Text>
+		<Qual50Text>Much warmer than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 20 degrees warmer than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0003">
+		<Qual32Text>Much warmer than yesterday.</Qual32Text>
+		<Qual50Text>Much warmer than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 25 degrees warmer than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0004">
+		<Qual32Text>Much warmer than yesterday.</Qual32Text>
+		<Qual50Text>Much warmer than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 30 degrees warmer than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0005">
+		<Qual32Text>Much warmer than yesterday.</Qual32Text>
+		<Qual50Text>Much warmer than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 35 degrees warmer than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0006">
+		<Qual32Text>Much warmer than yesterday.</Qual32Text>
+		<Qual50Text>Much warmer than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 40 degrees warmer than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0007">
+		<Qual32Text>Cooler than yesterday.</Qual32Text>
+		<Qual50Text>Cooler than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 15 degrees cooler than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0008">
+		<Qual32Text>Much cooler than yesterday.</Qual32Text>
+		<Qual50Text>Much cooler than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 20 degrees cooler than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0009">
+		<Qual32Text>Much cooler than yesterday.</Qual32Text>
+		<Qual50Text>Much cooler than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 25 degrees cooler than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0010">
+		<Qual32Text>Much cooler than yesterday.</Qual32Text>
+		<Qual50Text>Much cooler than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 30 degrees cooler than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0011">
+		<Qual32Text>Much cooler than yesterday.</Qual32Text>
+		<Qual50Text>Much cooler than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 35 degrees cooler than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0012">
+		<Qual32Text>Much cooler than yesterday.</Qual32Text>
+		<Qual50Text>Much cooler than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 40 degrees cooler than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0013">
+		<Qual32Text>Colder than yesterday.</Qual32Text>
+		<Qual50Text>Colder than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 15 degrees colder than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0014">
+		<Qual32Text>Much colder than yesterday.</Qual32Text>
+		<Qual50Text>Much colder than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 20 degrees colder than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0015">
+		<Qual32Text>Much colder than yesterday.</Qual32Text>
+		<Qual50Text>Much colder than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 25 degrees colder than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0016">
+		<Qual32Text>Much colder than yesterday.</Qual32Text>
+		<Qual50Text>Much colder than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 30 degrees colder than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0017">
+		<Qual32Text>Much colder than yesterday.</Qual32Text>
+		<Qual50Text>Much colder than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 35 degrees colder than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0018">
+		<Qual32Text>Much colder than yesterday.</Qual32Text>
+		<Qual50Text>Much colder than yesterday.</Qual50Text>
+		<Qual100Text>It is now more than 40 degrees colder than it was yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0019">
+		<Qual32Text>Temps have been below average.</Qual32Text>
+		<Qual50Text>Recent high temps about 15 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 15 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0020">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent high temps about 20 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 20 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0021">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent high temps about 25 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 25 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0022">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent high temps about 30 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 30 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0023">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent high temps about 35 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 35 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0024">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent high temps about 40 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 40 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0025">
+		<Qual32Text>Temps have been above average.</Qual32Text>
+		<Qual50Text>Recent high temps about 15 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 15 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0026">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent high temps about 20 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 20 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0027">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent high temps about 25 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 25 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0028">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent high temps about 30 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 30 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0029">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent high temps about 35 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 35 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0030">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent high temps about 40 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is about 40 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0031">
+		<Qual32Text>Temps have been below average.</Qual32Text>
+		<Qual50Text>Recent low temps about 15 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 15 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0032">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent low temps about 20 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 20 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0033">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent low temps about 25 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 25 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0034">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent low temps about 30 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 30 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0035">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent low temps about 35 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 35 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0036">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Recent low temps about 40 degrees below average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 40 degrees below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0037">
+		<Qual32Text>Temps have been above average.</Qual32Text>
+		<Qual50Text>Recent low temps about 15 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 15 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0038">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent low temps about 20 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 20 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0039">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent low temps about 25 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 25 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0040">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent low temps about 30 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 30 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0041">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent low temps about 35 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 35 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0042">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Recent low temps about 40 degrees above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is about 40 degrees above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0043">
+		<Qual32Text>Recent temps much below average.</Qual32Text>
+		<Qual50Text>Most recent high temperature much below average.</Qual50Text>
+		<Qual100Text>The most recent high temperature is below the average low for this date.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0044">
+		<Qual32Text>Recent temps much above average.</Qual32Text>
+		<Qual50Text>Most recent low temperature much above average.</Qual50Text>
+		<Qual100Text>The most recent low temperature is above the average high for this date.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0045">
+		<Qual32Text>Very hot.</Qual32Text>
+		<Qual50Text>Very hot.</Qual50Text>
+		<Qual100Text>Very hot.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0046">
+		<Qual32Text>Hot.</Qual32Text>
+		<Qual50Text>Hot.</Qual50Text>
+		<Qual100Text>Hot.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0047">
+		<Qual32Text>Hot.</Qual32Text>
+		<Qual50Text>Hot.</Qual50Text>
+		<Qual100Text>Hot.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0048">
+		<Qual32Text>Very warm.</Qual32Text>
+		<Qual50Text>Very warm.</Qual50Text>
+		<Qual100Text>Very warm.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0049">
+		<Qual32Text>Warm.</Qual32Text>
+		<Qual50Text>Warm.</Qual50Text>
+		<Qual100Text>Warm.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0050">
+		<Qual32Text>Warm.</Qual32Text>
+		<Qual50Text>Warm.</Qual50Text>
+		<Qual100Text>Warm.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0051">
+		<Qual32Text>Hot and humid.</Qual32Text>
+		<Qual50Text>Hot and humid.</Qual50Text>
+		<Qual100Text>Hot and humid.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0052">
+		<Qual32Text>Hot and humid.</Qual32Text>
+		<Qual50Text>Hot and humid.</Qual50Text>
+		<Qual100Text>Hot and humid.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0053">
+		<Qual32Text>Warm and humid.</Qual32Text>
+		<Qual50Text>Warm and humid.</Qual50Text>
+		<Qual100Text>Warm and humid.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0054">
+		<Qual32Text>Warm and humid.</Qual32Text>
+		<Qual50Text>Warm and humid.</Qual50Text>
+		<Qual100Text>Warm and humid.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0055">
+		<Qual32Text>Humid.</Qual32Text>
+		<Qual50Text>Humid.</Qual50Text>
+		<Qual100Text>Humid.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0056">
+		<Qual32Text>Humid.</Qual32Text>
+		<Qual50Text>Humid.</Qual50Text>
+		<Qual100Text>Humid.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0057">
+		<Qual32Text>Cold.</Qual32Text>
+		<Qual50Text>Cold.</Qual50Text>
+		<Qual100Text>Cold.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0058">
+		<Qual32Text>Cold.</Qual32Text>
+		<Qual50Text>Cold.</Qual50Text>
+		<Qual100Text>Cold.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0059">
+		<Qual32Text>Very cold.</Qual32Text>
+		<Qual50Text>Very cold.</Qual50Text>
+		<Qual100Text>Very cold.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0060">
+		<Qual32Text>Bitterly cold.</Qual32Text>
+		<Qual50Text>Bitterly cold.</Qual50Text>
+		<Qual100Text>Bitterly cold.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0061">
+		<Qual32Text>Record high temperature.</Qual32Text>
+		<Qual50Text>Record high temperature.</Qual50Text>
+		<Qual100Text>Record high temperature.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0062">
+		<Qual32Text>Record low temperature.</Qual32Text>
+		<Qual50Text>Record low temperature.</Qual50Text>
+		<Qual100Text>Record low temperature.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0063">
+		<Qual32Text>Dangerous wind chills.</Qual32Text>
+		<Qual50Text>Dangerous wind chills. Limit outdoor exposure.</Qual50Text>
+		<Qual100Text>Dangerous wind chills.  Outdoor exposure should be limited.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0064">
+		<Qual32Text>Extreme wind chills.</Qual32Text>
+		<Qual50Text>Extreme wind chills. Limit outdoor expsure.</Qual50Text>
+		<Qual100Text>Extreme wind chills.  Outdoor exposure should be limited.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0065">
+		<Qual32Text>Dangerous head index</Qual32Text>
+		<Qual50Text>Dangerous heat index. Limit outdoor exposure.</Qual50Text>
+		<Qual100Text>Dangerous heat index.  Outdoor exposure should be limited.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0066">
+		<Qual32Text>Extreme heat index.</Qual32Text>
+		<Qual50Text>Extreme heat index. Limit outdoor exposure.</Qual50Text>
+		<Qual100Text>Extreme heat index.  Outdoor exposure should be limited.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0067">
+		<Qual32Text>Hotter than yesterday.</Qual32Text>
+		<Qual50Text>Hotter than yesterday at this time.</Qual50Text>
+		<Qual100Text>Hotter than yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0068">
+		<Qual32Text>Warmer than yesterday.</Qual32Text>
+		<Qual50Text>Warmer than yesterday at this time.</Qual50Text>
+		<Qual100Text>Warmer than yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0069">
+		<Qual32Text>Not as cold as yesterday.</Qual32Text>
+		<Qual50Text>Not as cold as yesterday at this time.</Qual50Text>
+		<Qual100Text>Not as cold as yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0070">
+		<Qual32Text>Not as hot as yesterday.</Qual32Text>
+		<Qual50Text>Not as hot as yesterday at this time.</Qual50Text>
+		<Qual100Text>Not as hot as yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0071">
+		<Qual32Text>Not as warm as yesterday.</Qual32Text>
+		<Qual50Text>Not as warm as yesterday at this time.</Qual50Text>
+		<Qual100Text>Not as warm as yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0072">
+		<Qual32Text>Cooler than yesterday.</Qual32Text>
+		<Qual50Text>Cooler than yesterday at this time.</Qual50Text>
+		<Qual100Text>Cooler than yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0073">
+		<Qual32Text>Colder than yesterday.</Qual32Text>
+		<Qual50Text>Colder than yesterday at this time.</Qual50Text>
+		<Qual100Text>Colder than yesterday at this time.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0074">
+		<Qual32Text>Temperatures below average.</Qual32Text>
+		<Qual50Text>Temperatures below average.</Qual50Text>
+		<Qual100Text>Temperatures below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0075">
+		<Qual32Text>Temps slightly below average.</Qual32Text>
+		<Qual50Text>Temperatures slightly below average.</Qual50Text>
+		<Qual100Text>Temperatures slightly below average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0076">
+		<Qual32Text>Seasonal temperatures.</Qual32Text>
+		<Qual50Text>Seasonal temperatures.</Qual50Text>
+		<Qual100Text>Seasonal temperatures.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0077">
+		<Qual32Text>Temps slightly above average.</Qual32Text>
+		<Qual50Text>Temperatures slightly above average.</Qual50Text>
+		<Qual100Text>Temperatures slightly above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ0078">
+		<Qual32Text>Temperatures above average.</Qual32Text>
+		<Qual50Text>Temperatures above average.</Qual50Text>
+		<Qual100Text>Temperatures above average.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1001">
+		<Qual32Text>Oppressive humidity.</Qual32Text>
+		<Qual50Text>Oppressive humidity.</Qual50Text>
+		<Qual100Text>Oppressive humidity.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1101">
+		<Qual32Text>Strong storms are localized.</Qual32Text>
+		<Qual50Text>Strong storms in the area are localized.</Qual50Text>
+		<Qual100Text>Strong storms in the area are localized.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1102">
+		<Qual32Text>Area thunderstorms are spotty.</Qual32Text>
+		<Qual50Text>Thunderstorms in the area are spotty.</Qual50Text>
+		<Qual100Text>Thunderstorms in the area are spotty.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1103">
+		<Qual32Text>Area precipitation is patchy.</Qual32Text>
+		<Qual50Text>Precipitation in the area is patchy.</Qual50Text>
+		<Qual100Text>Precipitation in the area is patchy.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1104">
+		<Qual32Text>Area precipitation is patchy.</Qual32Text>
+		<Qual50Text>Precipitation in the area is patchy.</Qual50Text>
+		<Qual100Text>Precipitation in the area is patchy.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1105">
+		<Qual32Text>Area precipitation is patchy.</Qual32Text>
+		<Qual50Text>Precipitation in the area is patchy.</Qual50Text>
+		<Qual100Text>Precipitation in the area is patchy.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1106">
+		<Qual32Text>Patchy freezing drizzle around.</Qual32Text>
+		<Qual50Text>Freezing drizzle in the area is patchy.</Qual50Text>
+		<Qual100Text>Freezing drizzle in the area is patchy.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1107">
+		<Qual32Text>Patchy areas of drizzle around.</Qual32Text>
+		<Qual50Text>Drizzle is occurring in only a few spots.</Qual50Text>
+		<Qual100Text>Drizzle is occurring in only a few spots.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1108">
+		<Qual32Text>Patchy areas of freezing rain.</Qual32Text>
+		<Qual50Text>Freezing rain in the area is patchy.</Qual50Text>
+		<Qual100Text>Only a few locations in the area are experiencing freezing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1109">
+		<Qual32Text>Rain in the area is spotty.</Qual32Text>
+		<Qual50Text>Rain is occurring in only a few spots.</Qual50Text>
+		<Qual100Text>Only a few locations in the area are experiencing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1110">
+		<Qual32Text>Rain in the area is spotty.</Qual32Text>
+		<Qual50Text>Rain is occurring in only a few spots.</Qual50Text>
+		<Qual100Text>Only a few locations in the area are experiencing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1111">
+		<Qual32Text>Flurries in the area are spotty.</Qual32Text>
+		<Qual50Text>Flurries in the area are few and far between.</Qual50Text>
+		<Qual100Text>Flurries and snow showers in the area are few and far between.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1112">
+		<Qual32Text>Snow in the area is localized.</Qual32Text>
+		<Qual50Text>Snow showers in the area are few and far between.</Qual50Text>
+		<Qual100Text>Snow showers in the area are few and far between.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1113">
+		<Qual32Text>Snow in the area is localized.</Qual32Text>
+		<Qual50Text>Snow in the area is localized.</Qual50Text>
+		<Qual100Text>Snow in the area is localized.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1114">
+		<Qual32Text>Snow in the area is localized.</Qual32Text>
+		<Qual50Text>Snow in the area is localized.</Qual50Text>
+		<Qual100Text>Snow in the area is localized.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1115">
+		<Qual32Text>Sleet in the area is localized.</Qual32Text>
+		<Qual50Text>Sleet is occurring in only a few spots.</Qual50Text>
+		<Qual100Text>Only a few locations in the area are experiencing sleet.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1116">
+		<Qual32Text>Fog in the area is patchy.</Qual32Text>
+		<Qual50Text>Fog in the area is patchy.</Qual50Text>
+		<Qual100Text>Fog in the area is patchy.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1117">
+		<Qual32Text>Area thunderstorms are spotty.</Qual32Text>
+		<Qual50Text>Thunderstorms in the area are spotty.</Qual50Text>
+		<Qual100Text>Thunderstorms in the area are spotty.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1118">
+		<Qual32Text>Area thunderstorms are spotty.</Qual32Text>
+		<Qual50Text>Thunderstorms in the area are spotty.</Qual50Text>
+		<Qual100Text>Thunderstorms in the area are spotty.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1119">
+		<Qual32Text>Rain in the area is spotty.</Qual32Text>
+		<Qual50Text>Rain is occurring in only a few spots.</Qual50Text>
+		<Qual100Text>Only a few locations in the area are experiencing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1120">
+		<Qual32Text>Rain in the area is spotty.</Qual32Text>
+		<Qual50Text>Rain is occurring in only a few spots.</Qual50Text>
+		<Qual100Text>Only a few locations in the area are experiencing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1121">
+		<Qual32Text>Snow in the area is localized.</Qual32Text>
+		<Qual50Text>Snow showers in the area are few and far between.</Qual50Text>
+		<Qual100Text>Snow showers in the area are few and far between.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1122">
+		<Qual32Text>Snow in the area is localized.</Qual32Text>
+		<Qual50Text>Snow in the area is localized.</Qual50Text>
+		<Qual100Text>Snow in the area is localized.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1123">
+		<Qual32Text>Snow in the area is localized.</Qual32Text>
+		<Qual50Text>Snow in the area is localized.</Qual50Text>
+		<Qual100Text>Snow in the area is localized.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1124">
+		<Qual32Text>Strong thunderstorms nearby.</Qual32Text>
+		<Qual50Text>Strong thunderstorms reported nearby.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting strong thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1125">
+		<Qual32Text>Strong t-storms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting strong t-storms.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting strong thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1126">
+		<Qual32Text>Strong thunderstorms nearby.</Qual32Text>
+		<Qual50Text>Strong thunderstorms and wind reported nearby.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting strong thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1127">
+		<Qual32Text>Strong t-storms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting strong t-storms.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting strong thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1128">
+		<Qual32Text>Strong t-storms across the area.</Qual32Text>
+		<Qual50Text>Strong thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Strong thunderstorms are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1129">
+		<Qual32Text>Strong t-storms across the area.</Qual32Text>
+		<Qual50Text>Strong thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Strong thunderstorms are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1130">
+		<Qual32Text>Strong t-storms across the area.</Qual32Text>
+		<Qual50Text>Strong thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Strong thunderstorms and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1131">
+		<Qual32Text>Strong t-storms across the area.</Qual32Text>
+		<Qual50Text>Strong thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Strong thunderstorms and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1132">
+		<Qual32Text>Thunderstorms in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting thunderstorms.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1133">
+		<Qual32Text>Thunderstorms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting thunderstorms.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1134">
+		<Qual32Text>Thunderstorms in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby report thunderstorms and wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1135">
+		<Qual32Text>Thunderstorms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting t-storms and wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1136">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Thunderstorms are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1137">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Thunderstorms are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1138">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms and wind moving through the area.</Qual50Text>
+		<Qual100Text>Thunderstorms and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1139">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Thunderstorms and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1140">
+		<Qual32Text>A mix of rain and snow nearby.</Qual32Text>
+		<Qual50Text>Areas nearby are reporting a mix of rain and snow.</Qual50Text>
+		<Qual100Text>Areas nearby are reporting a mix of rain and snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1141">
+		<Qual32Text>A rain/snow mix around the area.</Qual32Text>
+		<Qual50Text>Nearby locales also reporting a rain and snow mix.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting a mix of rain and snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1142">
+		<Qual32Text>A mix of rain and snow nearby.</Qual32Text>
+		<Qual50Text>Areas nearby are reporting a mix of rain and snow.</Qual50Text>
+		<Qual100Text>Areas nearby are reporting a mix of rain and snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1143">
+		<Qual32Text>A rain/snow mix around the area.</Qual32Text>
+		<Qual50Text>Nearby locales also reporting rain, snow and wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting a mix of rain and snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1144">
+		<Qual32Text>A rain/snow mix around the area.</Qual32Text>
+		<Qual50Text>A mix of rain and snow occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and snow is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1145">
+		<Qual32Text>A rain/snow mix across the area.</Qual32Text>
+		<Qual50Text>A mix of rain and snow occurring through the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and snow is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1146">
+		<Qual32Text>A rain/snow mix around the area.</Qual32Text>
+		<Qual50Text>A mix of rain and snow occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and snow with wind is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1147">
+		<Qual32Text>A rain/snow mix across the area.</Qual32Text>
+		<Qual50Text>A mix of rain and snow occurring through the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and snow with wind is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1148">
+		<Qual32Text>A mix of rain and sleet nearby.</Qual32Text>
+		<Qual50Text>Areas nearby reporting a mix of rain and sleet.</Qual50Text>
+		<Qual100Text>Areas nearby are reporting a mix of rain and sleet.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1149">
+		<Qual32Text>A rain/sleet mix in the area.</Qual32Text>
+		<Qual50Text>Nearby locales also reporting both rain and sleet.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting a mix of rain and sleet.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1150">
+		<Qual32Text>A mix of rain and sleet nearby.</Qual32Text>
+		<Qual50Text>Areas nearby reporting a mix of rain and sleet.</Qual50Text>
+		<Qual100Text>Areas nearby are reporting a mix of rain and sleet with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1151">
+		<Qual32Text>A rain/sleet mix in the area.</Qual32Text>
+		<Qual50Text>Nearby locales also reporting both rain and sleet.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting a mix of rain and sleet with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1152">
+		<Qual32Text>A rain/sleet mix in the area.</Qual32Text>
+		<Qual50Text>A mix of rain and sleet occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and sleet is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1153">
+		<Qual32Text>A rain/sleet mix in the area.</Qual32Text>
+		<Qual50Text>A mix of rain and sleet occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and sleet is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1154">
+		<Qual32Text>A rain/sleet mix in the area.</Qual32Text>
+		<Qual50Text>Rain, sleet and wind occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and sleet with wind is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1155">
+		<Qual32Text>A rain/sleet mix in the area.</Qual32Text>
+		<Qual50Text>Rain, sleet and wind occurring through the area.</Qual50Text>
+		<Qual100Text>A mixture of rain and sleet with wind is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1156">
+		<Qual32Text>A wintry mix reported nearby.</Qual32Text>
+		<Qual50Text>A mix of wintry precipitation is occurring nearby.</Qual50Text>
+		<Qual100Text>A mix of wintry precipitation is occurring at other points nearby.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1157">
+		<Qual32Text>A wintry mix around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting a wintry mix.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting a mix of wintry precipitation.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1158">
+		<Qual32Text>A wintry mix reported nearby.</Qual32Text>
+		<Qual50Text>A mix of wintry precipitation is occurring nearby.</Qual50Text>
+		<Qual100Text>A mix of wintry precipitation with wind is occurring at other points nearby.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1159">
+		<Qual32Text>A wintry mix around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting a wintry mix.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting a mix of wintry precipitation with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1160">
+		<Qual32Text>A wintry mix around the area.</Qual32Text>
+		<Qual50Text>A wintry mix is occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of wintry precipitation is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1161">
+		<Qual32Text>A wintry mix across the area.</Qual32Text>
+		<Qual50Text>A wintry mix is occuring throughout the area.</Qual50Text>
+		<Qual100Text>A mixture of wintry precipitation is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1162">
+		<Qual32Text>A wintry mix around the area.</Qual32Text>
+		<Qual50Text>A wintry mix and wind occurring around the area.</Qual50Text>
+		<Qual100Text>A mixture of wintry precipitation with wind is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1163">
+		<Qual32Text>A wintry mix across the area.</Qual32Text>
+		<Qual50Text>A wintry mix and wind occurring through the area.</Qual50Text>
+		<Qual100Text>A mixture of wintry precipitation with wind is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1164">
+		<Qual32Text>Patchy freezing drizzle nearby.</Qual32Text>
+		<Qual50Text>Some nearby locations reporting freezing drizzle.</Qual50Text>
+		<Qual100Text>Some nearby locations are reporting freezing drizzle.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1165">
+		<Qual32Text>Patchy freezing drizzle around.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting freezing drizzle.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting freezing drizzle.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1166">
+		<Qual32Text>Patchy freezing drizzle nearby.</Qual32Text>
+		<Qual50Text>Some nearby locations reporting freezing drizzle.</Qual50Text>
+		<Qual100Text>Some nearby locations are reporting freezing drizzle with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1167">
+		<Qual32Text>Patchy freezing drizzle around.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting freezing drizzle.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting freezing drizzle with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1168">
+		<Qual32Text>Freezing drizzle in the area.</Qual32Text>
+		<Qual50Text>Freezing drizzle is occurring around the area.</Qual50Text>
+		<Qual100Text>Freezing drizzle is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1169">
+		<Qual32Text>Widespread freezing drizzle.</Qual32Text>
+		<Qual50Text>Freezing drizzle is occurring across the area.</Qual50Text>
+		<Qual100Text>Freezing drizzle is occurring across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1170">
+		<Qual32Text>Freezing drizzle in the area.</Qual32Text>
+		<Qual50Text>Freezing drizzle is occurring around the area.</Qual50Text>
+		<Qual100Text>Freezing drizzle and wind are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1171">
+		<Qual32Text>Widespread freezing drizzle.</Qual32Text>
+		<Qual50Text>Freezing drizzle is occurring across the area.</Qual50Text>
+		<Qual100Text>Freezing drizzle and wind are occurring across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1172">
+		<Qual32Text>Areas of drizzle nearby.</Qual32Text>
+		<Qual50Text>Some nearby locations are reporting drizzle.</Qual50Text>
+		<Qual100Text>Some nearby locations are reporting drizzle.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1173">
+		<Qual32Text>Spotty drizzle around the area.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting drizzle.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting drizzle.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1174">
+		<Qual32Text>Areas of drizzle nearby.</Qual32Text>
+		<Qual50Text>Some nearby locations reporting drizzle with wind.</Qual50Text>
+		<Qual100Text>Some nearby locations are reporting drizzle with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1175">
+		<Qual32Text>Spotty drizzle around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting drizzle with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting drizzle with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1176">
+		<Qual32Text>Damp, drizzly around the area.</Qual32Text>
+		<Qual50Text>Damp, drizzly conditions around the area.</Qual50Text>
+		<Qual100Text>Damp, drizzly conditions are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1177">
+		<Qual32Text>Damp, drizzly across the area.</Qual32Text>
+		<Qual50Text>Damp, drizzly conditions throughout the area.</Qual50Text>
+		<Qual100Text>Damp, drizzly conditions are occurring across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1178">
+		<Qual32Text>Damp, drizzly around the area.</Qual32Text>
+		<Qual50Text>Drizzle and wind are occurring around the area.</Qual50Text>
+		<Qual100Text>Drizzle and wind are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1179">
+		<Qual32Text>Damp, drizzly across the area.</Qual32Text>
+		<Qual50Text>Drizzle and wind are occurring across the area.</Qual50Text>
+		<Qual100Text>Drizzle and wind are occurring across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1180">
+		<Qual32Text>Patchy freezing rain nearby.</Qual32Text>
+		<Qual50Text>Some nearby locations are reporting freezing rain.</Qual50Text>
+		<Qual100Text>Some nearby locations are reporting freezing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1181">
+		<Qual32Text>Patchy freezing rain around.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting freezing rain.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting freezing rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1182">
+		<Qual32Text>Patchy freezing rain nearby.</Qual32Text>
+		<Qual50Text>Some nearby locations are reporting freezing rain.</Qual50Text>
+		<Qual100Text>Some nearby locations are reporting freezing rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1183">
+		<Qual32Text>Patchy freezing rain around.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting freezing rain.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting freezing rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1184">
+		<Qual32Text>Freezing rain around the area.</Qual32Text>
+		<Qual50Text>Freezing rain is occurring around the area.</Qual50Text>
+		<Qual100Text>Freezing rain is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1185">
+		<Qual32Text>Widespread freezing rain.</Qual32Text>
+		<Qual50Text>Freezing rain is occurring across the area.</Qual50Text>
+		<Qual100Text>Freezing rain is occurring across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1186">
+		<Qual32Text>Freezing rain around the area.</Qual32Text>
+		<Qual50Text>Freezing rain and wind occurring around the area.</Qual50Text>
+		<Qual100Text>Freezing rain and wind are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1187">
+		<Qual32Text>Widespread freezing rain.</Qual32Text>
+		<Qual50Text>Freezing rain and wind occurring across the area.</Qual50Text>
+		<Qual100Text>Freezing rain and wind are occurring across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1188">
+		<Qual32Text>Raining at nearby locations.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting rain.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1189">
+		<Qual32Text>Also raining in spots nearby.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting rain.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1190">
+		<Qual32Text>Rain and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting rain with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1191">
+		<Qual32Text>Also raining and windy nearby.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting rain with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1192">
+		<Qual32Text>Raining around the area.</Qual32Text>
+		<Qual50Text>Rain is widespread around the area.</Qual50Text>
+		<Qual100Text>Rain is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1193">
+		<Qual32Text>Widespread rain across the area.</Qual32Text>
+		<Qual50Text>Rain is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Rain is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1194">
+		<Qual32Text>Rain and wind around the area.</Qual32Text>
+		<Qual50Text>Rain and wind are widespread around the area.</Qual50Text>
+		<Qual100Text>Rain and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1195">
+		<Qual32Text>Rain and wind are widespread.</Qual32Text>
+		<Qual50Text>Rain and wind are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Rain and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1196">
+		<Qual32Text>Raining at nearby locations.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting rain.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1197">
+		<Qual32Text>Also raining in spots nearby.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting rain.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1198">
+		<Qual32Text>Rain and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting rain with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1199">
+		<Qual32Text>Also raining and windy nearby.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting rain with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1200">
+		<Qual32Text>Raining around the area.</Qual32Text>
+		<Qual50Text>Rain is widespread around the area.</Qual50Text>
+		<Qual100Text>Rain is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1201">
+		<Qual32Text>Widespread rain across the area.</Qual32Text>
+		<Qual50Text>Rain is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Rain is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1202">
+		<Qual32Text>Rain and wind around the area.</Qual32Text>
+		<Qual50Text>Rain and wind are widespread around the area.</Qual50Text>
+		<Qual100Text>Rain and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1203">
+		<Qual32Text>Rain and wind are widespread.</Qual32Text>
+		<Qual50Text>Rain and wind are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Rain and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1204">
+		<Qual32Text>Snow flurries reported nearby.</Qual32Text>
+		<Qual50Text>A few snow flurries are being reported nearby.</Qual50Text>
+		<Qual100Text>A few snow flurries are being reported at nearby locations.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1205">
+		<Qual32Text>Snow flurries scattered around.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting snow flurries.</Qual50Text>
+		<Qual100Text>A few snow flurries are being reported at other nearby locations.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1206">
+		<Qual32Text>Snow flurries reported nearby.</Qual32Text>
+		<Qual50Text>A few snow flurries are being reported nearby.</Qual50Text>
+		<Qual100Text>A few snow flurries with windy conditions are being reported at nearby locations.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1207">
+		<Qual32Text>Snow flurries scattered around.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting snow flurries.</Qual50Text>
+		<Qual100Text>A few snow flurries with windy conditions are being reported at other nearby locations.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1208">
+		<Qual32Text>Snow flurries around the area.</Qual32Text>
+		<Qual50Text>Snow flurries are being reported around the area.</Qual50Text>
+		<Qual100Text>Snow flurries are being reported around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1209">
+		<Qual32Text>Snow flurries across the area.</Qual32Text>
+		<Qual50Text>Snow flurries are being reported across the area.</Qual50Text>
+		<Qual100Text>Snow flurries are being reported across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1210">
+		<Qual32Text>Snow flurries around the area.</Qual32Text>
+		<Qual50Text>Snow flurries with wind reported around the area.</Qual50Text>
+		<Qual100Text>Snow flurries with windy conditions are being reported around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1211">
+		<Qual32Text>Snow flurries across the area.</Qual32Text>
+		<Qual50Text>Snow flurries with wind reported across the area.</Qual50Text>
+		<Qual100Text>Snow flurries with windy conditions are being reported across the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1212">
+		<Qual32Text>Snowing at nearby locations.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting snow.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1213">
+		<Qual32Text>Also snowing in spots nearby.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting snow.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1214">
+		<Qual32Text>Snow and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting snow with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1215">
+		<Qual32Text>Also snowing and windy nearby.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting snow with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1216">
+		<Qual32Text>Snowing around the area.</Qual32Text>
+		<Qual50Text>Snow is widespread around the area.</Qual50Text>
+		<Qual100Text>Snow is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1217">
+		<Qual32Text>Widespread snow across the area.</Qual32Text>
+		<Qual50Text>Snow is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Snow is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1218">
+		<Qual32Text>Snow and wind around the area.</Qual32Text>
+		<Qual50Text>Snow and wind are widespread around the area.</Qual50Text>
+		<Qual100Text>Snow and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1219">
+		<Qual32Text>Snow and wind are widespread.</Qual32Text>
+		<Qual50Text>Snow and wind are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Snow and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1220">
+		<Qual32Text>Snow and blowing snow nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting snow and blowing snow.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow and blowing snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1221">
+		<Qual32Text>Snow and blowing snow around.</Qual32Text>
+		<Qual50Text>Nearby locales also report snow and blowing snow.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow and blowing snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1222">
+		<Qual32Text>Snow and blowing snow nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting snow and blowing snow.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting windy conditions with snow and blowing snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1223">
+		<Qual32Text>Snow and blowing snow around.</Qual32Text>
+		<Qual50Text>Nearby locales also report snow and blowing snow.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting windy conditions with snow and blowing snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1224">
+		<Qual32Text>Widespread snow, blowing snow.</Qual32Text>
+		<Qual50Text>Snow and blowing snow around the area.</Qual50Text>
+		<Qual100Text>Snow and blowing snow are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1225">
+		<Qual32Text>Widespread snow, blowing snow.</Qual32Text>
+		<Qual50Text>Snow and blowing snow throughout the area.</Qual50Text>
+		<Qual100Text>Snow and blowing snow are occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1226">
+		<Qual32Text>Widespread snow, blowing snow.</Qual32Text>
+		<Qual50Text>Snow and blowing snow around the area.</Qual50Text>
+		<Qual100Text>Windy conditions with snow and blowing snow are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1227">
+		<Qual32Text>Widespread snow, blowing snow.</Qual32Text>
+		<Qual50Text>Snow and blowing snow throughout the area.</Qual50Text>
+		<Qual100Text>Windy conditions with snow and blowing snow are occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1228">
+		<Qual32Text>Snowing at nearby locations.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting snow.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1229">
+		<Qual32Text>Also snowing in spots nearby.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting snow.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1230">
+		<Qual32Text>Snow and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting snow with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1231">
+		<Qual32Text>Also snowing and windy nearby.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting snow with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1232">
+		<Qual32Text>Snowing around the area.</Qual32Text>
+		<Qual50Text>Snow is widespread around the area.</Qual50Text>
+		<Qual100Text>Snow is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1233">
+		<Qual32Text>Widespread snow across the area.</Qual32Text>
+		<Qual50Text>Snow is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Snow is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1234">
+		<Qual32Text>Snow and wind around the area.</Qual32Text>
+		<Qual50Text>Snow and wind are widespread around the area.</Qual50Text>
+		<Qual100Text>Snow and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1235">
+		<Qual32Text>Snow and wind are widespread.</Qual32Text>
+		<Qual50Text>Snow and wind are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Snow and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1236">
+		<Qual32Text>Sleet reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting sleet.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting sleet.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1237">
+		<Qual32Text>Sleet reported around the area.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting sleet.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting sleet.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1238">
+		<Qual32Text>Sleet and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting sleet with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting sleet with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1239">
+		<Qual32Text>Sleet reported around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting sleet with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting sleet with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1240">
+		<Qual32Text>Sleet reported around the area.</Qual32Text>
+		<Qual50Text>Sleet is occurring around the area.</Qual50Text>
+		<Qual100Text>Sleet is occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1241">
+		<Qual32Text>Sleet reported across the area.</Qual32Text>
+		<Qual50Text>Sleet is occurring throughout the area.</Qual50Text>
+		<Qual100Text>Sleet is occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1242">
+		<Qual32Text>Sleet reported around the area.</Qual32Text>
+		<Qual50Text>Sleet and wind are occurring around the area.</Qual50Text>
+		<Qual100Text>Sleet and windy conditions are occurring around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1243">
+		<Qual32Text>Sleet reported across the area.</Qual32Text>
+		<Qual50Text>Sleet and wind are occurring throughout the area.</Qual50Text>
+		<Qual100Text>Sleet and windy conditions are occurring throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1244">
+		<Qual32Text>Patchy fog reported nearby.</Qual32Text>
+		<Qual50Text>Some areas nearby are reporting fog.</Qual50Text>
+		<Qual100Text>Some areas nearby are reporting fog.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1245">
+		<Qual32Text>Areas nearby also reporting fog.</Qual32Text>
+		<Qual50Text>Areas nearby are also reporting fog.</Qual50Text>
+		<Qual100Text>Areas nearby are also reporting fog.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1246">
+		<Qual32Text>Patchy fog reported nearby.</Qual32Text>
+		<Qual50Text>Some areas nearby are reporting fog with wind.</Qual50Text>
+		<Qual100Text>Some areas nearby are reporting fog with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1247">
+		<Qual32Text>Areas nearby also reporting fog.</Qual32Text>
+		<Qual50Text>Areas nearby are also reporting fog with wind.</Qual50Text>
+		<Qual100Text>Areas nearby are also reporting fog with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1248">
+		<Qual32Text>Widespread fog around the area.</Qual32Text>
+		<Qual50Text>Foggy conditions reported around the area.</Qual50Text>
+		<Qual100Text>Foggy conditions are being reported around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1249">
+		<Qual32Text>Widespread fog across the area.</Qual32Text>
+		<Qual50Text>Foggy conditions reported throughout the area.</Qual50Text>
+		<Qual100Text>Foggy conditions are being reported throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1250">
+		<Qual32Text>Widespread fog around the area.</Qual32Text>
+		<Qual50Text>Fog and windy conditions reported around the area.</Qual50Text>
+		<Qual100Text>Foggy and windy conditions are being reported around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1251">
+		<Qual32Text>Widespread fog across the area.</Qual32Text>
+		<Qual50Text>Fog and windy conditions reported throug the area.</Qual50Text>
+		<Qual100Text>Foggy and windy conditions are being reported throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1252">
+		<Qual32Text>Gusty winds reported nearby.</Qual32Text>
+		<Qual50Text>Some areas nearby are experiencing gusty winds.</Qual50Text>
+		<Qual100Text>Some areas nearby are experiencing gusty winds.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1253">
+		<Qual32Text>Gusty winds around the area.</Qual32Text>
+		<Qual50Text>Areas nearby also experiencing windy conditions.</Qual50Text>
+		<Qual100Text>Areas nearby are also experiencing windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1254">
+		<Qual32Text>Gusty winds reported nearby.</Qual32Text>
+		<Qual50Text>Some areas nearby are experiencing gusty winds.</Qual50Text>
+		<Qual100Text>Some areas nearby are experiencing gusty winds.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1255">
+		<Qual32Text>Gusty winds around the area.</Qual32Text>
+		<Qual50Text>Areas nearby also experiencing windy conditions.</Qual50Text>
+		<Qual100Text>Areas nearby are also experiencing windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1256">
+		<Qual32Text>Gusty winds around the area.</Qual32Text>
+		<Qual50Text>Windy conditions reported around the area.</Qual50Text>
+		<Qual100Text>Windy conditions are being reported around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1257">
+		<Qual32Text>Widspread windy conditions.</Qual32Text>
+		<Qual50Text>Windy conditions reported throughout the area.</Qual50Text>
+		<Qual100Text>Windy conditions are being reported throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1258">
+		<Qual32Text>Gusty winds around the area.</Qual32Text>
+		<Qual50Text>Windy conditions reported around the area.</Qual50Text>
+		<Qual100Text>Windy conditions are being reported around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1259">
+		<Qual32Text>Widespread windy conditions.</Qual32Text>
+		<Qual50Text>Windy conditions reported throughout the area.</Qual50Text>
+		<Qual100Text>Windy conditions are being reported throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1260">
+		<Qual32Text>Thunderstorms in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting thunderstorms.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting a thunderstorm.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1261">
+		<Qual32Text>Thunderstorms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting thunderstorms.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1262">
+		<Qual32Text>Thunderstorms in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby report thunderstorms and wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1263">
+		<Qual32Text>Thunderstorms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also report t-storms and wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1264">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Thunderstorms are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1265">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Thunderstorms are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1266">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms and wind moving through the area.</Qual50Text>
+		<Qual100Text>Thunderstorms and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1267">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Thunderstorms and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1268">
+		<Qual32Text>Thunderstorms in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting thunderstorms.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1269">
+		<Qual32Text>Thunderstorms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting thunderstorms.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting thunderstorms.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1270">
+		<Qual32Text>Thunderstorms in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby report thunderstorms and wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1271">
+		<Qual32Text>Thunderstorms around the area.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting t-storms and wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting thunderstorms with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1272">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms are moving through the area.</Qual50Text>
+		<Qual100Text>Thunderstorms are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1273">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Thunderstorms are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1274">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms and wind moving through the area.</Qual50Text>
+		<Qual100Text>Thunderstorms and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1275">
+		<Qual32Text>Thunderstorms across the area.</Qual32Text>
+		<Qual50Text>Thunderstorms and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Thunderstorms and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1276">
+		<Qual32Text>Raining at nearby locations.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting rain.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1277">
+		<Qual32Text>Also raining in spots nearby.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting rain.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1278">
+		<Qual32Text>Rain and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting rain with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1279">
+		<Qual32Text>Also raining and windy nearby.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting rain with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1280">
+		<Qual32Text>Raining around the area.</Qual32Text>
+		<Qual50Text>Rain is widespread around the area.</Qual50Text>
+		<Qual100Text>Rain is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1281">
+		<Qual32Text>Widespread rain across the area.</Qual32Text>
+		<Qual50Text>Rain is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Rain is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1282">
+		<Qual32Text>Rain and wind around the area.</Qual32Text>
+		<Qual50Text>Rain and wind are widespread around the area.</Qual50Text>
+		<Qual100Text>Rain and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1283">
+		<Qual32Text>Rain and wind are widespread.</Qual32Text>
+		<Qual50Text>Rain and wind are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Rain and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1284">
+		<Qual32Text>Raining heavily in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting heavy rain.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting heavy rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1285">
+		<Qual32Text>Raining heavily around the area.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting heavy rain.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting heavy rain.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1286">
+		<Qual32Text>Heavy rain and wind nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting heavy rain with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting heavy rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1287">
+		<Qual32Text>Heavy rain and wind in the area.</Qual32Text>
+		<Qual50Text>Nearby locations also report heavy rain with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting heavy rain with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1288">
+		<Qual32Text>Raining heavily around the area.</Qual32Text>
+		<Qual50Text>Heavy rain is widespread around the area.</Qual50Text>
+		<Qual100Text>Heavy rain is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1289">
+		<Qual32Text>Raining heavily across the area.</Qual32Text>
+		<Qual50Text>Heavy rain is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Heavy rain is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1290">
+		<Qual32Text>Widespread heavy rain and wind.</Qual32Text>
+		<Qual50Text>Heavy rain and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Heavy rain and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1291">
+		<Qual32Text>Widespread heavy rain and wind.</Qual32Text>
+		<Qual50Text>Heavy rain and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Heavy rain and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1292">
+		<Qual32Text>Snowing at nearby locations.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting snow.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1293">
+		<Qual32Text>Also snowing in spots nearby.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting snow.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1294">
+		<Qual32Text>Snow and wind reported nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting snow with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1295">
+		<Qual32Text>Also snowing and windy nearby.</Qual32Text>
+		<Qual50Text>Nearby locations also reporting snow with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1296">
+		<Qual32Text>Snowing around the area.</Qual32Text>
+		<Qual50Text>Snow is widespread around the area.</Qual50Text>
+		<Qual100Text>Snow is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1297">
+		<Qual32Text>Widespread snow across the area.</Qual32Text>
+		<Qual50Text>Snow is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Snow is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1298">
+		<Qual32Text>Snow and wind around the area.</Qual32Text>
+		<Qual50Text>Snow and wind are widespread around the area.</Qual50Text>
+		<Qual100Text>Snow and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1299">
+		<Qual32Text>Snow and wind are widespread.</Qual32Text>
+		<Qual50Text>Snow and wind are widespread throughout the area.</Qual50Text>
+		<Qual100Text>Snow and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1300">
+		<Qual32Text>Snowing heavily in spots nearby.</Qual32Text>
+		<Qual50Text>Locations nearby are reporting heavy snow.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting heavy snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1301">
+		<Qual32Text>Snowing heavily around the area.</Qual32Text>
+		<Qual50Text>Nearby locations are also reporting heavy snow.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting heavy snow.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1302">
+		<Qual32Text>Heavy snow and wind nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting heavy snow with wind.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting heavy snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1303">
+		<Qual32Text>Heavy snow and wind in the area.</Qual32Text>
+		<Qual50Text>Nearby locations also report heavy snow with wind.</Qual50Text>
+		<Qual100Text>Nearby locations are also reporting heavy snow with windy conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1304">
+		<Qual32Text>Snowing heavily around the area.</Qual32Text>
+		<Qual50Text>Heavy snow is widespread around the area.</Qual50Text>
+		<Qual100Text>Heavy snow is widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1305">
+		<Qual32Text>Snowing heavily across the area.</Qual32Text>
+		<Qual50Text>Heavy snow is widespread throughout the area.</Qual50Text>
+		<Qual100Text>Heavy snow is widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1306">
+		<Qual32Text>Widespread heavy snow and wind.</Qual32Text>
+		<Qual50Text>Heavy snow and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Heavy snow and wind are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1307">
+		<Qual32Text>Widespread heavy snow and wind.</Qual32Text>
+		<Qual50Text>Heavy snow and wind are widespread in the area.</Qual50Text>
+		<Qual100Text>Heavy snow and wind are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1308">
+		<Qual32Text>Blizzard conditions nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting blizzard conditions.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting blizzard conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1309">
+		<Qual32Text>Blizzard conditions at times.</Qual32Text>
+		<Qual50Text>Nearby locations also report blizzard conditions.</Qual50Text>
+		<Qual100Text>Nearby locations are also experiencing blizzard conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1310">
+		<Qual32Text>Blizzard conditions nearby.</Qual32Text>
+		<Qual50Text>Locations nearby reporting blizzard conditions.</Qual50Text>
+		<Qual100Text>Locations nearby are reporting blizzard conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1311">
+		<Qual32Text>Blizzard conditions at times.</Qual32Text>
+		<Qual50Text>Nearby locations also report blizzard conditions.</Qual50Text>
+		<Qual100Text>Nearby locations are also experiencing blizzard conditions.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1312">
+		<Qual32Text>Blizzard conditions in the area.</Qual32Text>
+		<Qual50Text>Bilzzard conditions are widespread in the area.</Qual50Text>
+		<Qual100Text>Bilzzard conditions are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1313">
+		<Qual32Text>Widespread blizzard conditions.</Qual32Text>
+		<Qual50Text>Bilzzard conditions are widespread in the area.</Qual50Text>
+		<Qual100Text>Blizzard conditions are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1314">
+		<Qual32Text>Blizzard conditions in the area.</Qual32Text>
+		<Qual50Text>Bilzzard conditions are widespread in the area.</Qual50Text>
+		<Qual100Text>Bilzzard conditions are widespread around the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ1315">
+		<Qual32Text>Widespread blizzard conditions.</Qual32Text>
+		<Qual50Text>Bilzzard conditions are widespread in the area.</Qual50Text>
+		<Qual100Text>Blizzard conditions are widespread throughout the area.</Qual100Text>
+	</Entry>
+	<Entry key="OQ2001">
+		<Qual32Text>Near zero visibility in fog.</Qual32Text>
+		<Qual50Text>Near zero visibility in dense fog. Use caution.</Qual50Text>
+		<Qual100Text>Near zero visibility in dense fog.  Use extreme caution.</Qual100Text>
+	</Entry>
+	<Entry key="OQ2002">
+		<Qual32Text>Smoke reducing visibility.</Qual32Text>
+		<Qual50Text>Widespread smoke is reducing visibility.</Qual50Text>
+		<Qual100Text>Widespread smoke is reducing visibility.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3001">
+		<Qual32Text>A wind shift has occurred.</Qual32Text>
+		<Qual50Text>A notable wind shift has occurred.</Qual50Text>
+		<Qual100Text>Winds have shifted as the result of a recent frontal passage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3002">
+		<Qual32Text>Winds now tropical storm force.</Qual32Text>
+		<Qual50Text>Winds now sustained at Tropical storm force.</Qual50Text>
+		<Qual100Text>Winds now sustained at Tropical Storm force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3003">
+		<Qual32Text>Winds now tropical storm force.</Qual32Text>
+		<Qual50Text>Winds now sustained at Tropical storm force.</Qual50Text>
+		<Qual100Text>Winds now sustained at Tropical Storm force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3004">
+		<Qual32Text>Winds now hurricane force.</Qual32Text>
+		<Qual50Text>Winds now sustained at Hurricane force.</Qual50Text>
+		<Qual100Text>Winds now sustained at Hurricane force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3005">
+		<Qual32Text>Winds now hurricane force.</Qual32Text>
+		<Qual50Text>Winds now sustained at Hurricane force.</Qual50Text>
+		<Qual100Text>Winds now sustained at Hurricane force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3006">
+		<Qual32Text>Gusts now tropical storm force.</Qual32Text>
+		<Qual50Text>Winds now gusting to Tropical Storm force.</Qual50Text>
+		<Qual100Text>Winds now gusting to Tropical Storm force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3007">
+		<Qual32Text>Gusts now tropical storm force.</Qual32Text>
+		<Qual50Text>Winds now gusting to Tropical Storm force.</Qual50Text>
+		<Qual100Text>Winds now gusting to Tropical Storm force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3008">
+		<Qual32Text>Gusts now hurricane force.</Qual32Text>
+		<Qual50Text>Winds now gusting to Hurricane force.</Qual50Text>
+		<Qual100Text>Winds now gusting to Hurricane force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3009">
+		<Qual32Text>Gusts now hurricane force.</Qual32Text>
+		<Qual50Text>Winds now gusting to Hurricane force.</Qual50Text>
+		<Qual100Text>Winds now gusting to Hurricane force.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3010">
+		<Qual32Text>May be power outages from winds.</Qual32Text>
+		<Qual50Text>Strong winds may be causing power outages.</Qual50Text>
+		<Qual100Text>Strong winds may be causing power outages and downed tree limbs.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3011">
+		<Qual32Text>May be downed trees from winds.</Qual32Text>
+		<Qual50Text>Very strong winds may be causing power outages.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages and downed trees.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3012">
+		<Qual32Text>May be downed trees from winds.</Qual32Text>
+		<Qual50Text>Very strong winds may be causing power outages.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages and downed trees.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3013">
+		<Qual32Text>May be damage from winds.</Qual32Text>
+		<Qual50Text>Winds may be causing minimal structural damage.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages, downed trees, and minimal structural damage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3014">
+		<Qual32Text>May be damage from winds.</Qual32Text>
+		<Qual50Text>Winds may be causing minimal structural damage.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages, downed trees, and minimal structural damage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3015">
+		<Qual32Text>Moderate damage from winds.</Qual32Text>
+		<Qual50Text>Winds may be causing moderate structural damage.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages, downed trees, and moderate structural damage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3016">
+		<Qual32Text>Extensive damage from winds.</Qual32Text>
+		<Qual50Text>Winds may be causing extensive structural damage.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages, downed trees, and extensive structural damage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3017">
+		<Qual32Text>Extreme damage from winds.</Qual32Text>
+		<Qual50Text>Winds may be causing extreme structural damage.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages, uprooted trees, and extreme structural damage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ3018">
+		<Qual32Text>Catastrophic damage from winds.</Qual32Text>
+		<Qual50Text>Winds may be causing extreme structural damage.</Qual50Text>
+		<Qual100Text>Very strong winds may be causing power outages and catastrophic structural damage.</Qual100Text>
+	</Entry>
+	<Entry key="OQ4001">
+		<Qual32Text>Freezing conditions occurring</Qual32Text>
+		<Qual50Text>Freezing conditions are occurring.</Qual50Text>
+		<Qual100Text>Freezing conditions are occurring.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5001">
+		<Qual32Text>Some precip not reaching ground.</Qual32Text>
+		<Qual50Text>Some area precipitation not reaching the ground.</Qual50Text>
+		<Qual100Text>Precipitation is not reaching the ground in all areas.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5002">
+		<Qual32Text>Be alert for flash flooding.</Qual32Text>
+		<Qual50Text>Be alert for flash flooding from the heavy rain.</Qual50Text>
+		<Qual100Text>Heavy rainfall is occurring.  Be alert for flash flooding.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5003">
+		<Qual32Text>Be alert for flash flooding.</Qual32Text>
+		<Qual50Text>Be alert for flash flooding from excessive rain.</Qual50Text>
+		<Qual100Text>Excessive rainfall is occurring.  Be alert for river or stream flooding.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5004">
+		<Qual32Text>Rain deficit now below 6 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 6 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 6 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5005">
+		<Qual32Text>Rain deficit now below 7 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 7 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 7 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5006">
+		<Qual32Text>Rain deficit now below 8 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 8 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 8 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5007">
+		<Qual32Text>Rain deficit now below 9 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 9 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 9 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5008">
+		<Qual32Text>Rain deficit below 10 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 10 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 10 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5009">
+		<Qual32Text>Rain deficit below 11 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 11 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 11 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5010">
+		<Qual32Text>Rain deficit below 12 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 12 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 12 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5011">
+		<Qual32Text>Rain deficit below 13 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 13 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 13 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5012">
+		<Qual32Text>Rain deficit below 14 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 14 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 14 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5013">
+		<Qual32Text>Rain deficit below 15 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 15 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 15 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5014">
+		<Qual32Text>Rain deficit below 16 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 16 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 16 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5015">
+		<Qual32Text>Rain deficit below 17 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 17 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 17 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5016">
+		<Qual32Text>Rain deficit below 18 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 18 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 18 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5017">
+		<Qual32Text>Rain deficit below 19 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 19 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 19 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5018">
+		<Qual32Text>Rain deficit below 20 inches.</Qual32Text>
+		<Qual50Text>Rainfall deficit now below 20 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall reduces the year-to-date deficit to less than 20 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5019">
+		<Qual32Text>Rain surplus now over 5 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 5 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 5 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5020">
+		<Qual32Text>Rain surplus now over 6 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 6 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 6 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5021">
+		<Qual32Text>Rain surplus now over 7 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 7 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 7 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5022">
+		<Qual32Text>Rain surplus now over 8 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 8 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 8 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5023">
+		<Qual32Text>Rain surplus now over 9 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 9 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 9 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5024">
+		<Qual32Text>Rain surplus now over 10 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 10 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 10 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5025">
+		<Qual32Text>Rain surplus now over 11 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 11 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 11 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5026">
+		<Qual32Text>Rain surplus now over 12 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 12 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 12 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5027">
+		<Qual32Text>Rain surplus now over 13 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 13 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 13 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5028">
+		<Qual32Text>Rain surplus now over 14 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 14 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 14 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5029">
+		<Qual32Text>Rain surplus now over 15 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 15 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 15 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5030">
+		<Qual32Text>Rain surplus now over 16 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 16 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 16 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5031">
+		<Qual32Text>Rain surplus now over 17 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 17 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 17 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5032">
+		<Qual32Text>Rain surplus now over 18 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 18 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 18 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5033">
+		<Qual32Text>Rain surplus now over 19 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 19 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 19 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ5034">
+		<Qual32Text>Rain surplus now over 20 inches.</Qual32Text>
+		<Qual50Text>Rainfall surplus now more than 20 inches.</Qual50Text>
+		<Qual100Text>The recent rainfall increases the year-to-date surplus to more than 20 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6001">
+		<Qual32Text>Seasonal snow over 20 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 20 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 20 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6002">
+		<Qual32Text>Seasonal snow over 25 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 25 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 25 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6003">
+		<Qual32Text>Seasonal snow over 30 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 30 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 30 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6004">
+		<Qual32Text>Seasonal snow over 35 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 35 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 35 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6005">
+		<Qual32Text>Seasonal snow over 40 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 40 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 40 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6006">
+		<Qual32Text>Seasonal snow over 45 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 45 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 45 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6007">
+		<Qual32Text>Seasonal snow over 50 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 50 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 50 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6008">
+		<Qual32Text>Seasonal snow over 55 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 55 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 55 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6009">
+		<Qual32Text>Seasonal snow over 60 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 60 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 60 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6010">
+		<Qual32Text>Seasonal snow over 65 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 65 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 65 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6011">
+		<Qual32Text>Seasonal snow over 70 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 70 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 70 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6012">
+		<Qual32Text>Seasonal snow over 75 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 75 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 75 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6013">
+		<Qual32Text>Seasonal snow over 80 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 80 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 80 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6014">
+		<Qual32Text>Seasonal snow over 85 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 85 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 85 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6015">
+		<Qual32Text>Seasonal snow over 90 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 90 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 90 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6016">
+		<Qual32Text>Seasonal snow over 95 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 95 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 95 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ6017">
+		<Qual32Text>Seasonal snow over 100 inches.</Qual32Text>
+		<Qual50Text>Seasonal snowfall total now over 100 inches.</Qual50Text>
+		<Qual100Text>The recent snowfall brings the seasonal total to over 100 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7001">
+		<Qual32Text>Blizzard conditions at times.</Qual32Text>
+		<Qual50Text>Blizzard conditions are occurring at times.</Qual50Text>
+		<Qual100Text>Blizzard conditions are occurring at times.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7002">
+		<Qual32Text>Severe blizzard at times.</Qual32Text>
+		<Qual50Text>Severe blizzard conditions are occurring at times.</Qual50Text>
+		<Qual100Text>Severe blizzard conditions are currently in progress.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7003">
+		<Qual32Text>Snow is accumulating rapidly.</Qual32Text>
+		<Qual50Text>Snow is accumulating rapidly.</Qual50Text>
+		<Qual100Text>Snow is accumulating rapidly.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7004">
+		<Qual32Text>First measurable snow of season.</Qual32Text>
+		<Qual50Text>First measurable snowfall of the season.</Qual50Text>
+		<Qual100Text>First measurable snowfall of the season.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7005">
+		<Qual32Text>Accumulating snowfall has ended.</Qual32Text>
+		<Qual50Text>Accumulating snowfall has ended.</Qual50Text>
+		<Qual100Text>Accumulating snowfall has ended.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7006">
+		<Qual32Text>Three day snow over 30 inches.</Qual32Text>
+		<Qual50Text>Three day snow total is now over 30 inches.</Qual50Text>
+		<Qual100Text>Three day snow total is now over 30 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7007">
+		<Qual32Text>Three day snow over 40 inches.</Qual32Text>
+		<Qual50Text>Three day snow total is now over 40 inches.</Qual50Text>
+		<Qual100Text>Three day snow total is now over 40 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7008">
+		<Qual32Text>Three day snow over 50 inches.</Qual32Text>
+		<Qual50Text>Three day snow total is now over 50 inches.</Qual50Text>
+		<Qual100Text>Three day snow total is now over 50 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7009">
+		<Qual32Text>Two day snow now over 20 inches.</Qual32Text>
+		<Qual50Text>Two day snow total is now over 20 inches.</Qual50Text>
+		<Qual100Text>Two day snow total is now over 20 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7010">
+		<Qual32Text>Two day snow now over 30 inches.</Qual32Text>
+		<Qual50Text>Two day snow total is now over 30 inches.</Qual50Text>
+		<Qual100Text>Two day snow total is now over 30 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7011">
+		<Qual32Text>Two day snow now over 40 inches.</Qual32Text>
+		<Qual50Text>Two day snow total is now over 40 inches.</Qual50Text>
+		<Qual100Text>Two day snow total is now over 40 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ7012">
+		<Qual32Text>Two day snow now over 50 inches.</Qual32Text>
+		<Qual50Text>Two day snow total is now over 50 inches.</Qual50Text>
+		<Qual100Text>Two day snow total is now over 50 inches.</Qual100Text>
+	</Entry>
+	<Entry key="OQ8001">
+		<Qual32Text>Dangerous icing now occurring.</Qual32Text>
+		<Qual50Text>Dangerous icing conditions are now occurring.</Qual50Text>
+		<Qual100Text>Dangerous icing conditions are now occurring.</Qual100Text>
+	</Entry>
+	<Entry key="OQ8002">
+		<Qual32Text>Dangerous icing now occurring.</Qual32Text>
+		<Qual50Text>Very dangerous icing conditions are now occurring.</Qual50Text>
+		<Qual100Text>Very dangerous icing conditions are now occurring.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9001">
+		<Qual32Text>A severe storm is in progress.</Qual32Text>
+		<Qual50Text>A severe thunderstorm is in progress.</Qual50Text>
+		<Qual100Text>A severe thunderstorm is in progress.  Be alert for large hail and strong/damaging winds. </Qual100Text>
+	</Entry>
+	<Entry key="OQ9002">
+		<Qual32Text>A severe storm is in progress.</Qual32Text>
+		<Qual50Text>A severe thunderstorm is in progress.</Qual50Text>
+		<Qual100Text>A severe thunderstorm is in progress.  Be alert for large hail.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9003">
+		<Qual32Text>A severe storm is in progress.</Qual32Text>
+		<Qual50Text>A severe thunderstorm is in progress.</Qual50Text>
+		<Qual100Text>A severe thunderstorm is in progress.  Be alert for heavy downpours and frequent lightning.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9004">
+		<Qual32Text>A severe storm is in progress.</Qual32Text>
+		<Qual50Text>A severe thunderstorm is in progress.</Qual50Text>
+		<Qual100Text>A severe thunderstorm is in progress.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9005">
+		<Qual32Text>A severe storm is in progress.</Qual32Text>
+		<Qual50Text>A severe thunderstorm is in progress.</Qual50Text>
+		<Qual100Text>A severe thunderstorm is in progress.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9006">
+		<Qual32Text>Tornadoes possible in storms.</Qual32Text>
+		<Qual50Text>Storms are capable of spawning tornadoes.</Qual50Text>
+		<Qual100Text>A severe thunderstorm is in progress.  Be alert for the possibility of tornadoes.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9007">
+		<Qual32Text>A tornado is on the ground!</Qual32Text>
+		<Qual50Text>A tornado is on the ground. Take cover now.</Qual50Text>
+		<Qual100Text>A tornado is on the ground.  Take cover immediately. </Qual100Text>
+	</Entry>
+	<Entry key="OQ9008">
+		<Qual32Text>Frequent lightning nearby.</Qual32Text>
+		<Qual50Text>Frequent lightning is occurring in the vicinity.</Qual50Text>
+		<Qual100Text>Frequent cloud to ground lightning is occurring in the vicinity.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9009">
+		<Qual32Text>Severe storms nearby.</Qual32Text>
+		<Qual50Text>Severe storms are close to your location.</Qual50Text>
+		<Qual100Text>Severe storms are close to your location.  Be alert for large hail and strong/damaging winds.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9010">
+		<Qual32Text>Severe storms nearby.</Qual32Text>
+		<Qual50Text>Severe storms are close to your location.</Qual50Text>
+		<Qual100Text>Severe storms are close to your location.  Be alert for large hail.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9011">
+		<Qual32Text>Severe storms nearby.</Qual32Text>
+		<Qual50Text>Severe storms are close to your location.</Qual50Text>
+		<Qual100Text>Severe storms are close to your location.  Be alert for heavy downpours and frequent lightning.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9012">
+		<Qual32Text>Severe storms nearby.</Qual32Text>
+		<Qual50Text>Severe storms are close to your location.</Qual50Text>
+		<Qual100Text>Severe storms are close to your location.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9013">
+		<Qual32Text>Tornadoes possible in storms.</Qual32Text>
+		<Qual50Text>Storms capable of spawning tornadoes nearby.</Qual50Text>
+		<Qual100Text>Severe storms are close to your location.  Be alert for the possibility of tornadoes.</Qual100Text>
+	</Entry>
+	<Entry key="OQ9999">
+		<Qual32Text/>
+		<Qual50Text/>
+		<Qual100Text/>
+	</Entry>
+</Mapping>

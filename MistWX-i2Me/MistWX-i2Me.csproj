@@ -27,6 +27,16 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Data\Mapping\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Data\Mapping\HolidayMapping.xml">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
       <ProjectReference Include="..\TWC.I2.MsgEncode\TWC.I2.MsgEncode.csproj" />
       <ProjectReference Include="..\TWC.Msg\TWC.Msg.csproj" />
       <ProjectReference Include="..\TWC.SE.StarBundle\TWC.SE.StarBundle.csproj" />

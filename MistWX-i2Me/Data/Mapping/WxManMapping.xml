@@ -1,0 +1,358 @@
+<Mapping id="20091027113650" name="WxManMapping">
+  <Entry key="wx1000">
+    <DayIcon>SunnyMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1050">
+    <DayIcon>SunnyCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1010">
+    <DayIcon>SunnyCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1030">
+    <DayIcon>SunnyHot</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1001">
+    <DayIcon>SunnyMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1051">
+    <DayIcon>SunnyCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1011">
+    <DayIcon>SunnyColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1031">
+    <DayIcon>SunnyHotWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1100">
+    <DayIcon>PartlyCloudyMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1150">
+    <DayIcon>PartlyCloudyCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1110">
+    <DayIcon>PartlyCloudyCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1130">
+    <DayIcon>PartlyCloudyHot</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1101">
+    <DayIcon>PartlyCloudyMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1151">
+    <DayIcon>PartlyCloudyCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1111">
+    <DayIcon>PartlyCloudyColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1131">
+    <DayIcon>PartlyCloudyHotWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1200">
+    <DayIcon>CloudyMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1250">
+    <DayIcon>CloudyCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1210">
+    <DayIcon>CloudyCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1230">
+    <DayIcon>CloudyHot</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1201">
+    <DayIcon>CloudyMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1251">
+    <DayIcon>CloudyCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1211">
+    <DayIcon>CloudyColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1231">
+    <DayIcon>CloudyHotWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1300">
+    <DayIcon>Foggy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1800">
+    <DayIcon>BitterCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2000">
+    <DayIcon>ChanceOfRainMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2050">
+    <DayIcon>ChanceOfRainCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2010">
+    <DayIcon>ChanceOfRainCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2030">
+    <DayIcon>ChanceOfRainHot</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2001">
+    <DayIcon>ChanceOfRainMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2051">
+    <DayIcon>ChanceOfRainCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2011">
+    <DayIcon>ChanceOfRainColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2031">
+    <DayIcon>ChanceOfRainHotWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2500">
+    <DayIcon>RainyMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2550">
+    <DayIcon>RainyCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2510">
+    <DayIcon>RainyCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2501">
+    <DayIcon>RainMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2551">
+    <DayIcon>RainCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2511">
+    <DayIcon>RainyColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2600">
+    <DayIcon>TropicalStorm</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx2700">
+    <DayIcon>Hurricane</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx3010">
+    <DayIcon>MixPossible</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx3011">
+    <DayIcon>MixPossibleWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx3510">
+    <DayIcon>Mix</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx3511">
+    <DayIcon>MixWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx4400">
+    <DayIcon>Blank</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx4510">
+    <DayIcon>Icy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx4511">
+    <DayIcon>IcyWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx4710">
+    <DayIcon>IceAccumulationLikely</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx4711">
+    <DayIcon>IceAccumulationLikelyWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5010">
+    <DayIcon>SnowPossible</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5011">
+    <DayIcon>SnowPossibleWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5510">
+    <DayIcon>SnowLikely</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5511">
+    <DayIcon>SnowLikelyWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5560">
+    <DayIcon>SnowAccumulation</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5561">
+    <DayIcon>SnowWindyAccumulation</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx5711">
+    <DayIcon>Blizzard</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6300">
+    <DayIcon>ThunderMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6350">
+    <DayIcon>ThunderCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6310">
+    <DayIcon>ThunderCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6330">
+    <DayIcon>ThunderHot</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6301">
+    <DayIcon>ThunderMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6351">
+    <DayIcon>ThunderCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6311">
+    <DayIcon>ThunderColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6331">
+    <DayIcon>ThunderHotWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6500">
+    <DayIcon>ThunderstormMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6550">
+    <DayIcon>ThunderstormCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6510">
+    <DayIcon>ThunderstormCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6501">
+    <DayIcon>ThunderstormMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6511">
+    <DayIcon>ThunderstormColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1500">
+    <DayIcon>NightClearMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1550">
+    <DayIcon>NightClearCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1510">
+    <DayIcon>NightClearCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1501">
+    <DayIcon>NightClearMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1551">
+    <DayIcon>NightClearCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1511">
+    <DayIcon>NightClearColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1600">
+    <DayIcon>NightPartlyCloudyMild</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1650">
+    <DayIcon>NightPartlyCloudyCool</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1610">
+    <DayIcon>NightPartlyCloudyCold</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1601">
+    <DayIcon>NightPartlyCloudyMildWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1651">
+    <DayIcon>NightPartlyCloudyCoolWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx1611">
+    <DayIcon>NightPartlyCloudyColdWindy</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx6700">
+    <DayIcon>Tornado</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx7001">
+    <DayIcon>BlowingSnow</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx7051">
+    <DayIcon>DustStorm</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx8000">
+    <DayIcon>Hail</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx9010">
+    <DayIcon>IceCrystals</DayIcon>
+    <NightIcon />
+  </Entry>
+  <Entry key="wx9500">
+    <DayIcon>VolcanicAsh</DayIcon>
+    <NightIcon />
+  </Entry>
+</Mapping>

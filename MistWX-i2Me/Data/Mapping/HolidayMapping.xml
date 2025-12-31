@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping id="635910678077301197" name="HolidayMapping">
+  <Holiday date="20251206">
+    <Name>First Day of Hanukkah</Name>
+    <Date>12/06/2025</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_hanukkah_color</Icon>
+    <RGBHero>222 173 57</RGBHero>
+    <RGBLogo>222 173 57</RGBLogo>
+    <RGBIcon>36 66 109</RGBIcon>
+  </Holiday>
+  <Holiday date="20260118">
+    <Name>MLK Day</Name>
+    <Date>01/18/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_mlkday_color</Icon>
+    <RGBHero>217 161 12</RGBHero>
+    <RGBLogo>217 161 12</RGBLogo>
+    <RGBIcon>79 52 137</RGBIcon>
+  </Holiday>
+  <Holiday date="20260202">
+    <Name>Groundhog Day</Name>
+    <Date>02/02/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_groundhogday_color</Icon>
+    <RGBHero>97 21 121</RGBHero>
+    <RGBLogo>97 21 121</RGBLogo>
+    <RGBIcon>174 133 187</RGBIcon>
+  </Holiday>
+  <Holiday date="20260214">
+    <Name>Valentine's Day</Name>
+    <Date>02/14/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_valentinesday_color</Icon>
+    <RGBHero>221 27 137</RGBHero>
+    <RGBLogo>221 27 137</RGBLogo>
+    <RGBIcon>221 27 137</RGBIcon>
+  </Holiday>
+  <Holiday date="20260313">
+    <Name>Spring Clock Change</Name>
+    <Date>03/13/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_dls_spring_color</Icon>
+    <RGBHero>107 188 121</RGBHero>
+    <RGBLogo>107 188 121</RGBLogo>
+    <RGBIcon>164 162 208</RGBIcon>
+  </Holiday>
+  <Holiday date="20260317">
+    <Name>St. Patrick's Day</Name>
+    <Date>03/17/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_stpatricksday_color</Icon>
+    <RGBHero>5 134 11</RGBHero>
+    <RGBLogo>5 134 11</RGBLogo>
+    <RGBIcon>146 171 67</RGBIcon>
+  </Holiday>
+  <Holiday date="20260320">
+    <Name>First Day of Spring</Name>
+    <Date>03/20/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_spring_color</Icon>
+    <RGBHero>200 129 209</RGBHero>
+    <RGBLogo>200 129 209</RGBLogo>
+    <RGBIcon>230 196 35</RGBIcon>
+  </Holiday>
+  <Holiday date="20260327">
+    <Name>Easter</Name>
+    <Date>03/27/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_easter_color</Icon>
+    <RGBHero>232 117 195</RGBHero>
+    <RGBLogo>232 117 195</RGBLogo>
+    <RGBIcon>86 199 232</RGBIcon>
+  </Holiday>
+  <Holiday date="20260422">
+    <Name>Earth Day</Name>
+    <Date>04/22/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_earthday_color</Icon>
+    <RGBHero>0 100 0</RGBHero>
+    <RGBLogo>0 100 0</RGBLogo>
+    <RGBIcon>66 135 68</RGBIcon>
+  </Holiday>
+  <Holiday date="20260429">
+    <Name>Arbor Day</Name>
+    <Date>04/29/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_arborday_color</Icon>
+    <RGBHero>64 103 50</RGBHero>
+    <RGBLogo>64 103 50</RGBLogo>
+    <RGBIcon>141 211 114</RGBIcon>
+  </Holiday>
+  <Holiday date="20260508">
+    <Name>Mother's Day</Name>
+    <Date>05/08/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_mothersday_color</Icon>
+    <RGBHero>248 143 163</RGBHero>
+    <RGBLogo>248 143 163</RGBLogo>
+    <RGBIcon>167 145 230</RGBIcon>
+  </Holiday>
+  <Holiday date="20260530">
+    <Name>Memorial Day</Name>
+    <Date>05/30/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_memorialday_color</Icon>
+    <RGBHero>23 78 213</RGBHero>
+    <RGBLogo>23 78 213</RGBLogo>
+    <RGBIcon>214 47 47</RGBIcon>
+  </Holiday>
+  <Holiday date="20260619">
+    <Name>Father's Day</Name>
+    <Date>06/19/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_fathersday_color</Icon>
+    <RGBHero>92 130 11</RGBHero>
+    <RGBLogo>92 130 11</RGBLogo>
+    <RGBIcon>3 107 193</RGBIcon>
+  </Holiday>
+  <Holiday date="20260620">
+    <Name>First Day of Summer</Name>
+    <Date>06/20/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_summer_color</Icon>
+    <RGBHero>232 113 6</RGBHero>
+    <RGBLogo>232 113 6</RGBLogo>
+    <RGBIcon>18 180 169</RGBIcon>
+  </Holiday>
+  <Holiday date="20260704">
+    <Name>Fourth of July</Name>
+    <Date>07/04/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_fourthofjuly_color</Icon>
+    <RGBHero>222 42 22</RGBHero>
+    <RGBLogo>222 42 22</RGBLogo>
+    <RGBIcon>3 85 157</RGBIcon>
+  </Holiday>
+  <Holiday date="20260905">
+    <Name>Labor Day</Name>
+    <Date>09/05/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_laborday_color</Icon>
+    <RGBHero>28 50 88</RGBHero>
+    <RGBLogo>165 45 48</RGBLogo>
+    <RGBIcon>24 84 114</RGBIcon>
+  </Holiday>
+  <Holiday date="20260922">
+    <Name>First Day of Fall</Name>
+    <Date>09/22/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_fall_color</Icon>
+    <RGBHero>167 65 1</RGBHero>
+    <RGBLogo>167 65 1</RGBLogo>
+    <RGBIcon>221 132 71</RGBIcon>
+  </Holiday>
+  <Holiday date="20261031">
+    <Name>Halloween</Name>
+    <Date>10/31/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_halloween_color</Icon>
+    <RGBHero>215 159 0</RGBHero>
+    <RGBLogo>215 159 0</RGBLogo>
+    <RGBIcon>239 105 38</RGBIcon>
+  </Holiday>
+  <Holiday date="20261106">
+    <Name>Fall Clock Change</Name>
+    <Date>11/06/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_dlsfall_color</Icon>
+    <RGBHero>179 173 0</RGBHero>
+    <RGBLogo>179 173 0</RGBLogo>
+    <RGBIcon>181 121 24</RGBIcon>
+  </Holiday>
+  <Holiday date="20261111">
+    <Name>Veteran’s Day</Name>
+    <Date>11/11/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_veteransday_color</Icon>
+    <RGBHero>138 48 48</RGBHero>
+    <RGBLogo>138 48 50</RGBLogo>
+    <RGBIcon>49 158 219</RGBIcon>
+  </Holiday>
+  <Holiday date="20261124">
+    <Name>Thanksgiving</Name>
+    <Date>11/24/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_thanksgiving_color</Icon>
+    <RGBHero>184 84 35</RGBHero>
+    <RGBLogo>184 84 35</RGBLogo>
+    <RGBIcon>96 45 32</RGBIcon>
+  </Holiday>
+  <Holiday date="20251221">
+    <Name>First Day of Winter</Name>
+    <Date>12/21/2025</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_winter_color</Icon>
+    <RGBHero>14 16 93</RGBHero>
+    <RGBLogo>14 16 93</RGBLogo>
+    <RGBIcon>63 167 178</RGBIcon>
+  </Holiday>
+  <Holiday date="20251224">
+    <Name>Christmas Eve</Name>
+    <Date>12/24/2025</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_christmas_color</Icon>
+    <RGBHero>190 49 42</RGBHero>
+    <RGBLogo>190 49 42</RGBLogo>
+    <RGBIcon>35 102 53</RGBIcon>
+  </Holiday>
+  <Holiday date="20251225">
+    <Name>Christmas</Name>
+    <Date>12/25/2025</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_christmas_color</Icon>
+    <RGBHero>190 49 42</RGBHero>
+    <RGBLogo>190 49 42</RGBLogo>
+    <RGBIcon>35 102 53</RGBIcon>
+  </Holiday>
+  <Holiday date="20251231">
+    <Name>New Year's Eve</Name>
+    <Date>12/31/2025</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_newyears_color</Icon>
+    <RGBHero>212 170 69</RGBHero>
+    <RGBLogo>212 170 69</RGBLogo>
+    <RGBIcon>237 67 99</RGBIcon>
+  </Holiday>
+  <Holiday date="20260101">
+    <Name>New Year's Day</Name>
+    <Date>01/01/2026</Date>
+    <Icon>domestic\AdSys\Holidays\Icons\hol_newyears_color</Icon>
+    <RGBHero>212 170 69</RGBHero>
+    <RGBLogo>212 170 69</RGBLogo>
+    <RGBIcon>237 67 99</RGBIcon>
+  </Holiday>
+</Mapping>

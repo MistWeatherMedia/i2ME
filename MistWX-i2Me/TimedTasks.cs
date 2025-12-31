@@ -5,6 +5,7 @@ using MistWX_i2Me.API.Products;
 using MistWX_i2Me.Communication;
 using MistWX_i2Me.RecordGeneration;
 using MistWX_i2Me.Schema.ibm;
+using MistWX_i2Me.Schema.twc;
 
 namespace MistWX_i2Me;
 
@@ -219,6 +220,14 @@ public class TimedTasks
                 List<GenericResponse<Almanac1DayResponse>> wns = await new Almanac1DayProduct().Populate(locations);
                 string wnsRecord = await new ClimatologyRecord().MakeRecord(wns);
                 sender.SendFile(wnsRecord, "storeData(QGROUP=__ClimatologyRecord__,Feed=ClimatologyRecord)");
+            }
+
+            if (dataConfig.HolidayMapping)
+            {
+                Log.Info($"Building Holiday Mapping Record I2 record..");
+                HolidayMappingResponse wns = await new HolidayMappingProduct().Populate();
+                string wnsRecord = await new HolidayMapping().MakeRecord(wns);
+                sender.SendFile(wnsRecord, "storeData(QGROUP=__Mapping__,Feed=Mapping)");
             }
 
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
