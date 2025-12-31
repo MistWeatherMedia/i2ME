@@ -31,7 +31,7 @@ public class HolidayMapping : I2Record
             holiday.DateFormatted = dateNew.ToString("MM/dd/yyyy");
         }
 
-        XmlSerializer serializer = new XmlSerializer(typeof(DHRecordResponse));
+        XmlSerializer serializer = new XmlSerializer(typeof(HolidayMappingResponse));
         StringWriter sw = new StringWriter();
         XmlWriter xw = XmlWriter.Create(sw, new XmlWriterSettings
         {
