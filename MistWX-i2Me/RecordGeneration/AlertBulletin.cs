@@ -351,7 +351,6 @@ public class AlertBulletin : I2Record
         { "WV", "West Virginia" },
         { "WI", "Wisconsin" },
         { "WY", "Wyoming" },
-        { "INTL", "International"}
     };
 
 
@@ -420,6 +419,7 @@ public class AlertBulletin : I2Record
             record.Id = "0000000";
             record.LocationKey =
                 $"{detail.areaId}_{detail.phenomena}_{detail.significance}_{detail.eventTrackingNumber}_{detail.officeCode}";
+            record.Action = "1";
             record.ClientKey = record.LocationKey;
             record.BEHdr = header;
             record.BEData = data;
@@ -464,6 +464,11 @@ public class AlertBulletin : I2Record
             loc.Text = detail.areaId;
             stateInfo.BSt = _states[locationInfo.stCd];
             stateInfo.Text = locationInfo.stCd;
+            if (locationInfo.stCd == null)
+            {
+                stateInfo.BSt = "International";
+                stateInfo.Text = "INTL";
+            }
             locations.BStCd = stateInfo;
             locations.BLocCd = loc;
             locations.BCntryCd = detail.countryCode;
