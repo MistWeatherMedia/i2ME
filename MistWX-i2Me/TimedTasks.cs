@@ -208,8 +208,8 @@ public class TimedTasks
 
             if (dataConfig.TropicalAdvisory)
             {
-                Log.Info($"Building Tropical Advisory I2 record for {locations.Length} locations..");
-                List<GenericResponse<TropicalAdvisoryResponse>> wns = await new TropicalAdvisoryProduct().Populate(locations);
+                Log.Info($"Building Tropical Advisory I2 record..");
+                List<GenericResponse<TropicalAdvisoryResponse>> wns = await new TropicalAdvisoryProduct().Populate();
                 string wnsRecord = await new TropicalAdvisoryRecord().MakeRecord(wns);
                 sender.SendFile(wnsRecord, "storeData(QGROUP=__TropicalAdvisory__,Feed=TropicalAdvisory)");
             }

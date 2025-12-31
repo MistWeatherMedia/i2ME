@@ -14,8 +14,8 @@ public class TropicalAdvisoryRecord : I2Record
         foreach (var result in results)
         {
             recordScript += 
-                $"<TropicalAdvisory id=\"000000000\" locationKey=\"{result.Location.coopId}\" isWxScan=\"0\">" +
-                $"{result.RawResponse}<clientKey>{result.Location.coopId}</clientKey></TropicalAdvisory>";
+                $"<TropicalAdvisory id=\"000000000\" locationKey=\"0\" isWxScan=\"0\">" +
+                $"{result.RawResponse}<clientKey>0</clientKey></TropicalAdvisory>";
         }
         
         recordScript += "</Data>";
