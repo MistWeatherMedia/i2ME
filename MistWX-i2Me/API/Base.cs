@@ -163,6 +163,11 @@ public class Base
             url = url.Replace("{month}", DateTime.Now.Month.ToString());
         }
 
+        if (url.Contains("{unit}"))
+        {
+            url = url.Replace("{unit}", Config.config.LocalStarConfig.Unit);
+        }
+
         return url;
     }
 
@@ -178,7 +183,7 @@ public class Base
 
     public async Task<LFRecordLocation> GetLocInfo(string locId)
     {
-        if (locationCache.TryGetValue(locId, out LFRecordLocation cachedLocation))
+        if (locationCache.TryGetValue(locId, out LFRecordLocation? cachedLocation))
         {
             if (cachedLocation != null)
             {
@@ -229,6 +234,25 @@ public class Base
                 // Just keep going! - PB
                 // return results;
                 continue;
+            }
+
+            // For Current Observations they change the format of the XML depending on what unit you have - no go for i2
+            if (response.Contains("<metric>"))
+            {
+                response = response.Replace("<metric>", "<imperial>");
+                response = response.Replace("</metric>", "</imperial>");
+            }
+
+            if (response.Contains("<metric_si>"))
+            {
+                response = response.Replace("<metric_si>", "<imperial>");
+                response = response.Replace("</metric_si>", "</imperial>");
+            }
+
+            if (response.Contains("<uk_hybrid>"))
+            {
+                response = response.Replace("<uk_hybrid>", "<imperial>");
+                response = response.Replace("</uk_hybrid>", "</imperial>");
             }
 
             string data = GetInnerXml(response);

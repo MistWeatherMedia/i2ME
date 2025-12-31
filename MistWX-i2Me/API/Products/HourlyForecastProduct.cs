@@ -8,7 +8,7 @@ public class HourlyForecastProduct : Base
     {
         RecordName = "HourlyForecast";
         DataUrl =
-            "https://api.weather.com/v1/geocode/{lat}/{long}/forecast/hourly/48hour.xml?language=en-US&units=e&apiKey={apiKey}";
+            "https://api.weather.com/v1/geocode/{lat}/{long}/forecast/hourly/48hour.xml?language=en-US&units={unit}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<HourlyForecastResponse>>> Populate(string[] locations)

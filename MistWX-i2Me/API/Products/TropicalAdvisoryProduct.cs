@@ -8,7 +8,7 @@ public class TropicalAdvisoryProduct : Base
     {
         RecordName = "TropicalAdvisory";
         DataUrl =
-            "https://api.weather.com/v2/tropical/currentposition?source=default&basin=all&language=en-US&format=xml&units=e&nautical=true&apiKey={apiKey}";
+            "https://api.weather.com/v2/tropical/currentposition?source=default&basin=all&units={unit}&language=en-US&format=xml&nautical=true&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<TropicalAdvisoryResponse>>> Populate(string[] locations)

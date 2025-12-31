@@ -25,8 +25,10 @@ public class Config
     [XmlElement] public int RecordGenTimeSeconds { get; set; } = 1800;      // Defaults to 30 minutes
     [XmlElement] public int CheckAlertTimeSeconds { get; set; } = 600;      // Defaults to 10 minutes
     
-    [XmlElement] public LocConfig LocationConfig { get; set; } = new LocConfig();
-    [XmlElement] public NetworkConfig UnitConfig { get; set; } = new NetworkConfig();
+    [XmlElement("LocationConfig")] public LocConfig LocationConfig { get; set; } = new LocConfig();
+    [XmlElement("UnitConfig")] public NetworkConfig UnitConfig { get; set; } = new NetworkConfig();
+
+    [XmlElement("LocalConfig")] public LocalConfig LocalStarConfig { get; set; } = new LocalConfig();
     [XmlElement("RadarConfig")] public RadarConfig RadarConfiguration { get; set; } = new RadarConfig();
     [XmlElement("DataConfig")] public DataEndpointConfig DataConfig { get; set; } = new DataEndpointConfig();
 
@@ -369,6 +371,12 @@ public class Config
     {
         [XmlElement] public bool UseRadarServer { get; set; } = false;
         [XmlElement] public string RadarServerUrl { get; set; } = "REPLACE_ME";
+    }
+
+    [XmlRoot("LocalConfig")]
+    public class LocalConfig
+    {
+        [XmlElement] public string Unit { get; set; } = "e";
     }
 
     [XmlRoot("DataConfig")]
