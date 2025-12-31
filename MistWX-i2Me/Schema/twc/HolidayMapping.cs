@@ -32,7 +32,7 @@ public class Holiday {
 public class HolidayMappingResponse { 
 
 	[XmlAttribute(AttributeName="id")] 
-	public int Id { get; set; } 
+	public string Id { get; set; } 
 
     [XmlAttribute(AttributeName="name")] 
 	public string Name { get; set; } 
