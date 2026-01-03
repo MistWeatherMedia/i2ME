@@ -124,17 +124,20 @@ public class TimedTasks
                 sender.SendFile(dfsRecord, "storeData(QGROUP=__DailyForecast__,Feed=DailyForecast)");
             }
 
-            if (dataConfig.HourlyForecast)
+            if (dataConfig.HourlyForecast || dataConfig.DHRecord)
             {
-                Log.Info($"Building HourlyForecast I2 record for {locations.Length} locations..");
                 List<GenericResponse<HourlyForecastResponse>> hfs = await new HourlyForecastProduct().Populate(locations);
-                string hfsRecord = await new HourlyForecastRecord().MakeRecord(hfs);
-                sender.SendFile(hfsRecord, "storeData(QGROUP=__HourlyForecast__,Feed=HourlyForecast)");
+                if (dataConfig.HourlyForecast)
+                {
+                    Log.Info($"Building HourlyForecast I2 record for {locations.Length} locations..");
+                    string hfsRecord = await new HourlyForecastRecord().MakeRecord(hfs);
+                    sender.SendFile(hfsRecord, "storeData(QGROUP=__HourlyForecast__,Feed=HourlyForecast)");
+                }
                 if (dataConfig.DHRecord)
                 {
                     Log.Info($"Building DHRecord I2 record for {locations.Length} locations..");
                     string dhRecord = await new DHRecord().MakeRecord(hfs);
-                    sender.SendFile(hfsRecord, "storeData(QGROUP=__DHRecord__,Feed=DHRecord)");
+                    sender.SendFile(dhRecord, "storeData(QGROUP=__DHRecord__,Feed=DHRecord)");
                 }
             }
     
