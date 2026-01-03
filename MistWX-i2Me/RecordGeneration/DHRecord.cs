@@ -17,7 +17,9 @@ public class DHRecord : I2Record
         foreach (var result in results)
         {
             DHRecordResponse dHRecRes = new DHRecordResponse();
-            
+            List<DHRecordData> dhRecordDataList = new List<DHRecordData>();
+            dHRecRes.DHRecordData = dhRecordDataList;
+
             DHRecordHeader dHRecHdr = new DHRecordHeader();
             dHRecHdr.CoopId = result.Location.coopId;
             dHRecHdr.ILevel = 2;
@@ -82,7 +84,7 @@ public class DHRecord : I2Record
             dHRecData.SubphrasePt3 = fcst.SubphrasePt3;
                 
             // wtf is with HourlyForecast schema
-            dHRecRes.DHRecordData.Add(dHRecData);
+            dhRecordDataList.Add(dHRecData);
 
             XmlSerializer serializer = new XmlSerializer(typeof(DHRecordResponse));
             StringWriter sw = new StringWriter();
