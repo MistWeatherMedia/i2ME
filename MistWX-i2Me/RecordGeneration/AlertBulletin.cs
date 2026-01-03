@@ -489,6 +489,12 @@ public class AlertBulletin : I2Record
             headline.BVocHdlnCd = MapVocalCode($"{detail.phenomena}_{detail.significance}");
 
             narrative.BNarrTxtLang = "en_US";
+            string narrtxt = detail.texts[0].description.Replace("\n", "");
+            if (narrtxt.Count() >= 764)
+            {
+                narrtxt = narrtxt.Substring(0, 764);
+                narrtxt += "...";
+            }
             narrative.BLn = detail.texts[0].description.Replace("\n", "");
             
             twcIdIdx += 1;
