@@ -8,7 +8,7 @@ public class Almanac1DayProduct : Base
     {
         RecordName = "Almanac1Day";
         DataUrl =
-            "https://api.weather.com/v3/wx/almanac/daily/1day?geocode={geocode}&format=json&units={unit}&day={day}&month={month}&apiKey={apiKey}";
+            "https://api.weather.com/v3/wx/almanac/daily/45day?geocode={geocode}&format=json&units={unit}&startDay={startDay45Day}&startMonth={startMonth45Day}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<Almanac1DayResponse>>> Populate(string[] locations)

@@ -173,6 +173,16 @@ public class Base
             url = url.Replace("{unit}", Config.config.LocalStarConfig.Unit);
         }
 
+        if (url.Contains("{startDay45Day}"))
+        {
+            url = url.Replace("{startDay45Day}", DateTime.Now.Subtract(TimeSpan.FromDays(45)).ToString("dd"));
+        }
+
+        if (url.Contains("{startMonth45Day}"))
+        {
+            url = url.Replace("{startMonth45Day}", DateTime.Now.Subtract(TimeSpan.FromDays(45)).ToString("MM"));
+        }
+
         return url;
     }
 

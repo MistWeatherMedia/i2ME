@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Xml;
 using System.Xml.Serialization;
 using MistWX_i2Me.API;
@@ -17,61 +18,69 @@ public class ClimatologyRecord : I2Record
         foreach (var result in results)
         {
             ClimatologyRecordResponse cliRecRes = new ClimatologyRecordResponse();
-            ClimatologyRec cliRec = new ClimatologyRec();
+            List<ClimatologyRec> cliRecList = new List<ClimatologyRec>();
             cliRecRes.Key = result.Location.cliStn;
-            cliRec.Loc = result.Location.cliStn;
-            if (result.ParsedData.temperatureAverageMax != null)
+            cliRecRes.ClimoRec = cliRecList;
+
+            for (var i = 0; i < result.ParsedData.almanacInterval.Count(); i++)
             {
-                if (result.ParsedData.temperatureAverageMax.First() != null)
+                ClimatologyRec cliRec = new ClimatologyRec();
+                cliRec.Loc = result.Location.cliStn;
+                if (result.ParsedData.temperatureAverageMax != null)
                 {
-                    cliRec.AvgHigh = Convert.ToInt32(result.ParsedData.temperatureAverageMax.First());
+                    if (result.ParsedData.temperatureAverageMax[i] != null)
+                    {
+                        cliRec.AvgHigh = Convert.ToInt32(result.ParsedData.temperatureAverageMax[i]);
+                    }
+                    
+                }
+                if (result.ParsedData.temperatureAverageMin != null)
+                {
+                    if (result.ParsedData.temperatureAverageMin[i] != null)
+                    {
+                        cliRec.AvgLow = Convert.ToInt32(result.ParsedData.temperatureAverageMin[i]);
+                    }
+                    
+                }
+                if (result.ParsedData.temperatureRecordMax != null)
+                {
+                    if (result.ParsedData.temperatureRecordMax[i] != null)
+                    {
+                        cliRec.RecHigh = Convert.ToInt32(result.ParsedData.temperatureRecordMax[i]);
+                    }
+                    
+                }
+                if (result.ParsedData.temperatureRecordMin != null)
+                {
+                    if (result.ParsedData.temperatureRecordMin[i] != null)
+                    {
+                        cliRec.RecLow = Convert.ToInt32(result.ParsedData.temperatureRecordMin[i]);
+                    }
+                    
+                }
+                if (result.ParsedData.almanacRecordYearMax != null)
+                {
+                    if (result.ParsedData.almanacRecordYearMax[i] != null)
+                    {
+                        cliRec.RecHighYear = Convert.ToInt32(result.ParsedData.almanacRecordYearMax[i]);
+                    }
+                    
+                }
+                if (result.ParsedData.almanacRecordYearMin != null)
+                {
+                    if (result.ParsedData.almanacRecordYearMin[i] != null)
+                    {
+                        cliRec.RecLowYear = Convert.ToInt32(result.ParsedData.almanacRecordYearMin[i]);
+                    }
                 }
                 
-            }
-            if (result.ParsedData.temperatureAverageMin != null)
-            {
-                if (result.ParsedData.temperatureAverageMin.First() != null)
-                {
-                    cliRec.AvgLow = Convert.ToInt32(result.ParsedData.temperatureAverageMin.First());
-                }
-                
-            }
-            if (result.ParsedData.temperatureRecordMax != null)
-            {
-                if (result.ParsedData.temperatureRecordMax.First() != null)
-                {
-                    cliRec.RecHigh = Convert.ToInt32(result.ParsedData.temperatureRecordMax.First());
-                }
-                
-            }
-            if (result.ParsedData.temperatureRecordMin != null)
-            {
-                if (result.ParsedData.temperatureRecordMin.First() != null)
-                {
-                    cliRec.RecLow = Convert.ToInt32(result.ParsedData.temperatureRecordMin.First());
-                }
-                
-            }
-            if (result.ParsedData.almanacRecordYearMax != null)
-            {
-                if (result.ParsedData.almanacRecordYearMax.First() != null)
-                {
-                    cliRec.RecHighYear = Convert.ToInt32(result.ParsedData.almanacRecordYearMax.First());
-                }
-                
-            }
-            if (result.ParsedData.almanacRecordYearMin != null)
-            {
-                if (result.ParsedData.almanacRecordYearMin.First() != null)
-                {
-                    cliRec.RecLowYear = Convert.ToInt32(result.ParsedData.almanacRecordYearMin.First());
-                }
+                cliRec.Year = System.DateTime.Now.Year;
+                cliRec.Month = System.DateTime.Now.Month;
+                cliRec.Day = System.DateTime.Now.Day;
+
+                cliRecList.Add(cliRec);
             }
             
-            cliRec.Year = System.DateTime.Now.Year;
-            cliRec.Month = System.DateTime.Now.Month;
-            cliRec.Day = System.DateTime.Now.Day;
-            cliRecRes.ClimoRec = cliRec;
 
             XmlSerializer serializer = new XmlSerializer(typeof(ClimatologyRecordResponse));
             StringWriter sw = new StringWriter();

@@ -43,5 +43,5 @@ public class ClimatologyRecordResponse {
 	public string Key { get; set; } 
 
 	[XmlElement(ElementName="ClimoRec")] 
-	public ClimatologyRec ClimoRec { get; set; } 
+	public List<ClimatologyRec> ClimoRec { get; set; } 
 }
