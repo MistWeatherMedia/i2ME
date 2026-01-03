@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Xml.Serialization;
 
 namespace MistWX_i2Me.Schema.ibm;
@@ -8,10 +9,10 @@ public class HourlyForecast
     [XmlElement(ElementName = "class")] public string Class { get; set; }
 
     [XmlElement(ElementName = "expire_time_gmt")]
-    public int ExpireTimeGmt { get; set; }
+    public string ExpireTimeGmt { get; set; }
 
     [XmlElement(ElementName = "fcst_valid")]
-    public int FcstValid { get; set; }
+    public string FcstValid { get; set; }
 
     [XmlElement(ElementName = "fcst_valid_local")]
     public string FcstValidLocal { get; set; }
@@ -24,7 +25,7 @@ public class HourlyForecast
 
     [XmlElement(ElementName = "dewpt")] public int Dewpt { get; set; }
 
-    [XmlElement(ElementName = "hi")] public int Hi { get; set; }
+    [XmlElement(ElementName = "hi")] public int? Hi { get; set; }
 
     [XmlElement(ElementName = "wc")] public int Wc { get; set; }
 
@@ -95,11 +96,12 @@ public class HourlyForecast
 
     [XmlElement(ElementName = "uv_desc")] public string UvDesc { get; set; }
 
+
     [XmlElement(ElementName = "golf_index")]
-    public int GolfIndex { get; set; }
+    public string? GolfIndex { get; set; }
 
     [XmlElement(ElementName = "golf_category")]
-    public string GolfCategory { get; set; }
+    public string? GolfCategory { get; set; }
 
     [XmlElement(ElementName = "severity")] public int Severity { get; set; }
 }
@@ -107,7 +109,7 @@ public class HourlyForecast
 [XmlRoot(ElementName = "forecasts")]
 public class HourlyForecasts
 {
-    [XmlElement(ElementName = "forecast")] public List<Forecast> Forecast { get; set; }
+    [XmlElement(ElementName = "forecast")] public List<HourlyForecast> Forecast { get; set; }
 }
 
 [XmlRoot(ElementName = "document")]
@@ -116,5 +118,5 @@ public class HourlyForecastResponse
     [XmlElement(ElementName = "metadata")] public HourlyForecastMetadata Metadata { get; set; }
 
     [XmlElement(ElementName = "forecasts")]
-    public HourlyForecast Forecasts { get; set; }
+    public HourlyForecasts Forecasts { get; set; }
 }
