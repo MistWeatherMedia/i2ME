@@ -12,10 +12,10 @@ public class ClimatologyRec {
 	public int Year { get; set; } 
 
     [XmlAttribute(AttributeName="month")] 
-	public int Month { get; set; }
+	public string Month { get; set; }
 
 	[XmlAttribute(AttributeName="day")] 
-	public int Day { get; set; }
+	public string Day { get; set; }
 
     [XmlAttribute(AttributeName="avgHigh")] 
 	public int AvgHigh { get; set; }  
