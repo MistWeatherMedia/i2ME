@@ -73,7 +73,7 @@ public class ClimatologyRecord : I2Record
                         cliRec.RecLowYear = Convert.ToInt32(result.ParsedData.almanacRecordYearMin[i]);
                     }
                 } 
-                Log.Debug(result.ParsedData.almanacRecordDate[i]);
+
                 cliRec.Year = System.DateTime.Now.Year;
                 cliRec.Month = result.ParsedData.almanacRecordDate[i].Substring(0,2);
                 cliRec.Day = result.ParsedData.almanacRecordDate[i].Substring(2,2);
