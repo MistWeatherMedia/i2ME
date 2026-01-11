@@ -457,6 +457,7 @@ public class Config
     [XmlRoot("RecordConfig")]
     public class DataEndpointConfig
     {
+        [XmlAnyElement("DataEComment")]
         public XmlComment DataEComment { get { return new XmlDocument().CreateComment("This defines which data record to generate and send to the i2. For more information, check out the MistWX-i2ME wiki."); } set { } }
         [XmlElement] public bool CurrentConditions { get; set; } = true;
         [XmlElement] public bool MosquitoActivity { get; set; } = true;
