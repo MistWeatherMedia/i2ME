@@ -1,5 +1,6 @@
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Serialization;
+using System.Xml;
 
 namespace MistWX_i2Me;
 
@@ -9,28 +10,31 @@ namespace MistWX_i2Me;
 [XmlRoot("Config")]
 public class Config
 {
-    // Config Elements \\
     
-    [XmlElement] public string TwcApiKey { get; set; } = "REPLACE_ME";
+    [XmlAnyElement("VersionComment")]
+    public XmlComment VersionComment { get { return new XmlDocument().CreateComment("DO NOT CHANGE THIS!"); } set { } }
+    [XmlElement]
+    public int Version {get; set;} = 1;
+
+    [XmlAnyElement("LLevelComment")]
+    public XmlComment LLevelComment { get { return new XmlDocument().CreateComment("This sets how verbose you would like i2ME to be. (ex: debug, info, warning, error)"); } set { } }
     [XmlElement] public string LogLevel { get; set; } = "info";
-    [XmlElement] public bool GetAlerts { get; set; } = true;
-
-
 
     // Used to process what locations to generate
-    [XmlElement]
+    [XmlAnyElement("MPCComment")]
+    public XmlComment MPCComment { get { return new XmlDocument().CreateComment("Path to your MachineProductCfg."); } set { } }
     public string MachineProductConfig { get; set; } =
         "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Config\\MachineProductCfg.xml";
 
-    [XmlElement] public int RecordGenTimeSeconds { get; set; } = 1800;      // Defaults to 30 minutes
-    [XmlElement] public int CheckAlertTimeSeconds { get; set; } = 600;      // Defaults to 10 minutes
-    
+    // Config Elements \\
+    [XmlElement("APIKeyConfig")] public APIKeyConfig APIConfig { get; set; } = new APIKeyConfig();
+    [XmlElement("DataConfig")] public DataConfig DConfig { get; set; } = new DataConfig();
+    [XmlElement("AlertConfig")] public AlertConfig AConfig { get; set; } = new AlertConfig();
     [XmlElement("LocationConfig")] public LocConfig LocationConfig { get; set; } = new LocConfig();
     [XmlElement("UnitConfig")] public NetworkConfig UnitConfig { get; set; } = new NetworkConfig();
-
     [XmlElement("LocalConfig")] public LocalConfig LocalStarConfig { get; set; } = new LocalConfig();
     [XmlElement("RadarConfig")] public RadarConfig RadarConfiguration { get; set; } = new RadarConfig();
-    [XmlElement("DataConfig")] public DataEndpointConfig DataConfig { get; set; } = new DataEndpointConfig();
+    [XmlElement("RecordConfig")] public DataEndpointConfig EndpointConfig { get; set; } = new DataEndpointConfig();
 
     // Actual configuration setup \\
     
@@ -307,32 +311,40 @@ public class Config
     [XmlRoot("LocationConfig")]
     public class LocConfig
     {
-
+        [XmlAnyElement("TideComment")]
+        public XmlComment TideComment { get { return new XmlDocument().CreateComment("Grab tide locations."); } set { } }
         [XmlElement] public bool UseTideLocs { get; set; } = false;
+
+        [XmlAnyElement("MapComment")]
+        public XmlComment MapComment { get { return new XmlDocument().CreateComment("Grab map locations."); } set { } }
         [XmlElement] public bool UseMapLocs { get; set; } = false;
+
+        [XmlAnyElement("TravelComment")]
+        public XmlComment TravelComment { get { return new XmlDocument().CreateComment("Grab travel locations."); } set { } }
         [XmlElement] public bool UseTravelLocs { get; set; } = false;
+
+        [XmlAnyElement("WinterGComment")]
+        public XmlComment WinterGComment { get { return new XmlDocument().CreateComment("Grab Winter Getaway locations."); } set { } }
         [XmlElement] public bool UseWinterGLocs { get; set; } = false;
+
+        [XmlAnyElement("SummerGComment")]
+        public XmlComment SummerGComment { get { return new XmlDocument().CreateComment("Grab Summer Getaway locations."); } set { } }
         [XmlElement] public bool UseSummerGLocs { get; set; } = false;
+
+        [XmlAnyElement("Subset1Comment")]
+        public XmlComment Subset1Comment { get { return new XmlDocument().CreateComment("Grab Subset 1/_1 locations."); } set { } }
         [XmlElement] public bool UseSubset1Locs { get; set; } = false;
+
+        [XmlAnyElement("Subset2Comment")]
+        public XmlComment Subset2Comment { get { return new XmlDocument().CreateComment("Grab Subset 2/_2 locations."); } set { } }
         [XmlElement] public bool UseSubset2Locs { get; set; } = false;
 
 
+        [XmlAnyElement("NationalComment")]
+        public XmlComment NationalComment { get { return new XmlDocument().CreateComment("Grab all the national locations, not the ones from the MachineProductCfg."); } set { } }
         [XmlElement] public bool UseNationalLocations { get; set; } = false;
-        [XmlArray("NationalLocations")] 
-        [XmlArrayItem("Location")] 
-        public string[] NationalLocations { get; set; } = {
-                "USNM0004", "USGA0028", "USMD0018", "USME0017", "USMT0031", "USAL0054", "USND0037", "USID0025",
-                "USMA0046", "USNY0081", "USVT0033", "USNC0121", "USIL0225", "USOH0188", "USOH0195", "USTX0327",
-                "USCO0105", "USIA0231", "USMI0229", "USAZ0068", "USSC0140", "USCT0094", "USTX0617", "USIN0305",
-                "USFL0228", "USMO0460", "USNV0049", "USAR0337", "USCA0638", "USKY1096", "USTN0325", "USFL0316",
-                "USWI0455", "USMN0503", "USTN0357", "USLA0338", "USNY0996", "USNJ0355", "USVA0557", "USOK0400",
-                "USNE0363", "USFL0372", "USPA1276", "USAZ0166", "USPA1290", "USME0328", "USOR0275", "USNC0558",
-                "USSD0283", "USNV0076", "USCA0967", "USUT0225", "USTX1200", "USCA0982", "USCA0987", "USWA0395",
-                "USWA0422", "USMO0787", "USFL0481", "USOK0537"
-            };
 
-        [XmlArray("Locations")] 
-        [XmlArrayItem("Location")] 
+        [XmlIgnore] 
         // Base locations.
         public List<string> LocationList = new List<string> {
             "PrimaryLocation",
@@ -359,29 +371,94 @@ public class Config
     [XmlRoot("UnitConfig")]
     public class NetworkConfig
     {
+        [XmlAnyElement("RoutineComment")]
+        public XmlComment RoutineComment { get { return new XmlDocument().CreateComment("Port for routine messages. Redundant if UseExecInstead is turned on."); } set { } }
         [XmlElement] public int RoutineMsgPort { get; set; } = 7787;
+
+        [XmlAnyElement("PriorityComment")]
+        public XmlComment PriorityComment { get { return new XmlDocument().CreateComment("Port for priority messages. Redundant if UseExecInstead is turned on."); } set { } }
         [XmlElement] public int PriorityMsgPort { get; set; } = 7788;
+
+        [XmlAnyElement("i2AddrComment")]
+        public XmlComment i2AddrComment { get { return new XmlDocument().CreateComment("UDP multicast address to i2Service. Redundant if UseExecInstead is turned on."); } set { } }
         [XmlElement] public string I2MsgAddress { get; set; } = "224.1.1.77";
+
+        [XmlAnyElement("IntrAddrComment")]
+        public XmlComment IntrAddrComment { get { return new XmlDocument().CreateComment("Interface address, can be 127.0.0.1. Redundant if UseExecInstead is turned on."); } set { } }
         [XmlElement] public string InterfaceAddress { get; set; } = "127.0.0.1";
+
+        [XmlAnyElement("ExecComment")]
+        public XmlComment ExecComment { get { return new XmlDocument().CreateComment("Use a usually more reliable way of sending data to i2Service. Is enabled by default."); } set { } }
         [XmlElement] public bool UseExecInstead { get; set; } = true;
     }
 
     [XmlRoot("RadarConfig")]
     public class RadarConfig
     {
+        [XmlAnyElement("UseRadarServerComment")]
+        public XmlComment UseRadarServerComment { get { return new XmlDocument().CreateComment("Use a radar server to retrieve radar data."); } set { } }
         [XmlElement] public bool UseRadarServer { get; set; } = false;
+
+        [XmlAnyElement("RadarServerComment")]
+        public XmlComment RadarServerComment { get { return new XmlDocument().CreateComment("Radar server url."); } set { } }
         [XmlElement] public string RadarServerUrl { get; set; } = "REPLACE_ME";
+
+
+    }
+
+    [XmlRoot("AlertConfig")]
+    public class AlertConfig
+    {
+        [XmlAnyElement("GetAlertsComment")]
+        public XmlComment GetAlertsComment { get { return new XmlDocument().CreateComment("Sets if you want i2ME to get alerts for your i2. Can be true or false."); } set { } }
+        [XmlElement] public bool GetAlerts { get; set; } = true;
+
+        [XmlAnyElement("CheckAlertTimeComment")]
+        public XmlComment CheckAlertTimeComment { get { return new XmlDocument().CreateComment("Sets how long should i2ME wait before grabbing alerts."); } set { } }
+        [XmlElement] public int CheckAlertTimeSeconds { get; set; } = 600;      // Defaults to 10 minutes
     }
 
     [XmlRoot("LocalConfig")]
     public class LocalConfig
     {
+        [XmlAnyElement("UnitComment")]
+        public XmlComment UnitComment { get { return new XmlDocument().CreateComment("Sets the unit of the data sent to the i2."); } set { } }
+        [XmlAnyElement("Unit1Comment")]
+        public XmlComment Unit1Comment { get { return new XmlDocument().CreateComment("This doesn't change the units displayed on the i2 - so if it's 0 degrees C, it gets shown as 0 degrees F on the i2."); } set { } }
+        [XmlAnyElement("Unit2Comment")]
+        public XmlComment Unit2Comment { get { return new XmlDocument().CreateComment("Values can be e, m, h, or s. For more information, check out the Weather Company Data API Common Usage Guide: https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-weather-company-data-api-common-usage-guide"); } set { } }
         [XmlElement] public string Unit { get; set; } = "e";
+        
+        [XmlAnyElement("LangComment")]
+        public XmlComment LangComment { get { return new XmlDocument().CreateComment("Sets the language of the data sent to the i2."); } set { } }
+        [XmlAnyElement("Lang1Comment")]
+        public XmlComment Lang1Comment { get { return new XmlDocument().CreateComment("The i2 doesn't typically display other languages - so expect some problems. It also has most values hardcoded to English."); } set { } }
+        [XmlAnyElement("Lang2Comment")]
+        public XmlComment Lang2Comment { get { return new XmlDocument().CreateComment("Values are defined in the Weather Company Data API Common Usage Guide: https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-weather-company-data-api-common-usage-guide"); } set { } }
+        [XmlElement] public string Language { get; set; } = "en-US";
+    }
+
+    [XmlRoot("ApiKeyConfig")]
+    public class APIKeyConfig
+    {
+        [XmlAnyElement("TWCApiKeyComment")]
+        public XmlComment TWCApiKeyComment { get { return new XmlDocument().CreateComment("The API key given to you by The Weather Company. This is required!"); } set { } }
+        [XmlElement] public string TwcApiKey { get; set; } = "REPLACE_ME";
     }
 
     [XmlRoot("DataConfig")]
+    public class DataConfig
+    {
+        [XmlAnyElement("RecordGenTimeComment")]
+        public XmlComment RecordGenTimeComment { get { return new XmlDocument().CreateComment("Sets how long should i2ME wait before grabbing data."); } set { } }
+        [XmlElement] public int RecordGenTimeSeconds { get; set; } = 1800;      // Defaults to 30 minutes
+    }
+
+    [XmlRoot("RecordConfig")]
     public class DataEndpointConfig
     {
+        [XmlAnyElement("DataEComment")]
+        public XmlComment DataEComment { get { return new XmlDocument().CreateComment("This defines which data record to generate and send to the i2. For more information, check out the MistWX-i2ME wiki."); } set { } }
         [XmlElement] public bool CurrentConditions { get; set; } = true;
         [XmlElement] public bool MosquitoActivity { get; set; } = true;
         [XmlElement] public bool DrySkin { get; set; } = true;

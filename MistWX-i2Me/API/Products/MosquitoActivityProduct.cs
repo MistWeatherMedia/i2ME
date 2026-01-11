@@ -8,7 +8,7 @@ public class MosquitoActivityProduct : Base
     {
         RecordName = "MosquitoActivity";
         DataUrl =
-            "https://api.weather.com/v2/indices/mosquito/daily/7day?geocode={geocode}&format=xml&language=en-US&apiKey={apiKey}";
+            "https://api.weather.com/v2/indices/mosquito/daily/7day?geocode={geocode}&format=xml&language={lang}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<MosquitoActivityResponse>>> Populate(string[] locations)

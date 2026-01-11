@@ -8,7 +8,7 @@ public class BreathingProduct : Base
     {
         RecordName = "Breathing";
         DataUrl =
-            "https://api.weather.com/v2/indices/breathing/daypart/7day?geocode={geocode}&format=xml&language=en-US&apiKey={apiKey}";
+            "https://api.weather.com/v2/indices/breathing/daypart/7day?geocode={geocode}&format=xml&language={lang}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<BreathingResponse>>> Populate(string[] locations)

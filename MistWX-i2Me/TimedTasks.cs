@@ -19,7 +19,7 @@ public class TimedTasks
     /// <param name="sender">UdpSender, prefer priority port</param>
     public static async Task CheckForAlerts(string[] locations, UdpSender sender, int checkInterval)
     {
-        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.GetAlerts)
+        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.AConfig.GetAlerts)
         {
             Log.Debug("Disabling alert generation.");
             return;
@@ -55,7 +55,7 @@ public class TimedTasks
     /// </summary>
     public static async Task ClearExpiredAlerts()
     {
-        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.GetAlerts)
+        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.AConfig.GetAlerts)
         {
             return;
         }
@@ -92,7 +92,7 @@ public class TimedTasks
         while (true)
         {
             watch.Restart();
-            Config.DataEndpointConfig dataConfig = Config.config.DataConfig;
+            Config.DataEndpointConfig dataConfig = Config.config.EndpointConfig;
             
             Log.Info("Running scheduled record collection");
             Log.Info("Clearing temp directory...");

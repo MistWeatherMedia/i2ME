@@ -7,7 +7,7 @@ public class AirQualityProduct : Base
     public AirQualityProduct()
     {
         RecordName = "AirQuality";
-        DataUrl = "https://api.weather.com/v1/geocode/{lat}/{long}/airquality.xml?language=en-US&apiKey={apiKey}";
+        DataUrl = "https://api.weather.com/v1/geocode/{lat}/{long}/airquality.xml?language={lang}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<AirQualityResponse>>> Populate(string[] locations)

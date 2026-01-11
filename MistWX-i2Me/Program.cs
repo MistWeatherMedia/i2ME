@@ -28,7 +28,7 @@ public class Program
 
         Config config = Config.Load();
 
-        if (config.TwcApiKey == "REPLACE_ME" || String.IsNullOrEmpty(config.TwcApiKey))
+        if (config.APIConfig.TwcApiKey == "REPLACE_ME" || String.IsNullOrEmpty(config.APIConfig.TwcApiKey))
         {
             Log.Error("No weather.com API key is currently set.");
             Log.Info("A valid weather.com API key needs to be set in Config.xml.");
@@ -50,32 +50,27 @@ public class Program
         if (config.LocationConfig.UseNationalLocations)
         {
             Log.Warning("Collecting data for national locations can take a while.");
-            if (config.LocationConfig.NationalLocations == null) 
+
+            locations = new string[]
             {
-                locations = new string[]
-                {
-                    "USNM0004", "USGA0028", "USMD0018", "USME0017", "USMT0031", "USAL0054", "USND0037", "USID0025",
-                    "USMA0046", "USNY0081", "USVT0033", "USNC0121", "USIL0225", "USOH0188", "USOH0195", "USTX0327",
-                    "USCO0105", "USIA0231", "USMI0229", "USAZ0068", "USSC0140", "USCT0094", "USTX0617", "USIN0305",
-                    "USFL0228", "USMO0460", "USNV0049", "USAR0337", "USCA0638", "USKY1096", "USTN0325", "USFL0316",
-                    "USWI0455", "USMN0503", "USTN0357", "USLA0338", "USNY0996", "USNJ0355", "USVA0557", "USOK0400",
-                    "USNE0363", "USFL0372", "USPA1276", "USAZ0166", "USPA1290", "USME0328", "USOR0275", "USNC0558",
-                    "USSD0283", "USNV0076", "USCA0967", "USUT0225", "USTX1200", "USCA0982", "USCA0987", "USWA0395",
-                    "USWA0422", "USMO0787", "USFL0481", "USOK0537"
-                };
-            }
-            else
-            {
-                locations = config.LocationConfig.NationalLocations;
-            }
+                "USNM0004", "USGA0028", "USMD0018", "USME0017", "USMT0031", "USAL0054", "USND0037", "USID0025",
+                "USMA0046", "USNY0081", "USVT0033", "USNC0121", "USIL0225", "USOH0188", "USOH0195", "USTX0327",
+                "USCO0105", "USIA0231", "USMI0229", "USAZ0068", "USSC0140", "USCT0094", "USTX0617", "USIN0305",
+                "USFL0228", "USMO0460", "USNV0049", "USAR0337", "USCA0638", "USKY1096", "USTN0325", "USFL0316",
+                "USWI0455", "USMN0503", "USTN0357", "USLA0338", "USNY0996", "USNJ0355", "USVA0557", "USOK0400",
+                "USNE0363", "USFL0372", "USPA1276", "USAZ0166", "USPA1290", "USME0328", "USOR0275", "USNC0558",
+                "USSD0283", "USNV0076", "USCA0967", "USUT0225", "USTX1200", "USCA0982", "USCA0987", "USWA0395",
+                "USWA0422", "USMO0787", "USFL0481", "USOK0537"
+            };
+
         }
         else
         {
             locations = await GetMachineLocations(config);
         }
         
-        Task checkAlerts = TimedTasks.CheckForAlerts(locations, prioritySender, config.CheckAlertTimeSeconds);
-        Task recordGenTask = TimedTasks.RecordGenTask(locations, routineSender, config.RecordGenTimeSeconds);
+        Task checkAlerts = TimedTasks.CheckForAlerts(locations, prioritySender, config.DConfig.RecordGenTimeSeconds);
+        Task recordGenTask = TimedTasks.RecordGenTask(locations, routineSender, config.AConfig.CheckAlertTimeSeconds);
         Task clearAlertsCache = TimedTasks.ClearExpiredAlerts();
         
         await Task.WhenAll(checkAlerts, recordGenTask, clearAlertsCache);

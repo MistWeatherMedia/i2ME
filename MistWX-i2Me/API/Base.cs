@@ -14,7 +14,7 @@ namespace MistWX_i2Me.API;
 public class Base
 {
     protected HttpClient Client = new HttpClient();
-    protected string ApiKey = Config.config.TwcApiKey;
+    protected string ApiKey = Config.config.APIConfig.TwcApiKey;
 
     protected string RecordName = String.Empty;
     protected string DataUrl = String.Empty;
@@ -181,6 +181,11 @@ public class Base
         if (url.Contains("{startMonth45Day}"))
         {
             url = url.Replace("{startMonth45Day}", DateTime.Now.Subtract(TimeSpan.FromDays(45)).ToString("MM"));
+        }
+
+        if (url.Contains("{lang}"))
+        {
+            url = url.Replace("{lang}}", Config.config.LocalStarConfig.Language);
         }
 
         return url;

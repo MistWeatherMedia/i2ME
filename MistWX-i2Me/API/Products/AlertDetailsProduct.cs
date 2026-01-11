@@ -23,7 +23,7 @@ public class AlertDetailsProduct : Base
             foreach (Alert alert in headline.ParsedData.alerts)
             {
                 string url =
-                    $"https://api.weather.com/v3/alerts/detail?alertId={alert.detailKey}&format=json&language=en-US&apiKey={Config.config.TwcApiKey}";
+                    $"https://api.weather.com/v3/alerts/detail?alertId={alert.detailKey}&format=json&language={Config.config.LocalStarConfig.Language}&apiKey={Config.config.APIConfig.TwcApiKey}";
                 string? res = await DownloadRecord(url);
                 
                 if (res == null)
