@@ -28,7 +28,7 @@ public class TIRecordData {
     public string? TItdTyp { get; set; }
 
     [XmlElement(ElementName="TItdHght")]
-    public long TItdHght { get; set; }
+    public float TItdHght { get; set; }
 }
 
 [XmlRoot(ElementName="TIRecord")]
