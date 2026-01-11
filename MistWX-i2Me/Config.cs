@@ -1,5 +1,6 @@
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Serialization;
+using System.Xml;
 
 namespace MistWX_i2Me;
 
@@ -9,6 +10,11 @@ namespace MistWX_i2Me;
 [XmlRoot("Config")]
 public class Config
 {
+    
+    [XmlAnyElement("VersionComment")]
+    public XmlComment VersionComment { get { return new XmlDocument().CreateComment("DO NOT CHANGE THIS!"); } set { } }
+    [XmlElement]
+    public int Version {get; set;} = 1;
     // Config Elements \\
     
     [XmlElement] public string TwcApiKey { get; set; } = "REPLACE_ME";
@@ -18,7 +24,7 @@ public class Config
 
 
     // Used to process what locations to generate
-    [XmlElement]
+
     public string MachineProductConfig { get; set; } =
         "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Config\\MachineProductCfg.xml";
 
@@ -376,6 +382,8 @@ public class Config
     public class LocalConfig
     {
         [XmlElement] public string Unit { get; set; } = "e";
+        
+        [XmlElement] public string Language { get; set; } = "en-US";
     }
 
     [XmlRoot("DataConfig")]
