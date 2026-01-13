@@ -185,7 +185,7 @@ public class Base
 
         if (url.Contains("{lang}"))
         {
-            url = url.Replace("{lang}}", Config.config.LocalStarConfig.Language);
+            url = url.Replace("{lang}", Config.config.LocalStarConfig.Language);
         }
 
         return url;
