@@ -25,6 +25,8 @@ public class TIRecord : I2Record
             dHRecHdr.ILevel = 2;
             dHRecHdr.ProcTm = System.DateTime.Now.ToString("yyyyMMddHHmmss");
 
+            dHRecRes.TIRecordHeader = dHRecHdr;
+
             foreach (var fcst in result.ParsedData.Tides.Tide)
             {
                 TIRecordData dHRecData = new TIRecordData();
