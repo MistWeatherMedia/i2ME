@@ -6,6 +6,7 @@
         <RootNamespace>MistWX_i2Me</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PublishSingleFile>false</PublishSingleFile>
     </PropertyGroup>
 
     <ItemGroup>

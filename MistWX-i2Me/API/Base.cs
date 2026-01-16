@@ -1,4 +1,3 @@
-using System.Data.Common;
 using System.Data.SQLite;
 using Dapper;
 using System.Text;
@@ -240,6 +239,17 @@ public class Base
         return stream;
     }
 
+    public static string vocalKeyBuilder(int temp, int iconCodeExt)
+    {
+        // for some reason, the TWC api still returns imperial vocal local even when metric units are requested. this causes the display of metric temperatures
+        // to be accompanied by imperial vocals. we can give this method a temperature and icon code to generate a vocalKey with metric vocals. as lordtheythem Rai intended.
+        // vocalKey input example: temp = -67, iconCodeExt = 6700 => return OT-67:OX6700. this is not a real world example otherwise we would all be frozen dead. maybe. im not a forecaster.
+        string outKey = $"OT{(temp >= 0 ? "+" : "")}{temp}:OX{iconCodeExt}";
+        Log.Debug($"Generated vocalKey: {outKey}");
+        return outKey;
+        // why is the damn comment longer than the code itself
+    }
+
     public async Task<List<GenericResponse<T>>> GetData<T>(string[] locations)
     {
         List<GenericResponse<T>> results = new List<GenericResponse<T>>();
@@ -256,25 +266,50 @@ public class Base
                 continue;
             }
 
+            // Start Fix
+            string? GetXmlValue(string xml, string tagName)
+            {
+                string startTag = $"<{tagName}>";
+                int start = xml.IndexOf(startTag);
+                if (start == -1) return null;
+                start += startTag.Length;
+                int end = xml.IndexOf($"</{tagName}>", start);
+                if (end == -1) return null;
+                return xml.Substring(start, end - start);
+            }
+
+            string? tempVal = GetXmlValue(response, "temp");
+            string? iconVal = GetXmlValue(response, "iconCodeExt") ?? GetXmlValue(response, "icon_extd");
+            string? vocalKeyVal = GetXmlValue(response, "vocalKey") ?? GetXmlValue(response, "vocal_key");
+
+            int temp = 0;
+            int iconCodeExt = 0;
+            
+            if (int.TryParse(tempVal, out int t)) temp = t;
+            if (int.TryParse(iconVal, out int i)) iconCodeExt = i;
+
+            List<string> unitTags = new List<string> { "metric", "metric_si", "uk_hybrid" };
+
             // For Current Observations they change the format of the XML depending on what unit you have - no go for i2
-            if (response.Contains("<metric>"))
+            if (! response.Contains("<imperial>"))
             {
-                response = response.Replace("<metric>", "<imperial>");
-                response = response.Replace("</metric>", "</imperial>");
-            }
+                foreach (string unitTag in unitTags)
+                {
+                    if (response.Contains($"<{unitTag}>"))
+                    {
+                        response = response.Replace(unitTag, "imperial");
+                        response = response.Replace($"</{unitTag}>", "</imperial>");
+                    }
+                }
+            
 
-            if (response.Contains("<metric_si>"))
-            {
-                response = response.Replace("<metric_si>", "<imperial>");
-                response = response.Replace("</metric_si>", "</imperial>");
+                if (vocalKeyVal != null)
+                {
+                    string newVocalKey = vocalKeyBuilder(temp, iconCodeExt);
+                    response = response.Replace(vocalKeyVal, newVocalKey);
+                }
             }
-
-            if (response.Contains("<uk_hybrid>"))
-            {
-                response = response.Replace("<uk_hybrid>", "<imperial>");
-                response = response.Replace("</uk_hybrid>", "</imperial>");
-            }
-
+            
             string data = GetInnerXml(response);
 
             try
@@ -325,26 +360,26 @@ public class Base
 
             if (!string.IsNullOrEmpty(response))
             {
-                using (var stream = StreamFromString(response))
+                using var stream = StreamFromString(response);
+                try
                 {
-                    try
+                    T? deserializedData = await JsonSerializer.DeserializeAsync<T?>(stream);
+                    if (deserializedData != null)
                     {
-                        T? deserializedData = await JsonSerializer.DeserializeAsync<T?>(stream);
                         results.Add(new GenericResponse<T>(locationInfo, response, deserializedData));
-                        continue;
                     }
-                    catch (JsonException exception)
-                    {
-                        Log.Error($"Failed to parse {RecordName} data for location {location}.");
-                        Log.Debug(exception.Message);
-                        
-                        // Print stacktrace to the debug console if applicable
-                        if (!string.IsNullOrEmpty(exception.StackTrace))
-                        {
-                            Log.Debug(exception.StackTrace);
-                        }
-                    }
+                    continue;
+                }
+                catch (JsonException exception)
+                {
+                    Log.Error($"Failed to parse {RecordName} data for location {location}.");
+                    Log.Debug(exception.Message);
 
+                    // Print stacktrace to the debug console if applicable
+                    if (!string.IsNullOrEmpty(exception.StackTrace))
+                    {
+                        Log.Debug(exception.StackTrace);
+                    }
                 }
             }
             Log.Warning($"{RecordName} returned no data for location {location}.");
