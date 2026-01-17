@@ -6,15 +6,15 @@ public class LocServNearAirportLocation
 
     public List<string> longitude { get; set; }
 
-    public List<double> distanceKm { get; set; }
+    public List<string?> distanceKm { get; set; }
 
-    public List<double> distanceMi { get; set; }
+    public List<string?> distanceMi { get; set; }
 
-    public List<string> airportName { get; set; }
+    public List<string?> airportName { get; set; }
 
-    public List<string> iataCode { get; set; }
+    public List<string?> iataCode { get; set; }
 
-    public List<string> icaoCode { get; set; }
+    public List<string?> icaoCode { get; set; }
 }
 
 public class LocServNearAirportResponse
