@@ -50,4 +50,6 @@ public class LFRecordLocation
     public string? tPrsntNm { get; set; }
     public string? wrlsPrsntNm { get; set; }
     public string? wmoId { get; set; }
+
+    public string? dmaCd { get; set; }
 }
