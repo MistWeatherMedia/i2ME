@@ -1,11 +1,25 @@
 namespace MistWX_i2Me.Schema.ibm;
 
+public class LocServPointLocale
+{
+    public string? locale1 { get; set; }
+
+    public string? locale2 { get; set; }
+
+    public string? locale3 { get; set; }
+
+    public string? locale4 { get; set; }
+}
+
 public class LocServPointLocation
 {
     public double latitude { get; set; }
 
     public double longitude { get; set; }
+
     public string? city { get; set; }
+
+    public LocServPointLocale? locale { get; set; }
 
     public string? neighborhood { get; set; }
 
@@ -66,5 +80,5 @@ public class LocServPointLocation
 
 public class LocServPointResponse
 {
-    
+    public LocServPointLocation? location { get; set; }
 }
