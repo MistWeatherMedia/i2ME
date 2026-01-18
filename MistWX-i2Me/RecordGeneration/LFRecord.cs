@@ -11,6 +11,10 @@ public class LFRecord : I2Record
 {
     public async Task<string> MakeRecord(LFRecordLocation result)
     {
+        if (Directory.Exists(Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords")) != true)
+        {
+            Directory.CreateDirectory(Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords"));
+        }
         Log.Info($"Creating LFRecord for {result.prsntNm}.");
         string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords", $"LFRecord-{result.cntryCd}-{result.locType}-{result.locId}-{result.cityNm}.xml");
         string recordScript = "<Data type=\"DHRecord\">";
@@ -60,6 +64,7 @@ public class LFRecord : I2Record
         LFRecData.tertObsStn = result.tertObsStn;
         LFRecData.tertTecci = result.tertTecci;
         LFRecData.tideId = result.tideId;
+        LFRecData.tmZnNm = result.tmZnNm;
         LFRecData.tmZnAbbr = result.tmZnAbbr;
         LFRecData.tPrsntNm = result.tPrsntNm;
         LFRecData.wmoId = result.wmoId;
