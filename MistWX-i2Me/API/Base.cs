@@ -7,6 +7,7 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using Microsoft.Extensions.Caching.Memory;
 using MistWX_i2Me.Schema.System;
+using NetVips;
 
 namespace MistWX_i2Me.API;
 
@@ -24,7 +25,7 @@ public class Base
     /// </summary>
     /// <param name="url">API URL to send a GET request to</param>
     /// <returns>XML Document as a string object</returns>
-    public async Task<string> DownloadRecord(string url)
+    public async Task<byte[]?> DownloadRecord(string url)
     {
         Log.Debug(url);
 
@@ -39,19 +40,19 @@ public class Base
             {
                 Log.Debug("Bad Request issue!");
 
-                return String.Empty;
+                return null;
             }
             
             if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
             {
-                return String.Empty;
+                return null;
             }
 
 
             byte[] content = await Client.GetByteArrayAsync(url);
-            string contentString = Encoding.UTF8.GetString(content);
+            
 
-            return contentString;
+            return content;
         }
         catch (Exception ex)
         {
@@ -63,7 +64,7 @@ public class Base
             {
                 Log.Debug(ex.StackTrace);
             }
-            return String.Empty;
+            return null;
         }
 
     }
@@ -196,7 +197,22 @@ public class Base
         Log.Debug($"Downloading {RecordName} for location {location.locId}");
         
         string url = FormatUrl(location);
-        string response = await DownloadRecord(url);
+        byte[]? response = await DownloadRecord(url);
+        if (response == null)
+        {
+            return String.Empty;
+        }
+        string contentString = Encoding.UTF8.GetString(response);
+        return contentString;
+    }
+
+    public async Task<byte[]?> DownloadLocationDataRaw(LFRecordLocation location)
+    {
+        Log.Debug($"Downloading {RecordName} for location {location.locId}");
+        
+        string url = FormatUrl(location);
+        byte[]? response = await DownloadRecord(url);
+
         return response;
     }
 
@@ -343,7 +359,7 @@ public class Base
         return results;
     }
 
-    public async Task<GenericResponse<T>> GetDataLFR<T>(LFRecordLocation location)
+    public async Task<GenericResponse<T>?> GetDataLFR<T>(LFRecordLocation location)
     {
 
 
@@ -411,10 +427,10 @@ public class Base
 
                 if (deserializedData == null)
                 {
-                    throw new Exception($"Failed to deserialize {RecordName} for location {location}");
+                    Log.Warning($"Failed to deserialize {RecordName} for location {location}");
                 }
 
-                return new GenericResponse<T>(locationInfo, data, deserializedData);
+                return null;
             }
         }
             catch (InvalidOperationException ex)
@@ -424,7 +440,8 @@ public class Base
                 {
                     Log.Debug(ex.StackTrace);
                 }
-                throw new Exception($"Location {location} has no data for {RecordName}, skipping..");
+                Log.Warning($"Location {location} has no data for {RecordName}, skipping..");
+                return null;
             }
     }
     
@@ -475,7 +492,7 @@ public class Base
     }
 
 
-    public async Task<GenericResponse<T>> GetJsonDataLFR<T>(LFRecordLocation location)
+    public async Task<GenericResponse<T>?> GetJsonDataLFR<T>(LFRecordLocation location)
     {
 
         LFRecordLocation locationInfo = location;
@@ -509,4 +526,34 @@ public class Base
         Log.Warning($"{RecordName} returned no data for location {location}.");
         return null;
     }
+
+    public async Task<Image> GetTileData()
+    {
+        LFRecordLocation locationInfo = await GetLocInfo("USNY0996");
+        byte[]? response = await DownloadLocationDataRaw(locationInfo);
+
+        if (response != null)
+        {
+            try
+            {
+                return Image.NewFromBuffer(response);
+            }
+            catch (JsonException exception)
+            {
+                Log.Error($"Failed to parse {RecordName} data.");
+                Log.Debug(exception.Message);
+
+                // Print stacktrace to the debug console if applicable
+                if (!string.IsNullOrEmpty(exception.StackTrace))
+                {
+                    Log.Debug(exception.StackTrace);
+                }
+                return NetVips.Image.Black(256,256);
+            }
+        }
+        Log.Warning($"{RecordName} returned no data.");
+        return NetVips.Image.Black(256,256);
+        
+    }
+
 }
