@@ -286,31 +286,47 @@ public class TimedTasks
                 if (radarConfig.RadarEnable)
                 {
                     Log.Info($"Generating radar frames...");
-                    if (rdi.ParsedData.twcRadarMosaic != null)
+                    if (rdi.ParsedData.seriesInfo != null)
                     {
-                        if (rdi.ParsedData.twcRadarMosaic.series != null)
+                        if (rdi.ParsedData.seriesInfo.twcRadarMosaic != null)
                         {
-                            taskList.Add(new RadarProcess().Run(radarConfig.RadarDef, rdi.ParsedData.twcRadarMosaic.series.Select(ts => ts.ts).ToArray(), sender));
+                            if (rdi.ParsedData.seriesInfo.twcRadarMosaic.series != null)
+                            {
+                                taskList.Add(new RadarProcess().Run(radarConfig.RadarDef, rdi.ParsedData.seriesInfo.twcRadarMosaic.series.Select(ts => ts.ts).ToArray(), sender));
+                            } else {
+                                Log.Warning("No radar timestamps.");
+                                Log.Debug("No series!");
+                            }
                         } else {
                             Log.Warning("No radar timestamps.");
+                            Log.Debug("No twcRadarMosaic!");
                         }
                     } else {
                         Log.Warning("No radar timestamps.");
+                        Log.Debug("No seriesInfo!");
                     }
                 }
                 if (radarConfig.SatRadEnable)
                 {
                     Log.Info($"Generating satellite radar frames...");
-                    if (rdi.ParsedData.sat != null)
+                    if (rdi.ParsedData.seriesInfo != null)
                     {
-                        if (rdi.ParsedData.sat.series != null)
+                        if (rdi.ParsedData.seriesInfo.sat != null)
                         {
-                            taskList.Add(new RadarProcess().Run(radarConfig.SatRadDef, rdi.ParsedData.sat.series.Select(ts => ts.ts).ToArray(), sender));
+                            if (rdi.ParsedData.seriesInfo.sat.series != null)
+                            {
+                                taskList.Add(new RadarProcess().Run(radarConfig.SatRadDef, rdi.ParsedData.seriesInfo.sat.series.Select(ts => ts.ts).ToArray(), sender));
+                            } else {
+                                Log.Warning("No satrad timestamps.");
+                                Log.Debug("No series!");
+                            }
                         } else {
                             Log.Warning("No satrad timestamps.");
+                            Log.Debug("No sat!");
                         }
                     } else {
-                        Log.Warning("No satarad timestamps.");
+                        Log.Warning("No satrad timestamps.");
+                        Log.Debug("No seriesInfo!");
                     }
                 }
             } else {
