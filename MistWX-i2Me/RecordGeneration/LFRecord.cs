@@ -17,7 +17,7 @@ public class LFRecord : I2Record
         }
         Log.Info($"Creating LFRecord for {result.prsntNm}.");
         string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords", $"LFRecord-{result.cntryCd}-{result.locType}-{result.locId}-{result.cityNm}.xml");
-        string recordScript = "<Data type=\"DHRecord\">";
+        string recordScript = "<Data type=\"LFRecord\">";
 
         LFRecordResponse LFRecRes = new LFRecordResponse();
 
