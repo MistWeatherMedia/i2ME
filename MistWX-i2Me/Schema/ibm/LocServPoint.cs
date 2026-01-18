@@ -55,7 +55,7 @@ public class LocServPointLocation
 
     public List<object>? disputedCustomers { get; set; }
 
-    public List<string>? disputedShowCountry { get; set; }
+    public List<bool>? disputedShowCountry { get; set; }
 
     public string? canonicalCityId { get; set; }
 
