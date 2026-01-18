@@ -258,7 +258,7 @@ public class TimedTasks
         }
     }
 
-    public static async Task RadarTask(string[] locations, UdpSender sender, int generationInterval)
+    public static async Task RadarTask(UdpSender sender, int generationInterval)
     {
         var watch = Stopwatch.StartNew();
         Config.RadarConfig radarConfig = Config.config.RadarConfiguration;
@@ -273,19 +273,56 @@ public class TimedTasks
         {
             watch.Restart();
             
+            List<Task> taskList = new();
             
             Log.Info("Running scheduled radar/satrad collection");
-
+            
             // start grabbing all timestamps
             Log.Info($"Grabbing all radar/satrad timestamps...");
+            GenericResponse<RadarImageryResponse>? rdi = await new RadarImageryProduct().Populate();
 
+            if (rdi != null)
+            {
+                if (radarConfig.RadarEnable)
+                {
+                    Log.Info($"Generating radar frames...");
+                    if (rdi.ParsedData.twcRadarMosaic != null)
+                    {
+                        if (rdi.ParsedData.twcRadarMosaic.series != null)
+                        {
+                            taskList.Add(new RadarProcess().Run(radarConfig.RadarDef, rdi.ParsedData.twcRadarMosaic.series.Select(ts => ts.ts).ToArray(), sender));
+                        } else {
+                            Log.Warning("No radar timestamps.");
+                        }
+                    } else {
+                        Log.Warning("No radar timestamps.");
+                    }
+                }
+                if (radarConfig.SatRadEnable)
+                {
+                    Log.Info($"Generating satellite radar frames...");
+                    if (rdi.ParsedData.sat != null)
+                    {
+                        if (rdi.ParsedData.sat.series != null)
+                        {
+                            taskList.Add(new RadarProcess().Run(radarConfig.SatRadDef, rdi.ParsedData.sat.series.Select(ts => ts.ts).ToArray(), sender));
+                        } else {
+                            Log.Warning("No satrad timestamps.");
+                        }
+                    } else {
+                        Log.Warning("No satarad timestamps.");
+                    }
+                }
+            } else {
+                Log.Warning("No radar/satrad timestamps.");
+            }
             
 
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
             
             watch.Stop();
             
-            Log.Info($"Generated data for {locations.Length} locations in {watch.ElapsedMilliseconds} ms.");
+            Log.Info($"Generated radar/satrad in {watch.ElapsedMilliseconds} ms.");
             Log.Info($"Next record generation will be at {nextTimestamp}");
             
             await Task.Delay(generationInterval * 1000);
