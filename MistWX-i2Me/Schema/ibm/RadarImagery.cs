@@ -2,9 +2,9 @@ namespace MistWX_i2Me.Schema.ibm;
 
 public class RadarImageryCoordinates
 {
-    public double lat { get; set; }
+    public string? lat { get; set; }
 
-    public double lng { get; set; }
+    public string? lng { get; set; }
 }
 
 public class RadarImageryBoundingBox
@@ -30,8 +30,13 @@ public class RadarImageryLayer
     public List<RadarImageryTimestamps>? series { get; set; }
 }
 
-public class RadarImageryResponse
+public class RadarImagerySeriesInfo
 {
     public RadarImageryLayer? sat { get; set; }
     public RadarImageryLayer? twcRadarMosaic { get; set; }
+}
+
+public class RadarImageryResponse
+{
+    public RadarImagerySeriesInfo? seriesInfo { get; set; }
 }
