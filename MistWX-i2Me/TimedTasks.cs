@@ -332,6 +332,8 @@ public class TimedTasks
             } else {
                 Log.Warning("No radar/satrad timestamps.");
             }
+
+            await Task.WhenAll(taskList);
             
 
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
