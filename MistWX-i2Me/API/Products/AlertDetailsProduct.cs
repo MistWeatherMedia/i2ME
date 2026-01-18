@@ -1,6 +1,8 @@
 using System.Text.Json;
+using System.Text;
 using Microsoft.Extensions.Caching.Memory;
 using MistWX_i2Me.Schema.ibm;
+using System.Data.SqlTypes;
 
 namespace MistWX_i2Me.API.Products;
 
@@ -24,12 +26,14 @@ public class AlertDetailsProduct : Base
             {
                 string url =
                     $"https://api.weather.com/v3/alerts/detail?alertId={alert.detailKey}&format=json&language={Config.config.LocalStarConfig.Language}&apiKey={Config.config.APIConfig.TwcApiKey}";
-                string? res = await DownloadRecord(url);
+                byte[]? resbyte = await DownloadRecord(url);
                 
-                if (res == null)
+                if (resbyte == null)
                 {
                     continue;
                 }
+
+                string res = Encoding.UTF8.GetString(resbyte);
                 
                 if (alertsCache.TryGetValue(alert.detailKey, out int expireTime))
                 {
