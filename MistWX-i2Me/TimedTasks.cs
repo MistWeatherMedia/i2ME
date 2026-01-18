@@ -84,7 +84,7 @@ public class TimedTasks
         }
 
     }
-    
+
     public static async Task RecordGenTask(string[] locations, UdpSender sender, int generationInterval)
     {
         var watch = Stopwatch.StartNew();
@@ -246,6 +246,40 @@ public class TimedTasks
                 string wnsRecord = await new HolidayMapping().MakeRecord(wns);
                 sender.SendFile(wnsRecord, "storeData(QGROUP=__Mapping__,Feed=Mapping)");
             }
+
+            string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
+            
+            watch.Stop();
+            
+            Log.Info($"Generated data for {locations.Length} locations in {watch.ElapsedMilliseconds} ms.");
+            Log.Info($"Next record generation will be at {nextTimestamp}");
+            
+            await Task.Delay(generationInterval * 1000);
+        }
+    }
+
+    public static async Task RadarTask(string[] locations, UdpSender sender, int generationInterval)
+    {
+        var watch = Stopwatch.StartNew();
+        Config.RadarConfig radarConfig = Config.config.RadarConfiguration;
+
+        if (radarConfig.RadarEnable != true && radarConfig.SatRadEnable != true)
+        {
+            Log.Info("Both radar and satrad are disabled, disabling radar generation...");
+            return;
+        }
+        
+        while (true)
+        {
+            watch.Restart();
+            
+            
+            Log.Info("Running scheduled radar/satrad collection");
+
+            // start grabbing all timestamps
+            Log.Info($"Grabbing all radar/satrad timestamps...");
+
+            
 
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
             
