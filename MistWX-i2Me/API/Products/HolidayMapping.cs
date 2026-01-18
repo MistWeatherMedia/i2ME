@@ -13,7 +13,7 @@ public class HolidayMappingProduct : Base
     public async Task<HolidayMappingResponse> Populate()
     {
         XmlSerializer serializer = new XmlSerializer(typeof(HolidayMappingResponse));
-        StreamReader reader = new StreamReader(Path.Combine(AppContext.BaseDirectory, "Data", "Mapping", "HolidayMapping.xml"));
+        StreamReader reader = new StreamReader(Path.Combine(AppContext.BaseDirectory, "Custom", "Mapping", "HolidayMapping.xml"));
         return (HolidayMappingResponse)serializer.Deserialize(reader);
     }
 }
