@@ -260,7 +260,6 @@ public class TimedTasks
 
     public static async Task RadarTask(UdpSender sender, int generationInterval)
     {
-        await Task.Delay(generationInterval * 1000);
         var watch = Stopwatch.StartNew();
         Config.RadarConfig radarConfig = Config.config.RadarConfiguration;
 
@@ -272,6 +271,7 @@ public class TimedTasks
         
         while (true)
         {
+            await Task.Delay(generationInterval * 1000);
             watch.Restart();
             
             List<Task> taskList = new();
