@@ -6,16 +6,16 @@ namespace MistWX_i2Me.Schema.twc;
 public class ClimatologyRec { 
 
 	[XmlAttribute(AttributeName="loc")] 
-	public string Loc { get; set; }  
+	public string? Loc { get; set; }  
 
     [XmlAttribute(AttributeName="year")] 
 	public int Year { get; set; } 
 
     [XmlAttribute(AttributeName="month")] 
-	public string Month { get; set; }
+	public string? Month { get; set; }
 
 	[XmlAttribute(AttributeName="day")] 
-	public string Day { get; set; }
+	public string? Day { get; set; }
 
     [XmlAttribute(AttributeName="avgHigh")] 
 	public int AvgHigh { get; set; }  
@@ -40,8 +40,8 @@ public class ClimatologyRec {
 public class ClimatologyRecordResponse { 
 
 	[XmlElement(ElementName="Key")] 
-	public string Key { get; set; } 
+	public string? Key { get; set; } 
 
 	[XmlElement(ElementName="ClimoRec")] 
-	public List<ClimatologyRec> ClimoRec { get; set; } 
+	public List<ClimatologyRec>? ClimoRec { get; set; } 
 }
