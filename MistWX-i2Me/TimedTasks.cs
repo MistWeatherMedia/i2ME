@@ -271,7 +271,6 @@ public class TimedTasks
         
         while (true)
         {
-            await Task.Delay(generationInterval * 1000);
             watch.Restart();
             
             List<Task> taskList = new();
@@ -340,9 +339,10 @@ public class TimedTasks
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
             
             watch.Stop();
-            
             Log.Info($"Generated radar/satrad in {watch.ElapsedMilliseconds} ms.");
             Log.Info($"Next record generation will be at {nextTimestamp}");
+            await Task.Delay(generationInterval * 1000);
+
         }
     }
 }

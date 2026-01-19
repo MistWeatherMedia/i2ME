@@ -186,12 +186,12 @@ public class Program
         }
 
         
-        Task checkAlerts = TimedTasks.CheckForAlerts(locations, prioritySender, config.AConfig.CheckAlertTimeSeconds);
-        Task recordGenTask = TimedTasks.RecordGenTask(locations, routineSender, config.DConfig.RecordGenTimeSeconds);
+        //Task checkAlerts = TimedTasks.CheckForAlerts(locations, prioritySender, config.AConfig.CheckAlertTimeSeconds);
+        //Task recordGenTask = TimedTasks.RecordGenTask(locations, routineSender, config.DConfig.RecordGenTimeSeconds);
         Task radarTask = TimedTasks.RadarTask(prioritySender, config.RadarConfiguration.RadarInt);
-        Task clearAlertsCache = TimedTasks.ClearExpiredAlerts();
+        //Task clearAlertsCache = TimedTasks.ClearExpiredAlerts();
         
-        await Task.WhenAll(checkAlerts, recordGenTask, radarTask, clearAlertsCache);
+        await Task.WhenAll(radarTask);
 
     }
 

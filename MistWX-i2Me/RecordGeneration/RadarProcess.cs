@@ -68,7 +68,7 @@ public class RadarProcess
             Log.Debug("Passed directory checks!");
         }
 
-        DirectoryInfo mapTypeDir = new DirectoryInfo(mapTypeDirPath);
+        DirectoryInfo mapTypeDir = new(mapTypeDirPath);
         
         // Delete all frames from the maptype.
         foreach(System.IO.FileInfo file in mapTypeDir.GetFiles()) file.Delete();
@@ -77,10 +77,10 @@ public class RadarProcess
 
         ImageSequenceDef boundaries = BoundariesFromJSON(radar_type);
         Log.Debug("Imported boundaries from JSON");
-        Point<float> upperRight = boundaries.GrabUpperRight();
-        Point<float> lowerLeft = boundaries.GrabLowerLeft();
-        Point<float> upperLeft = boundaries.GrabUpperLeft();
-        Point<float> lowerRight = boundaries.GrabLowerRight();
+        Point<double> upperRight = boundaries.GrabUpperRight();
+        Point<double> lowerLeft = boundaries.GrabLowerLeft();
+        Point<double> upperLeft = boundaries.GrabUpperLeft();
+        Point<double> lowerRight = boundaries.GrabLowerRight();
 
         // slice timestamps
         timestamps = new ArraySegment<int>(timestamps, 0, boundaries.MaxImages - 1).ToArray();
@@ -111,13 +111,72 @@ public class RadarProcess
         List<Point<int>> combinedCoords = new();
 
         //throw new Exception($"YStart: {bounds.YStart}, YEnd: {bounds.YEnd}, XStart: {bounds.XStart}, XEnd: {bounds.XEnd}");
+        
+        int GrabXStart = bounds.XStart;
+        int GrabYStart = bounds.YStart;
+        int GrabXEnd = bounds.XEnd;
+        int GrabYEnd = bounds.YEnd;
 
-        foreach (int y in Enumerable.Range(bounds.YStart, bounds.YEnd))
+        // If LocalRadar is turned on, set range to be nearby the center of the map in terms of tiles.
+        if (Config.config.RadarConfiguration.LocalRadar)
         {
-            if (y <= bounds.YEnd) {
-                foreach (int x in Enumerable.Range(bounds.XStart, bounds.XEnd))
+            // Grab MachineProductConfig.
+            XmlSerializer serializer = new(typeof(MachineProductConfig));
+            StreamReader reader = new(Path.Combine(AppContext.BaseDirectory, "MachineProductConfig.xml"));
+            MachineProductConfig? mpc = null;
+            if (reader != null)
+            {
+                mpc = (MachineProductConfig?)serializer.Deserialize(reader);
+            }
+            
+            if (mpc != null)
+            {
+                foreach (ConfigItem cfgItm in mpc.ConfigDef.ConfigItems.ConfigItem)
                 {
-                    if (x  <= bounds.XEnd)
+                    if (cfgItm.Key == "PrimaryLatitudeLongitude")
+                    {
+                        Point<double> latlong = new((double)0.0, (double)0.0);
+                        string[] split = cfgItm.Value.Split("-");
+                        string split0Dir = split[0].Substring(0, 1);
+                        string split1Dir = split[1].Substring(0, 1);
+
+                        if (split0Dir == "W")
+                        {
+                            latlong.Y = Convert.ToDouble($"-{split[0].Substring(1)}");
+                        } else
+                        {
+                            latlong.Y = Convert.ToDouble(split[0].Substring(1));
+                        }
+
+                        if (split1Dir == "N")
+                        {
+                            latlong.X = Convert.ToDouble(split[1].Substring(1));
+                        } else
+                        {
+                            latlong.X = Convert.ToDouble($"-{split[1].Substring(1)}");
+                        }
+
+                        Point<int> tile = LongLatToTile(latlong);
+                        GrabXStart = tile.X - Config.config.RadarConfiguration.LocalRadarRadius;
+                        GrabXEnd = tile.X + Config.config.RadarConfiguration.LocalRadarRadius;
+                        GrabYStart = tile.Y - Config.config.RadarConfiguration.LocalRadarRadius;
+                        GrabYEnd = tile.Y + Config.config.RadarConfiguration.LocalRadarRadius;
+                        //throw new Exception($"{GrabXStart} \n {GrabXEnd} \n {GrabYStart} \n {GrabYEnd}");
+                        break;
+                    } 
+                }
+            } else
+            {
+                Log.Warning("Could not read MachineProductCfg!");
+            }
+        }
+
+        foreach (int y in Enumerable.Range(GrabYStart, GrabYEnd))
+        {
+            if (y <= GrabYEnd) {
+                foreach (int x in Enumerable.Range(GrabXStart, GrabXEnd))
+                {
+                    if (x  <= GrabXEnd)
                     {
                         combinedCoords.Add(new Point<int>(x, y));
                     }
@@ -153,7 +212,7 @@ public class RadarProcess
 
         foreach ((int ts, List<Task<Image>> imageList) in images)
         {
-            taskList.Add(ProcessRadarFrame(await Task.WhenAll(imageList), radarFrames[ts], combinedCoords.ToArray(), ts, new Point<int>(bounds.XStart, bounds.XEnd), mapTypeDirPath, sender, radar_type));
+            taskList.Add(ProcessRadarFrame(imageList, radarFrames[ts], combinedCoords.ToArray(), ts, new Point<int>(bounds.XStart, bounds.XEnd), mapTypeDirPath, sender, radar_type));
             Log.Debug($"Added task to process radar frame {ts}");
         }
 
@@ -161,7 +220,7 @@ public class RadarProcess
         Log.Debug("Awaited all tasks");
     }
 
-    public static async Task ProcessRadarFrame(Image[] imgs, Image frame, Point<int>[] coords, int ts, Point<int> tileStart, string dir_path, UdpSender sender, string radar_type)
+    public static async Task ProcessRadarFrame(List<Task<Image>> imgs, Image frame, Point<int>[] coords, int ts, Point<int> tileStart, string dir_path, UdpSender sender, string radar_type)
     {
         Log.Debug($"Processing frame {ts}");
 
@@ -169,7 +228,10 @@ public class RadarProcess
         int[] xSet = coords.Select(p => Math.Abs((p.X - tileStart.X) * 256)).ToArray();
         int[] ySet = coords.Select(p => Math.Abs((p.Y - tileStart.Y) * 256)).ToArray();
 
-        frame = frame.Composite(imgs, new Enums.BlendMode[]{Enums.BlendMode.Add}, xSet, ySet).Flatten();
+        // Await all images.
+        Image[] alltiles = await Task.WhenAll(imgs);
+
+        frame = frame.Composite(alltiles, new Enums.BlendMode[]{Enums.BlendMode.Add}, xSet, ySet).Flatten();
         Log.Debug($"Frame {ts} stitched");
         // Frame recolor
         frame = PaletteConvert(frame);
@@ -241,20 +303,20 @@ public class RadarProcess
         return img;
     }
 
-    public static Point<float> LatLongProject(Point<float> point)
+    public static Point<double> LatLongProject(Point<double> point)
     {
         double sin_y = Math.Sin(point.X * Math.PI / 180);
         sin_y = Math.Min(Math.Max(sin_y, -0.9999), 0.9999);
-        float x = (float)(256 * (0.5 + point.Y / 360));
-        float y = (float)(256 * (0.5 - Math.Log((1 + sin_y) / (1 - sin_y)) / (4 * Math.PI)));
+        double x = (double)(256 * (0.5 + point.Y / 360));
+        double y = (double)(256 * (0.5 - Math.Log((1 + sin_y) / (1 - sin_y)) / (4 * Math.PI)));
 
-        return new Point<float>(x, y);
+        return new Point<double>(x, y);
     }
     
-    public static Point<int> LongLatToTile(Point<float> longlat)
+    public static Point<int> LongLatToTile(Point<double> longlat)
     {
         int scale = 1 << 6;
-        Point<float> coords = LatLongProject(longlat);
+        Point<double> coords = LatLongProject(longlat);
 
         return new Point<int>(
             (int)Math.Floor(coords.X * scale / 255),
@@ -262,7 +324,7 @@ public class RadarProcess
         );
     }
 
-    public static Point<int> CoordToTile(Point<float> longlat)
+    public static Point<int> CoordToTile(Point<double> longlat)
     {
         int scale = 1 << 6;
 
@@ -272,7 +334,7 @@ public class RadarProcess
         );
     }
 
-    public static Point<int> CoordToPixel(Point<float> longlat)
+    public static Point<int> CoordToPixel(Point<double> longlat)
     {
         int scale = 1 << 6;
 
@@ -298,7 +360,7 @@ public class RadarProcess
         public int ImageHeight { get; set; }
     }
 
-    static TileImageBounds CalculateBounds(Point<float> upper_right, Point<float> upper_left, Point<float> lower_left, Point<float> lower_right)
+    static TileImageBounds CalculateBounds(Point<double> upper_right, Point<double> upper_left, Point<double> lower_left, Point<double> lower_right)
     {
         Point<int> UpperRightTile = CoordToTile(LatLongProject(upper_right));
         Point<int> UpperLeftTile = CoordToTile(LatLongProject(upper_left));

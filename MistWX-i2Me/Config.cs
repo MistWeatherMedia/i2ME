@@ -424,8 +424,12 @@ public class Config
         [XmlElement] public int RadarInt { get; set; } = 300;
 
         [XmlAnyElement("LocalRadarComment")]
-        public XmlComment LocalRadarComment { get { return new XmlDocument().CreateComment("Grab the files nearby the center of your map instead of the entire map. Set to true since downloading every single tile for the national map takes a lot of time."); } set { } }
+        public XmlComment LocalRadarComment { get { return new XmlDocument().CreateComment("Grab the tiles nearby the center of your map instead of the entire map. Set to true since downloading every single tile for the national map takes a lot of time."); } set { } }
         [XmlElement] public bool LocalRadar { get; set; } = true;
+
+        [XmlAnyElement("LocalRadarRadiusComment")]
+        public XmlComment LocalRadarRadiusComment { get { return new XmlDocument().CreateComment("ONLY WORKS WITH LOCALRADAR! Add extra tiles. For example, a radius of 1 results in a 3x3 radius, a radius of 2 results in a 5x5, etc"); } set { } }
+        [XmlElement] public int LocalRadarRadius { get; set; } = 1;
 
     }
 
