@@ -43,10 +43,13 @@ public class AlertDetailsProduct : Base
                 using (var stream = StreamFromString(res))
                 {
                     AlertDetailResponse? response = await JsonSerializer.DeserializeAsync<AlertDetailResponse?>(stream);
-                    results.Add(new GenericResponse<AlertDetailResponse>(headline.Location, res, response));
-                    alertsCache.Set(alert.detailKey, alert.expireTimeUTC);
-                    alertDetailKeys.Add(alert.detailKey);
-                    Log.Debug($"Alert ID {alert.detailKey} cached, expires @ {alert.expireTimeUTC} UTC.");
+                    if (response != null)
+                    {
+                        results.Add(new GenericResponse<AlertDetailResponse>(headline.Location, res, response));
+                        alertsCache.Set(alert.detailKey, alert.expireTimeUTC);
+                        alertDetailKeys.Add(alert.detailKey);
+                        Log.Debug($"Alert ID {alert.detailKey} cached, expires @ {alert.expireTimeUTC} UTC.");
+                    }
                 }
             }
         }
