@@ -8,7 +8,7 @@ public class AlertHeadlinesProduct : Base
     {
         RecordName = "AlertHeadlines";
         DataUrl =
-            "https://api.weather.com/v3/alerts/headlines?geocode={geocode}&format=json&language=en-US&apiKey={apiKey}";
+            "https://api.weather.com/v3/alerts/headlines?geocode={geocode}&format=json&language={lang}&apiKey={apiKey}";
         // ^^ This URL isn't broken, but using the geocode causes it to output the correct zone/county code each time
     }
 

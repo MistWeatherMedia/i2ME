@@ -8,7 +8,7 @@ public class TideForecastProduct : Base
     {
         this.RecordName = "TidesForecast";
         this.DataUrl =
-            "https://api.weather.com/v1/geocode/{lat}/{long}/forecast/tides.xml?language=en-US&startDate={curDate}&endDate={curDatePlusFive}&units={unit}&apiKey={apiKey}";
+            "https://api.weather.com/v1/geocode/{lat}/{long}/forecast/tides.xml?language={lang}&startDate={curDate}&endDate={curDatePlusFive}&units={unit}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<TideForecastResponse>>> Populate(string[] locations)

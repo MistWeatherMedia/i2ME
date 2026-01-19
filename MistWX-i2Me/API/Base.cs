@@ -1,4 +1,3 @@
-using System.Data.Common;
 using System.Data.SQLite;
 using Dapper;
 using System.Text;
@@ -8,13 +7,14 @@ using System.Xml.Linq;
 using System.Xml.Serialization;
 using Microsoft.Extensions.Caching.Memory;
 using MistWX_i2Me.Schema.System;
+using NetVips;
 
 namespace MistWX_i2Me.API;
 
 public class Base
 {
     protected HttpClient Client = new HttpClient();
-    protected string ApiKey = Config.config.TwcApiKey;
+    protected string ApiKey = Config.config.APIConfig.TwcApiKey;
 
     protected string RecordName = String.Empty;
     protected string DataUrl = String.Empty;
@@ -25,7 +25,7 @@ public class Base
     /// </summary>
     /// <param name="url">API URL to send a GET request to</param>
     /// <returns>XML Document as a string object</returns>
-    public async Task<string> DownloadRecord(string url)
+    public async Task<byte[]?> DownloadRecord(string url)
     {
         Log.Debug(url);
 
@@ -40,19 +40,19 @@ public class Base
             {
                 Log.Debug("Bad Request issue!");
 
-                return String.Empty;
+                return null;
             }
             
             if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
             {
-                return String.Empty;
+                return null;
             }
 
 
             byte[] content = await Client.GetByteArrayAsync(url);
-            string contentString = Encoding.UTF8.GetString(content);
+            
 
-            return contentString;
+            return content;
         }
         catch (Exception ex)
         {
@@ -64,7 +64,7 @@ public class Base
             {
                 Log.Debug(ex.StackTrace);
             }
-            return String.Empty;
+            return null;
         }
 
     }
@@ -128,6 +128,11 @@ public class Base
             }
         }
 
+        if (url.Contains("{cntyId}"))
+        {
+            url = url.Replace("{cntyId}", location.cntyId);
+        }
+
         if (url.Contains("{locId}"))
         {
             url = url.Replace("{locId}", location.locId);
@@ -168,6 +173,21 @@ public class Base
             url = url.Replace("{unit}", Config.config.LocalStarConfig.Unit);
         }
 
+        if (url.Contains("{startDay45Day}"))
+        {
+            url = url.Replace("{startDay45Day}", DateTime.Now.Subtract(TimeSpan.FromDays(45)).ToString("dd"));
+        }
+
+        if (url.Contains("{startMonth45Day}"))
+        {
+            url = url.Replace("{startMonth45Day}", DateTime.Now.Subtract(TimeSpan.FromDays(45)).ToString("MM"));
+        }
+
+        if (url.Contains("{lang}"))
+        {
+            url = url.Replace("{lang}", Config.config.LocalStarConfig.Language);
+        }
+
         return url;
     }
 
@@ -177,7 +197,22 @@ public class Base
         Log.Debug($"Downloading {RecordName} for location {location.locId}");
         
         string url = FormatUrl(location);
-        string response = await DownloadRecord(url);
+        byte[]? response = await DownloadRecord(url);
+        if (response == null)
+        {
+            return String.Empty;
+        }
+        string contentString = Encoding.UTF8.GetString(response);
+        return contentString;
+    }
+
+    public async Task<byte[]?> DownloadLocationDataRaw(LFRecordLocation location)
+    {
+        Log.Debug($"Downloading {RecordName} for location {location.locId}");
+        
+        string url = FormatUrl(location);
+        byte[]? response = await DownloadRecord(url);
+
         return response;
     }
 
@@ -193,7 +228,7 @@ public class Base
         }
         
         SQLiteConnection sqlite =
-            new SQLiteConnection($"Data Source={Path.Combine(AppContext.BaseDirectory, "Data", "LFRecord.db")}", true);
+            new SQLiteConnection($"Data Source={Path.Combine(AppContext.BaseDirectory, "Custom", "LFRecord.db")}", true);
         
         await sqlite.OpenAsync();
 
@@ -220,6 +255,17 @@ public class Base
         return stream;
     }
 
+    public static string vocalKeyBuilder(int temp, int iconCodeExt)
+    {
+        // for some reason, the TWC api still returns imperial vocal local even when metric units are requested. this causes the display of metric temperatures
+        // to be accompanied by imperial vocals. we can give this method a temperature and icon code to generate a vocalKey with metric vocals. as lordtheythem Rai intended.
+        // vocalKey input example: temp = -67, iconCodeExt = 6700 => return OT-67:OX6700. this is not a real world example otherwise we would all be frozen dead. maybe. im not a forecaster.
+        string outKey = $"OT{(temp >= 0 ? "+" : "")}{temp}:OX{iconCodeExt}";
+        Log.Debug($"Generated vocalKey: {outKey}");
+        return outKey;
+        // why is the damn comment longer than the code itself
+    }
+
     public async Task<List<GenericResponse<T>>> GetData<T>(string[] locations)
     {
         List<GenericResponse<T>> results = new List<GenericResponse<T>>();
@@ -236,25 +282,50 @@ public class Base
                 continue;
             }
 
+            // Start Fix
+            string? GetXmlValue(string xml, string tagName)
+            {
+                string startTag = $"<{tagName}>";
+                int start = xml.IndexOf(startTag);
+                if (start == -1) return null;
+                start += startTag.Length;
+                int end = xml.IndexOf($"</{tagName}>", start);
+                if (end == -1) return null;
+                return xml.Substring(start, end - start);
+            }
+
+            string? tempVal = GetXmlValue(response, "temp");
+            string? iconVal = GetXmlValue(response, "iconCodeExt") ?? GetXmlValue(response, "icon_extd");
+            string? vocalKeyVal = GetXmlValue(response, "vocalKey") ?? GetXmlValue(response, "vocal_key");
+
+            int temp = 0;
+            int iconCodeExt = 0;
+            
+            if (int.TryParse(tempVal, out int t)) temp = t;
+            if (int.TryParse(iconVal, out int i)) iconCodeExt = i;
+
+            List<string> unitTags = new List<string> { "metric", "metric_si", "uk_hybrid" };
+
             // For Current Observations they change the format of the XML depending on what unit you have - no go for i2
-            if (response.Contains("<metric>"))
+            if (! response.Contains("<imperial>"))
             {
-                response = response.Replace("<metric>", "<imperial>");
-                response = response.Replace("</metric>", "</imperial>");
-            }
+                foreach (string unitTag in unitTags)
+                {
+                    if (response.Contains($"<{unitTag}>"))
+                    {
+                        response = response.Replace(unitTag, "imperial");
+                        response = response.Replace($"</{unitTag}>", "</imperial>");
+                    }
+                }
+            
 
-            if (response.Contains("<metric_si>"))
-            {
-                response = response.Replace("<metric_si>", "<imperial>");
-                response = response.Replace("</metric_si>", "</imperial>");
+                if (vocalKeyVal != null)
+                {
+                    string newVocalKey = vocalKeyBuilder(temp, iconCodeExt);
+                    response = response.Replace(vocalKeyVal, newVocalKey);
+                }
             }
-
-            if (response.Contains("<uk_hybrid>"))
-            {
-                response = response.Replace("<uk_hybrid>", "<imperial>");
-                response = response.Replace("</uk_hybrid>", "</imperial>");
-            }
-
+            
             string data = GetInnerXml(response);
 
             try
@@ -288,6 +359,93 @@ public class Base
         return results;
     }
 
+    public async Task<GenericResponse<T>?> GetDataLFR<T>(LFRecordLocation location)
+    {
+
+
+        LFRecordLocation locationInfo = location;
+        string? response = await DownloadLocationData(locationInfo);
+
+        if (string.IsNullOrEmpty(response))
+        {
+            throw new Exception("Response was null!");
+        }
+
+        // Start Fix
+        string? GetXmlValue(string xml, string tagName)
+        {
+            string startTag = $"<{tagName}>";
+            int start = xml.IndexOf(startTag);
+            if (start == -1) return null;
+            start += startTag.Length;
+            int end = xml.IndexOf($"</{tagName}>", start);
+            if (end == -1) return null;
+            return xml.Substring(start, end - start);
+        }
+
+        string? tempVal = GetXmlValue(response, "temp");
+        string? iconVal = GetXmlValue(response, "iconCodeExt") ?? GetXmlValue(response, "icon_extd");
+        string? vocalKeyVal = GetXmlValue(response, "vocalKey") ?? GetXmlValue(response, "vocal_key");
+
+        int temp = 0;
+        int iconCodeExt = 0;
+            
+        if (int.TryParse(tempVal, out int t)) temp = t;
+        if (int.TryParse(iconVal, out int i)) iconCodeExt = i;
+
+        List<string> unitTags = new List<string> { "metric", "metric_si", "uk_hybrid" };
+
+        // For Current Observations they change the format of the XML depending on what unit you have - no go for i2
+        if (! response.Contains("<imperial>"))
+        {
+            foreach (string unitTag in unitTags)
+            {
+                if (response.Contains($"<{unitTag}>"))
+                {
+                    response = response.Replace(unitTag, "imperial");
+                    response = response.Replace($"</{unitTag}>", "</imperial>");
+                }
+            }
+            
+
+            if (vocalKeyVal != null)
+            {
+                string newVocalKey = vocalKeyBuilder(temp, iconCodeExt);
+                response = response.Replace(vocalKeyVal, newVocalKey);
+            }
+        }
+            
+        string data = GetInnerXml(response);
+
+        try
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+
+            using (StringReader reader = new StringReader(response))
+            {
+                var deserializedData = (T?)serializer.Deserialize(reader);
+
+                if (deserializedData == null)
+                {
+                    Log.Warning($"Failed to deserialize {RecordName} for location {location}");
+                }
+
+                return null;
+            }
+        }
+            catch (InvalidOperationException ex)
+            {
+                Log.Debug(ex.Message);
+                if (!string.IsNullOrEmpty(ex.StackTrace))
+                {
+                    Log.Debug(ex.StackTrace);
+                }
+                Log.Warning($"Location {location} has no data for {RecordName}, skipping..");
+                return null;
+            }
+    }
+    
+
     /// <summary>
     /// Creates a list of GenericResponse objects for JSON endpoints.
     /// </summary>
@@ -305,26 +463,26 @@ public class Base
 
             if (!string.IsNullOrEmpty(response))
             {
-                using (var stream = StreamFromString(response))
+                using var stream = StreamFromString(response);
+                try
                 {
-                    try
+                    T? deserializedData = await JsonSerializer.DeserializeAsync<T?>(stream);
+                    if (deserializedData != null)
                     {
-                        T? deserializedData = await JsonSerializer.DeserializeAsync<T?>(stream);
                         results.Add(new GenericResponse<T>(locationInfo, response, deserializedData));
-                        continue;
                     }
-                    catch (JsonException exception)
-                    {
-                        Log.Error($"Failed to parse {RecordName} data for location {location}.");
-                        Log.Debug(exception.Message);
-                        
-                        // Print stacktrace to the debug console if applicable
-                        if (!string.IsNullOrEmpty(exception.StackTrace))
-                        {
-                            Log.Debug(exception.StackTrace);
-                        }
-                    }
+                    continue;
+                }
+                catch (JsonException exception)
+                {
+                    Log.Error($"Failed to parse {RecordName} data for location {location}.");
+                    Log.Debug(exception.Message);
 
+                    // Print stacktrace to the debug console if applicable
+                    if (!string.IsNullOrEmpty(exception.StackTrace))
+                    {
+                        Log.Debug(exception.StackTrace);
+                    }
                 }
             }
             Log.Warning($"{RecordName} returned no data for location {location}.");
@@ -332,4 +490,70 @@ public class Base
 
         return results;
     }
+
+
+    public async Task<GenericResponse<T>?> GetJsonDataLFR<T>(LFRecordLocation location)
+    {
+
+        LFRecordLocation locationInfo = location;
+        string? response = await DownloadLocationData(locationInfo);
+
+        if (!string.IsNullOrEmpty(response))
+        {
+            using var stream = StreamFromString(response);
+            try
+            {
+                T? deserializedData = await JsonSerializer.DeserializeAsync<T?>(stream);
+                if (deserializedData != null)
+                {
+                    return new GenericResponse<T>(locationInfo, response, deserializedData);
+                }
+                Log.Warning("Data is null!");
+                return null;
+            }
+            catch (JsonException exception)
+            {
+                Log.Error($"Failed to parse {RecordName} data for location {location}.");
+                Log.Debug(exception.Message);
+
+                // Print stacktrace to the debug console if applicable
+                if (!string.IsNullOrEmpty(exception.StackTrace))
+                {
+                        Log.Debug(exception.StackTrace);
+                }
+            }
+        }
+        Log.Warning($"{RecordName} returned no data for location {location}.");
+        return null;
+    }
+
+    public async Task<Image> GetTileData()
+    {
+        LFRecordLocation locationInfo = await GetLocInfo("USNY0996");
+        byte[]? response = await DownloadLocationDataRaw(locationInfo);
+
+        if (response != null)
+        {
+            try
+            {
+                return Image.NewFromBuffer(response);
+            }
+            catch (JsonException exception)
+            {
+                Log.Error($"Failed to parse {RecordName} data.");
+                Log.Debug(exception.Message);
+
+                // Print stacktrace to the debug console if applicable
+                if (!string.IsNullOrEmpty(exception.StackTrace))
+                {
+                    Log.Debug(exception.StackTrace);
+                }
+                return NetVips.Image.Black(256,256);
+            }
+        }
+        Log.Warning($"{RecordName} returned no data.");
+        return NetVips.Image.Black(256,256);
+        
+    }
+
 }

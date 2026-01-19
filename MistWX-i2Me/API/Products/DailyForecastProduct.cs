@@ -8,7 +8,7 @@ public class DailyForecastProduct : Base
     {
         RecordName = "DailyForecast";
         DataUrl =
-            "https://api.weather.com/v1/geocode/{lat}/{long}/forecast/daily/7day.xml?language=en-US&units={unit}&apiKey={apiKey}";
+            "https://api.weather.com/v1/geocode/{lat}/{long}/forecast/daily/7day.xml?language={lang}&units={unit}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<DailyForecastResponse>>> Populate(string[] locations)

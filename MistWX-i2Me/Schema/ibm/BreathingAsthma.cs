@@ -6,10 +6,10 @@ namespace MistWX_i2Me.Schema.ibm;
 public class BreathingMetadata { 
 
 	[XmlElement(ElementName="language")] 
-	public string Language { get; set; } 
+	public string? Language { get; set; } 
 
 	[XmlElement(ElementName="transactionId")] 
-	public string TransactionId { get; set; } 
+	public string? TransactionId { get; set; } 
 
 	[XmlElement(ElementName="version")] 
 	public int Version { get; set; } 
@@ -31,47 +31,47 @@ public class BreathingMetadata {
 public class BreathingIndex { 
 
 	[XmlElement(ElementName="breathingIndex")] 
-	public List<int> BreathingIdex { get; set; } 
+	public List<int>? BreathingIdex { get; set; } 
 }
 
 [XmlRoot(ElementName="breathingCategory")]
 public class BreathingCategory { 
 
 	[XmlElement(ElementName="breathingCategory")] 
-	public List<string> BreathingCat { get; set; } 
+	public List<string>? BreathingCat { get; set; } 
 }
 
 [XmlRoot(ElementName="breathingIndex12hour")]
 public class BreathingIndex12Hour { 
 
 	[XmlElement(ElementName="fcstValid")] 
-	public FcstValid FcstValid { get; set; } 
+	public FcstValid? FcstValid { get; set; } 
 
 	[XmlElement(ElementName="fcstValidLocal")] 
-	public FcstValidLocal FcstValidLocal { get; set; } 
+	public FcstValidLocal? FcstValidLocal { get; set; } 
 
 	[XmlElement(ElementName="dayInd")] 
-	public DayInd DayInd { get; set; } 
+	public DayInd? DayInd { get; set; } 
 
 	[XmlElement(ElementName="num")] 
-	public Num Num { get; set; } 
+	public Num? Num { get; set; } 
 
 	[XmlElement(ElementName="daypartName")] 
-	public DaypartName DaypartName { get; set; } 
+	public DaypartName? DaypartName { get; set; } 
 
 	[XmlElement(ElementName="breathingIndex")] 
-	public BreathingIndex BreathingIndex { get; set; } 
+	public BreathingIndex? BreathingIndex { get; set; } 
 
 	[XmlElement(ElementName="breathingCategory")] 
-	public BreathingCategory BreathingCategory { get; set; } 
+	public BreathingCategory? BreathingCategory { get; set; } 
 }
 
 [XmlRoot(ElementName="daypartForecastResponse")]
 public class BreathingResponse { 
 
 	[XmlElement(ElementName="metadata")] 
-	public BreathingMetadata Metadata { get; set; } 
+	public BreathingMetadata? Metadata { get; set; } 
 
 	[XmlElement(ElementName="breathingIndex12hour")] 
-	public BreathingIndex12Hour BreathingIndex12hour { get; set; } 
+	public BreathingIndex12Hour? BreathingIndex12hour { get; set; } 
 }

@@ -6,10 +6,10 @@ namespace MistWX_i2Me.Schema.ibm;
 public class MosquitoActivityMetadata { 
 
 	[XmlElement(ElementName="language")] 
-	public string Language { get; set; } 
+	public string? Language { get; set; } 
 
 	[XmlElement(ElementName="transactionId")] 
-	public string TransactionId { get; set; } 
+	public string? TransactionId { get; set; } 
 
 	[XmlElement(ElementName="version")] 
 	public int Version { get; set; } 
@@ -32,47 +32,47 @@ public class MosquitoActivityMetadata {
 public class mosquitoIndex { 
 
 	[XmlElement(ElementName="mosquitoIndex")] 
-	public List<int> mosquitoIdex { get; set; } 
+	public List<int>? mosquitoIdex { get; set; } 
 }
 
 [XmlRoot(ElementName="mosquitoCategory")]
 public class mosquitoCategory { 
 
 	[XmlElement(ElementName="mosquitoCategory")] 
-	public List<string> mosquitoCat { get; set; } 
+	public List<string>? mosquitoCat { get; set; } 
 }
 
 [XmlRoot(ElementName="mosquitoIndex12hour")]
 public class mosquitoIndex12Hour { 
 
 	[XmlElement(ElementName="fcstValid")] 
-	public FcstValid FcstValid { get; set; } 
+	public FcstValid? FcstValid { get; set; } 
 
 	[XmlElement(ElementName="fcstValidLocal")] 
-	public FcstValidLocal FcstValidLocal { get; set; } 
+	public FcstValidLocal? FcstValidLocal { get; set; } 
 
 	[XmlElement(ElementName="dayInd")] 
-	public DayInd DayInd { get; set; } 
+	public DayInd? DayInd { get; set; } 
 
 	[XmlElement(ElementName="num")] 
-	public Num Num { get; set; } 
+	public Num? Num { get; set; } 
 
 	[XmlElement(ElementName="daypartName")] 
-	public DaypartName DaypartName { get; set; } 
+	public DaypartName? DaypartName { get; set; } 
 
 	[XmlElement(ElementName="mosquitoIndex")] 
-	public mosquitoIndex mosquitoIndex { get; set; } 
+	public mosquitoIndex? mosquitoIndex { get; set; } 
 
 	[XmlElement(ElementName="mosquitoCategory")] 
-	public mosquitoCategory mosquitoCategory { get; set; } 
+	public mosquitoCategory? mosquitoCategory { get; set; } 
 }
 
 [XmlRoot(ElementName="daypartForecastResponse")]
 public class MosquitoActivityResponse { 
 
 	[XmlElement(ElementName="metadata")] 
-	public MosquitoActivityMetadata Metadata { get; set; } 
+	public MosquitoActivityMetadata? Metadata { get; set; } 
 
 	[XmlElement(ElementName="mosquitoIndex12hour")] 
-	public mosquitoIndex12Hour mosquitoIndex12hour { get; set; } 
+	public mosquitoIndex12Hour? mosquitoIndex12hour { get; set; } 
 }

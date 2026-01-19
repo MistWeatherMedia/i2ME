@@ -1,4 +1,5 @@
 using MistWX_i2Me.Schema.ibm;
+using MistWX_i2Me.Schema.System;
 
 namespace MistWX_i2Me.API.Products;
 
@@ -7,11 +8,16 @@ public class AirQualityProduct : Base
     public AirQualityProduct()
     {
         RecordName = "AirQuality";
-        DataUrl = "https://api.weather.com/v1/geocode/{lat}/{long}/airquality.xml?language=en-US&apiKey={apiKey}";
+        DataUrl = "https://api.weather.com/v1/geocode/{lat}/{long}/airquality.xml?language={lang}&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<AirQualityResponse>>> Populate(string[] locations)
     {
         return await GetData<AirQualityResponse>(locations);
+    }
+
+    public async Task<GenericResponse<AirQualityResponse>?> Receive(LFRecordLocation locations)
+    {
+        return await GetDataLFR<AirQualityResponse>(locations);
     }
 }

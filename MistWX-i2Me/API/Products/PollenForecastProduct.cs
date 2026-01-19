@@ -8,7 +8,7 @@ public class PollenForecastProduct : Base
     {
         RecordName = "PollenForecast";
         DataUrl =
-            "https://api.weather.com/v2/indices/pollen/daypart/7day?geocode={geocode}&language=en-US&format=xml&apiKey={apiKey}";
+            "https://api.weather.com/v2/indices/pollen/daypart/7day?geocode={geocode}&language={lang}&format=xml&apiKey={apiKey}";
     }
 
     public async Task<List<GenericResponse<PollenResponse>>> Populate(string[] locations)

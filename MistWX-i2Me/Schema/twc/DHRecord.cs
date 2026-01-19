@@ -28,7 +28,7 @@ public class DHRecordData {
     public string dayOfWeek { get; set; }
 
     [XmlElement(ElementName="fcstValGMT")]
-    public int FcstValidGMT { get; set; }
+    public string FcstValidGMT { get; set; }
 
     [XmlElement(ElementName="DHlclValTm")]
     public string LocalValidTime { get; set; }
@@ -124,7 +124,7 @@ public class DHRecordData {
     public double uvIndexRaw { get; set; }
 
     [XmlElement(ElementName="glfIdx")]
-    public int GolfIndex { get; set; }
+    public string GolfIndex { get; set; }
 
     [XmlElement(ElementName="glfCat")]
     public string GolfCategory { get; set; }

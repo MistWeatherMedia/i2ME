@@ -382,122 +382,142 @@ public class AlertBulletin : I2Record
     public async Task<string?> MakeRecord(List<GenericResponse<AlertDetailResponse>> alertDetails)
     {
         string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "BERecord.xml");
-        BERecordRoot root = new BERecordRoot();
-        List<BERecord> alerts = new List<BERecord>();
-
-        root.Type = "BERecord";
-        root.BERecord = alerts;
+        List<BERecord> alerts = new();
+        BERecordRoot root = new()
+        {
+            Type = "BERecord",
+            BERecord = alerts
+        };
 
         if (alertDetails.Count < 1)
         {
-            await File.WriteAllTextAsync(recordPath, "<Data type=\"BERecord\"><BERecord></BERecord></Data>");
-            return recordPath;
+            return null;
         }
 
         int twcIdIdx = 0;
 
         foreach (var details in alertDetails)
         {
-            var detail = details.ParsedData.alertDetail;
-            var locationInfo = details.Location;
-
-            BERecord record = new BERecord();
-            BEHdr header = new BEHdr();
-            BEvent bEvent = new BEvent();
-            BLocations locations = new BLocations();
-            BStCd stateInfo = new BStCd();
-            BEData data = new BEData();
-            BHdln headline = new BHdln();
-            BNarrTxt narrative = new BNarrTxt();
+            AlertDetail? detail = details.ParsedData.alertDetail;
+            LFRecordLocation locationInfo = details.Location;
             
             // Timestamp parsing
-            var endTime = DateTimeOffset.FromUnixTimeSeconds(detail.endTimeUTC).ToString("yyyy MM dd HH mm")
-                .Replace(" ", "");
-            var expireTime = DateTimeOffset.FromUnixTimeSeconds(detail.expireTimeUTC)
-                .ToString("yyyy MM dd HH mm").Replace(" ", "");
-            var issueTime = DateTime.Parse(detail.issueTimeLocal).ToString("yyyy MM dd HH mm").Replace(" ", "");
-            var processTime = DateTimeOffset.FromUnixTimeSeconds(detail.processTimeUTC).ToString("yyyy MM dd HH mm ss")
-                .Replace(" ", "");
-
-            record.Id = "0000000";
-            record.LocationKey =
-                $"{detail.areaId}_{detail.phenomena}_{detail.significance}_{detail.eventTrackingNumber}_{detail.officeCode}";
-            record.Action = "1";
-            record.ClientKey = record.LocationKey;
-            record.BEHdr = header;
-            record.BEData = data;
-
-            header.BPIL = detail.productIdentifier;
-            header.BEvent = bEvent;
-            header.BSgmntChksum = detail.identifier;
-            header.ProcTm = processTime;
-            
-            EActionCd eActionCd = new EActionCd();
-            eActionCd.EActionPriority = detail.messageTypeCode;
-            
-            EOfficeId eOfficeId = new EOfficeId();
-            eOfficeId.EOfficeNm = detail.officeName;
-            eOfficeId.Text = detail.officeCode;
-
-            switch (detail.messageType)
+            if (detail != null)
             {
-                case "Update":
-                    eActionCd.Text = "CON";
-                    break;
-                case "New":
-                    eActionCd.Text = "NEW";
-                    break;
+                string endTime = DateTimeOffset.FromUnixTimeSeconds(detail.endTimeUTC).ToString("yyyy MM dd HH mm").Replace(" ", "");
+                string expireTime = DateTimeOffset.FromUnixTimeSeconds(detail.expireTimeUTC).ToString("yyyy MM dd HH mm").Replace(" ", "");
+                string issueTime = DateTime.Parse(detail.issueTimeLocal ?? "").ToString("yyyy MM dd HH mm").Replace(" ", "");
+                string processTime = DateTimeOffset.FromUnixTimeSeconds(detail.processTimeUTC).ToString("yyyy MM dd HH mm ss").Replace(" ", "");
+
+                EActionCd eActionCd = new() {EActionPriority = detail.messageTypeCode};
+
+                switch (detail.messageType)
+                {
+                    case "Update":
+                        eActionCd.Text = "CON";
+                        break;
+                    case "New":
+                        eActionCd.Text = "NEW";
+                        break;
+                }
+                
+                EOfficeId eOfficeId = new() {EOfficeNm = detail.officeName, Text = detail.officeCode};
+
+                BEvent bEvent = new()
+                {
+                    ETWCIId = twcIdIdx.ToString(),
+                    EActionCd = eActionCd,
+                    EOfficeId = eOfficeId,
+
+                    EPhenom = detail.phenomena,
+                    EETN = detail.eventTrackingNumber,
+                    EDesc = detail.eventDescription,
+                    EEndTmUTC = endTime,
+                    ESvrty = detail.severityCode,
+                    EExpTmUTC = expireTime,
+                    EStTmUTC = locationInfo.gmtDiff ?? ""
+                };
+                
+                BStCd stateInfo = new()
+                {
+                    BSt = _states[locationInfo.stCd],
+                    Text = locationInfo.stCd
+                };
+
+                BLocCd loc = new()
+                {
+                    BLoc = detail.areaName,
+                    BLocTyp = detail.areaTypeCode,
+                    Text = detail.areaId
+                };
+
+                BLocations locations = new()
+                {
+                    BStCd = stateInfo,
+                    BLocCd = loc,
+                    BCntryCd = detail.countryCode,
+                    BTzAbbrv = detail.effectiveTimeLocalTimeZone,
+                    BUTCDiff = locationInfo.gmtDiff ?? ""
+                };
+
+                BEHdr header = new()
+                {
+                    BPIL = detail.productIdentifier,
+                    BEvent = bEvent,
+                    BSgmntChksum = detail.identifier,
+                    ProcTm = processTime,
+                    BLocations = locations
+                };
+
+                BHdln headline = new()
+                {
+                    BHdlnTxt = detail.headlineText,
+                    BVocHdlnCd = MapVocalCode($"{detail.phenomena}_{detail.significance}")
+                };
+
+                BNarrTxt narrative = new()
+                {
+                    BNarrTxtLang = "en_US"
+                };
+
+                BEData data = new()
+                {
+                    BIssueTmUTC = issueTime,
+                    BHdln = headline,
+                    BNarrTxt = narrative
+                };
+
+                BERecord record = new() 
+                {
+                    Id = "0000000",
+                    LocationKey = $"{detail.areaId}_{detail.phenomena}_{detail.significance}_{detail.eventTrackingNumber}_{detail.officeCode}",
+                    Action = "1",
+                    ClientKey = $"{detail.areaId}_{detail.phenomena}_{detail.significance}_{detail.eventTrackingNumber}_{detail.officeCode}",
+                    BEHdr = header,
+                    BEData = data
+                };       
+
+                if (detail.texts != null)
+                {
+                    string narrtxt = detail.texts[0].description ?? "".Replace("\n", "");
+                    if (narrtxt.Count() >= 764)
+                    {
+                        narrtxt = narrtxt.Substring(0, 764);
+                        narrtxt += "...";
+                    }
+                    narrative.BLn = detail.texts[0].description ?? "".Replace("\n", "");
+                }
+                
+                
+                twcIdIdx += 1;
+                alerts.Add(record);
             }
             
-            bEvent.EStTmUTC = locationInfo.gmtDiff;
-            bEvent.ETWCIId = twcIdIdx.ToString();
-            bEvent.EActionCd = eActionCd;
-            bEvent.EOfficeId = eOfficeId;
-
-            bEvent.EPhenom = detail.phenomena;
-            bEvent.ESgnfcnc = detail.significance;
-            bEvent.EETN = detail.eventTrackingNumber;
-            bEvent.EDesc = detail.eventDescription;
-            bEvent.EEndTmUTC = endTime;
-            bEvent.ESvrty = detail.severityCode;
-            bEvent.EExpTmUTC = expireTime;
-
-            BLocCd loc = new BLocCd();
-
-            loc.BLoc = detail.areaName;
-            loc.BLocTyp = detail.areaTypeCode;
-            loc.Text = detail.areaId;
-            stateInfo.BSt = _states[locationInfo.stCd];
-            stateInfo.Text = locationInfo.stCd;
-            if (locationInfo.stCd == null)
-            {
-                stateInfo.BSt = "International";
-                stateInfo.Text = "INTL";
-            }
-            locations.BUTCDiff = locationInfo.gmtDiff;
-            locations.BStCd = stateInfo;
-            locations.BLocCd = loc;
-            locations.BCntryCd = detail.countryCode;
-            locations.BTzAbbrv = detail.effectiveTimeLocalTimeZone;
-
-            header.BLocations = locations;
-
-            data.BIssueTmUTC = issueTime;
-            data.BHdln = headline;
-            data.BNarrTxt = narrative;
-
-            headline.BHdlnTxt = detail.headlineText;
-            headline.BVocHdlnCd = MapVocalCode($"{detail.phenomena}_{detail.significance}");
-
-            narrative.BNarrTxtLang = "en_US";
-            narrative.BLn = detail.texts[0].description.Replace("\n", "");
-            
-            alerts.Add(record);
-            twcIdIdx += 1;
         }
 
         XmlSerializer serializer = new XmlSerializer(typeof(BERecordRoot));
         XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+        
         ns.Add("", "");
         using (StreamWriter sw = new StreamWriter(recordPath))
         {

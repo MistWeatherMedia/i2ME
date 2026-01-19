@@ -33,7 +33,7 @@ public class UdpSender
         Log.Info($"UDP Socket established at port {port}.");
     }
 
-    public void SendFile(string fileName, string command, bool gZipEncode = true, string headendId = null)
+    public void SendFile(string fileName, string command, bool gZipEncode = true, string? headendId = null)
     {
         
         if (!Config.config.UnitConfig.UseExecInstead)
@@ -102,7 +102,7 @@ public class UdpSender
         
     }
 
-    public void SendCommand(string command, string headendId = null)
+    public void SendCommand(string command, string? headendId = null)
     {
         Log.Info($"New command received.\nCommand: {command}");
         string tempFile = Path.Combine(_tempDirectory, Guid.NewGuid().ToString() + ".i2m");

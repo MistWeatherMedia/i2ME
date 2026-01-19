@@ -186,7 +186,7 @@ label_1:
       {
         return Directory.CreateDirectory(path1);
       }
-      catch (IOException ex)
+      catch
       {
         if (!Directory.Exists(path1))
           throw;

@@ -17,27 +17,31 @@ public class HolidayMapping : I2Record
 
         CultureInfo provider = CultureInfo.InvariantCulture;
 
-        foreach (var holiday in result.Holidays)
+        if (result.Holidays != null)
         {
-            DateTime date = DateTime.ParseExact(holiday.Date, "yyyyMMdd", provider);
-            DateTime dateNew = new DateTime(DateTime.Now.Year, date.Month, date.Day, date.Hour, date.Minute, date.Second);
-            DateTime now = DateTime.Now;
-
-            Log.Debug($"It is currently {now.ToString()}");
-
-            if (now > dateNew)
+            foreach (var holiday in result.Holidays)
             {
-                Log.Debug($"Holiday {holiday.Name} has already past,");
-                DateTime newDate = new DateTime(dateNew.Year + 1, date.Month, date.Day, date.Hour, date.Minute, date.Second);
-                Log.Debug($"new date is {newDate.ToString()}");
-                holiday.Date = newDate.ToString("yyyyMMdd");
-                holiday.DateFormatted = newDate.ToString("MM/dd/yyyy");
-                continue;
-            }
+                DateTime date = DateTime.ParseExact(holiday.Date ?? "20260119", "yyyyMMdd", provider);
+                DateTime dateNew = new(DateTime.Now.Year, date.Month, date.Day, date.Hour, date.Minute, date.Second);
+                DateTime now = DateTime.Now;
 
-            holiday.Date = dateNew.ToString("yyyyMMdd");
-            holiday.DateFormatted = dateNew.ToString("MM/dd/yyyy");
+                Log.Debug($"It is currently {now.ToString()}");
+
+                if (now > dateNew)
+                {
+                    Log.Debug($"Holiday {holiday.Name} has already past,");
+                    DateTime newDate = new(dateNew.Year + 1, date.Month, date.Day, date.Hour, date.Minute, date.Second);
+                    Log.Debug($"new date is {newDate.ToString()}");
+                    holiday.Date = newDate.ToString("yyyyMMdd");
+                    holiday.DateFormatted = newDate.ToString("MM/dd/yyyy");
+                    continue;
+                }
+
+                holiday.Date = dateNew.ToString("yyyyMMdd");
+                holiday.DateFormatted = dateNew.ToString("MM/dd/yyyy");
+            }
         }
+        
 
         XmlSerializer serializer = new XmlSerializer(typeof(HolidayMappingResponse));
         StringWriter sw = new StringWriter();

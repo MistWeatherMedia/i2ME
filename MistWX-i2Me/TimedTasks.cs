@@ -19,7 +19,7 @@ public class TimedTasks
     /// <param name="sender">UdpSender, prefer priority port</param>
     public static async Task CheckForAlerts(string[] locations, UdpSender sender, int checkInterval)
     {
-        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.GetAlerts)
+        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.AConfig.GetAlerts)
         {
             Log.Debug("Disabling alert generation.");
             return;
@@ -41,7 +41,11 @@ public class TimedTasks
 
             string? bulletinRecord = await new AlertBulletin().MakeRecord(alerts);
             
-            sender.SendFile(bulletinRecord, "storeData(QGROUP=__BERecord__,Feed=BERecord)");
+            if (bulletinRecord != null)
+            {
+                sender.SendFile(bulletinRecord, "storeData(QGROUP=__BERecord__,Feed=BERecord)");
+            }
+            
             await Task.Delay(checkInterval * 1000);
         }
     }
@@ -51,7 +55,7 @@ public class TimedTasks
     /// </summary>
     public static async Task ClearExpiredAlerts()
     {
-        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.GetAlerts)
+        if (Config.config.LocationConfig.UseNationalLocations || !Config.config.AConfig.GetAlerts)
         {
             return;
         }
@@ -80,7 +84,7 @@ public class TimedTasks
         }
 
     }
-    
+
     public static async Task RecordGenTask(string[] locations, UdpSender sender, int generationInterval)
     {
         var watch = Stopwatch.StartNew();
@@ -88,7 +92,7 @@ public class TimedTasks
         while (true)
         {
             watch.Restart();
-            Config.DataEndpointConfig dataConfig = Config.config.DataConfig;
+            Config.DataEndpointConfig dataConfig = Config.config.EndpointConfig;
             
             Log.Info("Running scheduled record collection");
             Log.Info("Clearing temp directory...");
@@ -120,17 +124,20 @@ public class TimedTasks
                 sender.SendFile(dfsRecord, "storeData(QGROUP=__DailyForecast__,Feed=DailyForecast)");
             }
 
-            if (dataConfig.HourlyForecast)
+            if (dataConfig.HourlyForecast || dataConfig.DHRecord)
             {
-                Log.Info($"Building HourlyForecast I2 record for {locations.Length} locations..");
                 List<GenericResponse<HourlyForecastResponse>> hfs = await new HourlyForecastProduct().Populate(locations);
-                string hfsRecord = await new HourlyForecastRecord().MakeRecord(hfs);
-                sender.SendFile(hfsRecord, "storeData(QGROUP=__HourlyForecast__,Feed=HourlyForecast)");
+                if (dataConfig.HourlyForecast)
+                {
+                    Log.Info($"Building HourlyForecast I2 record for {locations.Length} locations..");
+                    string hfsRecord = await new HourlyForecastRecord().MakeRecord(hfs);
+                    sender.SendFile(hfsRecord, "storeData(QGROUP=__HourlyForecast__,Feed=HourlyForecast)");
+                }
                 if (dataConfig.DHRecord)
                 {
                     Log.Info($"Building DHRecord I2 record for {locations.Length} locations..");
                     string dhRecord = await new DHRecord().MakeRecord(hfs);
-                    sender.SendFile(hfsRecord, "storeData(QGROUP=__DHRecord__,Feed=DHRecord)");
+                    sender.SendFile(dhRecord, "storeData(QGROUP=__DHRecord__,Feed=DHRecord)");
                 }
             }
     
@@ -182,12 +189,22 @@ public class TimedTasks
                 sender.SendFile(brsRecord, "storeData(QGROUP=__Breathing__,Feed=Breathing)");
             }
 
-            if (dataConfig.TideForecast)
+            if (dataConfig.TideForecast || dataConfig.TIRecord)
             {
-                Log.Info($"Building Tide Forecast I2 record for {locations.Length} locations..");
                 List<GenericResponse<TideForecastResponse>> tfcst = await new TideForecastProduct().Populate(locations);
-                string tfcstRecord = await new TideForecastRecord().MakeRecord(tfcst);
-                sender.SendFile(tfcstRecord, "storeData(QGROUP=__TidesForecast__,Feed=TidesForecast)");
+                if (dataConfig.TideForecast)
+                {
+                    Log.Info($"Building Tide Forecast I2 record for {locations.Length} locations..");
+                    string tfcstRecord = await new TideForecastRecord().MakeRecord(tfcst);
+                    sender.SendFile(tfcstRecord, "storeData(QGROUP=__TidesForecast__,Feed=TidesForecast)");
+                }
+                if (dataConfig.TIRecord)
+                {
+                    Log.Info($"Building TIRecord I2 for {locations.Length} locations..");
+                    string tiRecord = await new TIRecord().MakeRecord(tfcst);
+                    sender.SendFile(tiRecord, "storeData(QGROUP=__TIRecord__,Feed=TIRecord)");
+                }
+                
             }
 
             if (dataConfig.WateringNeeds)
@@ -238,6 +255,95 @@ public class TimedTasks
             Log.Info($"Next record generation will be at {nextTimestamp}");
             
             await Task.Delay(generationInterval * 1000);
+        }
+    }
+
+    public static async Task RadarTask(UdpSender sender, int generationInterval)
+    {
+        var watch = Stopwatch.StartNew();
+        Config.RadarConfig radarConfig = Config.config.RadarConfiguration;
+
+        if (radarConfig.RadarEnable != true || radarConfig.SatRadEnable != true)
+        {
+            Log.Info("Both radar and satrad are disabled, disabling radar generation...");
+            return;
+        }
+        
+        while (true)
+        {
+            await Task.Delay(generationInterval * 1000);
+            watch.Restart();
+            
+            List<Task> taskList = new();
+            
+            Log.Info("Running scheduled radar/satrad collection");
+            
+            // start grabbing all timestamps
+            Log.Info($"Grabbing all radar/satrad timestamps...");
+            GenericResponse<RadarImageryResponse>? rdi = await new RadarImageryProduct().Populate();
+
+            if (rdi != null)
+            {
+                if (radarConfig.RadarEnable)
+                {
+                    Log.Info($"Generating radar frames...");
+                    if (rdi.ParsedData.seriesInfo != null)
+                    {
+                        if (rdi.ParsedData.seriesInfo.twcRadarMosaic != null)
+                        {
+                            if (rdi.ParsedData.seriesInfo.twcRadarMosaic.series != null)
+                            {
+                                taskList.Add(new RadarProcess().Run(radarConfig.RadarDef, rdi.ParsedData.seriesInfo.twcRadarMosaic.series.Select(ts => ts.ts).ToArray(), sender, "twcRadarMosaic"));
+                            } else {
+                                Log.Warning("No radar timestamps.");
+                                Log.Debug("No series!");
+                            }
+                        } else {
+                            Log.Warning("No radar timestamps.");
+                            Log.Debug("No twcRadarMosaic!");
+                        }
+                    } else {
+                        Log.Warning("No radar timestamps.");
+                        Log.Debug("No seriesInfo!");
+                    }
+                }
+                if (radarConfig.SatRadEnable)
+                {
+                    Log.Info($"Generating satellite radar frames...");
+                    if (rdi.ParsedData.seriesInfo != null)
+                    {
+                        if (rdi.ParsedData.seriesInfo.sat != null)
+                        {
+                            if (rdi.ParsedData.seriesInfo.sat.series != null)
+                            {
+                                taskList.Add(new RadarProcess().Run(radarConfig.SatRadDef, rdi.ParsedData.seriesInfo.sat.series.Select(ts => ts.ts).ToArray(), sender, "sat"));
+                            } else {
+                                Log.Warning("No satrad timestamps.");
+                                Log.Debug("No series!");
+                            }
+                        } else {
+                            Log.Warning("No satrad timestamps.");
+                            Log.Debug("No sat!");
+                        }
+                    } else {
+                        Log.Warning("No satrad timestamps.");
+                        Log.Debug("No seriesInfo!");
+                    }
+                }
+            } else {
+                Log.Warning("No radar/satrad timestamps.");
+            }
+
+            await Task.WhenAll(taskList);
+            
+
+            string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
+            
+            watch.Stop();
+            Log.Info($"Generated radar/satrad in {watch.ElapsedMilliseconds} ms.");
+            Log.Info($"Next record generation will be at {nextTimestamp}");
+            
+
         }
     }
 }

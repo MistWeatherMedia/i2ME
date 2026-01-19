@@ -6,10 +6,10 @@ namespace MistWX_i2Me.Schema.ibm;
 public class TropicalAdvisoryMetadata { 
 
 	[XmlElement(ElementName="language")] 
-	public string Language { get; set; } 
+	public string? Language { get; set; } 
 
 	[XmlElement(ElementName="transactionId")] 
-	public string TransactionId { get; set; } 
+	public string? TransactionId { get; set; } 
 
 	[XmlElement(ElementName="version")] 
 	public int Version { get; set; } 
@@ -18,16 +18,16 @@ public class TropicalAdvisoryMetadata {
 	public bool Nautical { get; set; } 
 
 	[XmlElement(ElementName="format")] 
-	public string Format { get; set; }
+	public string? Format { get; set; }
 
 	[XmlElement(ElementName="units")] 
-	public string Units { get; set; }  
+	public string? Units { get; set; }  
 
 	[XmlElement(ElementName="basin")] 
-	public string Basin { get; set; } 
+	public string? Basin { get; set; } 
 
 	[XmlElement(ElementName="source")] 
-	public string Source { get; set; }
+	public string? Source { get; set; }
 
 	[XmlElement(ElementName="expireTimeGmt")] 
 	public int ExpireTimeGmt { get; set; } 
@@ -40,7 +40,7 @@ public class TropicalAdvisoryMetadata {
 public class TropicalAdvisoryHeadline { 
 
 	[XmlElement(ElementName="item")] 
-	public List<string> Item { get; set; } 
+	public List<string>? Item { get; set; } 
 }
 
 [XmlRoot(ElementName="heading")]
@@ -50,7 +50,7 @@ public class TropicalAdvisoryHeading {
 	public int StormDir { get; set; } 
 
 	[XmlElement(ElementName="storm_dir_cardinal")] 
-	public string StormDirCardinal { get; set; } 
+	public string? StormDirCardinal { get; set; } 
 
 	[XmlElement(ElementName="storm_spd")] 
 	public int StormSpd { get; set; } 
@@ -60,19 +60,19 @@ public class TropicalAdvisoryHeading {
 public class TropicalAdvisoryNearbyLoc { 
 
 	[XmlElement(ElementName="loc_nm")] 
-	public string LocNm { get; set; } 
+	public string? LocNm { get; set; } 
 
 	[XmlElement(ElementName="dist")] 
 	public int Dist { get; set; } 
 
 	[XmlElement(ElementName="dir_cardinal")] 
-	public string DirCardinal { get; set; } 
+	public string? DirCardinal { get; set; } 
 
 	[XmlElement(ElementName="city_nm")] 
-	public string CityNm { get; set; } 
+	public string? CityNm { get; set; } 
 
 	[XmlElement(ElementName="st_cd")] 
-	public string StateCd { get; set; } 
+	public string? StateCd { get; set; } 
 }
 
 [XmlRoot(ElementName="wind_radii")]
@@ -123,22 +123,22 @@ public class TropicalAdvisoryCurrentPosition {
 	public double Latitude { get; set; } 
 
 	[XmlElement(ElementName="lat_hemisphere")] 
-	public string LatitudeHemisphere { get; set; } 
+	public string? LatitudeHemisphere { get; set; } 
 
 	[XmlElement(ElementName="lon")] 
 	public double Longitude { get; set; } 
 
 	[XmlElement(ElementName="lon_hemisphere")] 
-	public string LongitudeHemisphere { get; set; }
+	public string? LongitudeHemisphere { get; set; }
 
 	[XmlElement(ElementName="storm_type_cd")] 
-	public string StormTypeCd { get; set; }
+	public string? StormTypeCd { get; set; }
 
 	[XmlElement(ElementName="storm_type")] 
-	public string StormType { get; set; }
+	public string? StormType { get; set; }
 
 	[XmlElement(ElementName="headline")] 
-	public TropicalAdvisoryHeadline Headline { get; set; }
+	public TropicalAdvisoryHeadline? Headline { get; set; }
 
 	[XmlElement(ElementName="min_pressure")] 
 	public double MinPressure { get; set; }
@@ -150,98 +150,98 @@ public class TropicalAdvisoryCurrentPosition {
 	public int WindGust { get; set; }
 
 	[XmlElement(ElementName="heading")] 
-	public TropicalAdvisoryHeading Heading { get; set; }
+	public TropicalAdvisoryHeading? Heading { get; set; }
 
 	[XmlElement(ElementName="nearby_loc")] 
-	public TropicalAdvisoryNearbyLoc NearbyLoc { get; set; }
+	public TropicalAdvisoryNearbyLoc? NearbyLoc { get; set; }
 
 	[XmlElement(ElementName="wind_radii")] 
-	public List<TropicalAdvisoryWindRadii> WindRadii { get; set; }
+	public List<TropicalAdvisoryWindRadii>? WindRadii { get; set; }
 
 	[XmlElement(ElementName="sea_radii")] 
-	public List<TropicalAdvisorySeaRadii> SeaRadii { get; set; }
+	public List<TropicalAdvisorySeaRadii>? SeaRadii { get; set; }
 }
 
 [XmlRoot(ElementName="advisoryinfo")]
 public class TropicalAdvisoryInfo { 
 
 	[XmlElement(ElementName="storm_key")] 
-	public string StormKey { get; set; } 
+	public string? StormKey { get; set; } 
 
 	[XmlElement(ElementName="storm_id")] 
-	public string StormID { get; set; } 
+	public string? StormID { get; set; } 
 
 	[XmlElement(ElementName="storm_number")] 
 	public int StormNumber { get; set; } 
 
 	[XmlElement(ElementName="storm_name")] 
-	public string StormName { get; set; } 
+	public string? StormName { get; set; } 
 
 	[XmlElement(ElementName="alternative_storm_name")] 
-	public string AltStormID { get; set; } 
+	public string? AltStormID { get; set; } 
 
 	[XmlElement(ElementName="source")] 
-	public string Source { get; set; }
+	public string? Source { get; set; }
 
 	[XmlElement(ElementName="dsgnt_source")] 
 	public bool DsgntSource { get; set; }  
 
 	[XmlElement(ElementName="basin")] 
-	public string Basin { get; set; } 
+	public string? Basin { get; set; } 
 
 	[XmlElement(ElementName="issue_office")] 
-	public string IssueOffice { get; set; } 
+	public string? IssueOffice { get; set; } 
 
 	[XmlElement(ElementName="wmo_id")] 
-	public string WMOID { get; set; } 
+	public string? WMOID { get; set; } 
 
 	[XmlElement(ElementName="pil")] 
-	public string PIL { get; set; } 
+	public string? PIL { get; set; } 
 
 	[XmlElement(ElementName="bulletin_id")] 
-	public string BulletinID { get; set; } 
+	public string? BulletinID { get; set; } 
 
 	[XmlElement(ElementName="related_bulletin_id")] 
-	public string RelBulletinID { get; set; } 
+	public string? RelBulletinID { get; set; } 
 
 	[XmlElement(ElementName="issue_dt_tm")] 
-	public string IssueDtTm { get; set; } 
+	public string? IssueDtTm { get; set; } 
 
 	[XmlElement(ElementName="issue_dt_tm_tz_cd")] 
-	public string IssueDtTmTzCd { get; set; } 
+	public string? IssueDtTmTzCd { get; set; } 
 
 	[XmlElement(ElementName="issue_dt_tm_tz_abbrv")] 
-	public string IssueDtTmTzAbbrv { get; set; } 
+	public string? IssueDtTmTzAbbrv { get; set; } 
 
 	[XmlElement(ElementName="adv_num")] 
 	public int AdvNum { get; set; } 
 
 	[XmlElement(ElementName="adv_dt_tm")] 
-	public string AdvDtTm { get; set; } 
+	public string? AdvDtTm { get; set; } 
 
 	[XmlElement(ElementName="adv_dt_tm_tz_cd")] 
-	public string AdvDtTmTzCd { get; set; } 
+	public string? AdvDtTmTzCd { get; set; } 
 
 	[XmlElement(ElementName="adv_dt_tm_tz_abbrv")] 
-	public string AdvDtTmTzAbbrv { get; set; } 
+	public string? AdvDtTmTzAbbrv { get; set; } 
 
 	[XmlElement(ElementName="nxt_cmplt_advsry_dt_tm")] 
-	public string NxtCmpltAdvsryDtTm { get; set; } 
+	public string? NxtCmpltAdvsryDtTm { get; set; } 
 
 	[XmlElement(ElementName="nxt_cmplt_advsry_tz_cd")] 
-	public string NxtCmpltAdvsryDtTmTzCd { get; set; } 
+	public string? NxtCmpltAdvsryDtTmTzCd { get; set; } 
 
 	[XmlElement(ElementName="nxt_cmplt_advsry_tz_abbrv")] 
-	public string NxtCmpltAdvsryDtTmTzAbbrv { get; set; } 
+	public string? NxtCmpltAdvsryDtTmTzAbbrv { get; set; } 
 
 	[XmlElement(ElementName="nxt_intrmdt_advsry_dt_tm")] 
-	public string NxtIntrmdtAdvsryDtTm { get; set; } 
+	public string? NxtIntrmdtAdvsryDtTm { get; set; } 
 
 	[XmlElement(ElementName="nxt_intrmdt_advsry_tz_cd")] 
-	public string NxtIntrmdtAdvsryDtTmTzCd { get; set; } 
+	public string? NxtIntrmdtAdvsryDtTmTzCd { get; set; } 
 
 	[XmlElement(ElementName="nxt_intrmdt_advsry_tz_abbrv")] 
-	public string NxtIntrmdtAdvsryDtTmTzAbbrv { get; set; } 
+	public string? NxtIntrmdtAdvsryDtTmTzAbbrv { get; set; } 
 
 	[XmlElement(ElementName="process_time_gmt")] 
 	public int ProcessTimeGmt { get; set; } 
@@ -256,16 +256,16 @@ public class TropicalAdvisoryInfo {
 	public bool AltFinalAdvisory { get; set; } 
 
 	[XmlElement(ElementName="currentposition")] 
-	public TropicalAdvisoryCurrentPosition CurrentPosition { get; set; } 
+	public TropicalAdvisoryCurrentPosition? CurrentPosition { get; set; } 
 }
 
 [XmlRoot(ElementName="response")]
 public class TropicalAdvisoryResponse { 
 
 	[XmlElement(ElementName="metadata")] 
-	public TropicalAdvisoryMetadata Metadata { get; set; } 
+	public TropicalAdvisoryMetadata? Metadata { get; set; } 
 
 	[XmlElement(ElementName="advisoryinfo")] 
-	public List<TropicalAdvisoryInfo> AdvisoryInfo { get; set; }
+	public List<TropicalAdvisoryInfo>? AdvisoryInfo { get; set; }
  
 }
