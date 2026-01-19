@@ -264,7 +264,7 @@ public class TimedTasks
         var watch = Stopwatch.StartNew();
         Config.RadarConfig radarConfig = Config.config.RadarConfiguration;
 
-        if (radarConfig.RadarEnable != true && radarConfig.SatRadEnable != true)
+        if (radarConfig.RadarEnable != true || radarConfig.SatRadEnable != true)
         {
             Log.Info("Both radar and satrad are disabled, disabling radar generation...");
             return;
