@@ -17,7 +17,7 @@ public class LocServPointProduct : Base
         return await GetJsonData<LocServPointResponse>(locations);
     }
 
-    public async Task<GenericResponse<LocServPointResponse>> Receive(LFRecordLocation locations)
+    public async Task<GenericResponse<LocServPointResponse>?> Receive(LFRecordLocation locations)
     {
         return await GetJsonDataLFR<LocServPointResponse>(locations);
     }
