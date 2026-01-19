@@ -213,14 +213,14 @@ public class Day
 [XmlRoot(ElementName = "forecasts")]
 public class Forecasts
 {
-    [XmlElement(ElementName = "forecast")] public List<Forecast> Forecast { get; set; }
+    [XmlElement(ElementName = "forecast")] public List<Forecast>? Forecast { get; set; }
 }
 
 [XmlRoot(ElementName = "dailyForecastResponse")]
 public class DailyForecastResponse
 {
-    [XmlElement(ElementName = "metadata")] public DailyForecastMetadata Metadata { get; set; }
+    [XmlElement(ElementName = "metadata")] public DailyForecastMetadata? Metadata { get; set; }
 
     [XmlElement(ElementName = "forecasts")]
-    public Forecasts Forecasts { get; set; }
+    public Forecasts? Forecasts { get; set; }
 }

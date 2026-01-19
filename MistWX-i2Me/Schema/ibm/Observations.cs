@@ -7,11 +7,11 @@ public class Imperial
 {
     [XmlElement(ElementName = "wspd")] public int Wspd { get; set; }
 
-    [XmlElement(ElementName = "gust")] public object Gust { get; set; }
+    [XmlElement(ElementName = "gust")] public object? Gust { get; set; }
 
     [XmlElement(ElementName = "vis")] public double Vis { get; set; }
 
-    [XmlElement(ElementName = "mslp")] public string Mslp { get; set; }
+    [XmlElement(ElementName = "mslp")] public string? Mslp { get; set; }
 
     [XmlElement(ElementName = "altimeter")]
     public double Altimeter { get; set; }
@@ -65,7 +65,7 @@ public class Imperial
     [XmlElement(ElementName = "snow_7day")]
     public double Snow7day { get; set; }
 
-    [XmlElement(ElementName = "ceiling")] public object Ceiling { get; set; }
+    [XmlElement(ElementName = "ceiling")] public object? Ceiling { get; set; }
 
     [XmlElement(ElementName = "precip_1hour")]
     public double Precip1hour { get; set; }
@@ -92,19 +92,19 @@ public class Imperial
     public double Precip7day { get; set; }
 
     [XmlElement(ElementName = "obs_qualifier_100char")]
-    public object ObsQualifier100char { get; set; }
+    public object? ObsQualifier100char { get; set; }
 
     [XmlElement(ElementName = "obs_qualifier_50char")]
-    public object ObsQualifier50char { get; set; }
+    public object? ObsQualifier50char { get; set; }
 
     [XmlElement(ElementName = "obs_qualifier_32char")]
-    public object ObsQualifier32char { get; set; }
+    public object? ObsQualifier32char { get; set; }
 }
 
 [XmlRoot(ElementName = "observation")]
 public class Observation
 {
-    [XmlElement(ElementName = "class")] public string Class { get; set; }
+    [XmlElement(ElementName = "class")] public string? Class { get; set; }
 
     [XmlElement(ElementName = "expire_time_gmt")]
     public int ExpireTimeGmt { get; set; }
@@ -112,7 +112,7 @@ public class Observation
     [XmlElement(ElementName = "obs_time")] public int ObsTime { get; set; }
 
     [XmlElement(ElementName = "obs_time_local")]
-    public string ObsTimeLocal { get; set; }
+    public string? ObsTimeLocal { get; set; }
 
     [XmlElement(ElementName = "wdir")] public int Wdir { get; set; }
 
@@ -122,63 +122,63 @@ public class Observation
     [XmlElement(ElementName = "icon_extd")]
     public int IconExtd { get; set; }
 
-    [XmlElement(ElementName = "sunrise")] public string Sunrise { get; set; }
+    [XmlElement(ElementName = "sunrise")] public string? Sunrise { get; set; }
 
-    [XmlElement(ElementName = "sunset")] public string Sunset { get; set; }
+    [XmlElement(ElementName = "sunset")] public string? Sunset { get; set; }
 
-    [XmlElement(ElementName = "day_ind")] public string DayInd { get; set; }
+    [XmlElement(ElementName = "day_ind")] public string? DayInd { get; set; }
 
     [XmlElement(ElementName = "uv_index")] public int UvIndex { get; set; }
 
     [XmlElement(ElementName = "uv_warning")]
     public int UvWarning { get; set; }
 
-    [XmlElement(ElementName = "wxman")] public string Wxman { get; set; }
+    [XmlElement(ElementName = "wxman")] public string? Wxman { get; set; }
 
     [XmlElement(ElementName = "obs_qualifier_code")]
-    public object ObsQualifierCode { get; set; }
+    public object? ObsQualifierCode { get; set; }
 
     [XmlElement(ElementName = "ptend_code")]
     public int PtendCode { get; set; }
 
-    [XmlElement(ElementName = "dow")] public string Dow { get; set; }
+    [XmlElement(ElementName = "dow")] public string? Dow { get; set; }
 
     [XmlElement(ElementName = "wdir_cardinal")]
-    public string WdirCardinal { get; set; }
+    public string? WdirCardinal { get; set; }
 
-    [XmlElement(ElementName = "uv_desc")] public string UvDesc { get; set; }
+    [XmlElement(ElementName = "uv_desc")] public string? UvDesc { get; set; }
 
     [XmlElement(ElementName = "phrase_12char")]
-    public string Phrase12char { get; set; }
+    public string? Phrase12char { get; set; }
 
     [XmlElement(ElementName = "phrase_22char")]
-    public string Phrase22char { get; set; }
+    public string? Phrase22char { get; set; }
 
     [XmlElement(ElementName = "phrase_32char")]
-    public string Phrase32char { get; set; }
+    public string? Phrase32char { get; set; }
 
     [XmlElement(ElementName = "ptend_desc")]
-    public string PtendDesc { get; set; }
+    public string? PtendDesc { get; set; }
 
     [XmlElement(ElementName = "sky_cover")]
-    public string SkyCover { get; set; }
+    public string? SkyCover { get; set; }
 
-    [XmlElement(ElementName = "clds")] public string Clds { get; set; }
+    [XmlElement(ElementName = "clds")] public string? Clds { get; set; }
 
     [XmlElement(ElementName = "obs_qualifier_severity")]
-    public object ObsQualifierSeverity { get; set; }
+    public object? ObsQualifierSeverity { get; set; }
 
     [XmlElement(ElementName = "vocal_key")]
-    public string VocalKey { get; set; }
+    public string? VocalKey { get; set; }
 
-    [XmlElement(ElementName = "imperial")] public Imperial Imperial { get; set; }
+    [XmlElement(ElementName = "imperial")] public Imperial? Imperial { get; set; }
 }
 
 [XmlRoot(ElementName = "currentObservationsResponse")]
 public class CurrentObservationsResponse
 {
-    [XmlElement(ElementName = "metadata")] public CurrentObservationsMetadata Metadata { get; set; }
+    [XmlElement(ElementName = "metadata")] public CurrentObservationsMetadata? Metadata { get; set; }
 
     [XmlElement(ElementName = "observation")]
-    public Observation Observation { get; set; }
+    public Observation? Observation { get; set; }
 }
