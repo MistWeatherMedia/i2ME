@@ -17,7 +17,7 @@ public class LocServNearSki : Base
         return await GetJsonData<LocServNearSkiResponse>(locations);
     }
 
-    public async Task<GenericResponse<LocServNearSkiResponse>> Receive(LFRecordLocation locations)
+    public async Task<GenericResponse<LocServNearSkiResponse>?> Receive(LFRecordLocation locations)
     {
         return await GetJsonDataLFR<LocServNearSkiResponse>(locations);
     }
