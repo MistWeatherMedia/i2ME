@@ -13,19 +13,19 @@ public class ImageSequenceDef {
 	public string? area { get; set; } 
 
     [XmlElement(ElementName="LowerLeftLong")]
-    public float LowerLeftLong { get; set; }
+    public double LowerLeftLong { get; set; }
 
     [XmlElement(ElementName="LowerLeftLat")]
-    public float LowerLeftLat { get; set; }
+    public double LowerLeftLat { get; set; }
 
     [XmlElement(ElementName="UpperRightLong")]
-    public float UpperRightLong { get; set; }
+    public double UpperRightLong { get; set; }
 
     [XmlElement(ElementName="UpperRightLat")]
-    public float UpperRightLat { get; set; }
+    public double UpperRightLat { get; set; }
 
     [XmlElement(ElementName="VerticalAdjustment")]
-    public float VerticalAdjustment { get; set; }
+    public double VerticalAdjustment { get; set; }
 
     [XmlElement(ElementName="OriginalImageWidth")]
     public int OriginalImageWidth { get; set; }
@@ -51,24 +51,24 @@ public class ImageSequenceDef {
     [XmlElement(ElementName="FileNameDateFormat")]
     public string? FileNameDateFormat { get; set; }
 
-    public Point<float> GrabUpperRight()
+    public Point<double> GrabUpperRight()
     {
-        return new Point<float>(UpperRightLat, UpperRightLong);
+        return new Point<double>(UpperRightLat, UpperRightLong);
     }
 
-    public Point<float> GrabLowerLeft()
+    public Point<double> GrabLowerLeft()
     {
-        return new Point<float>(LowerLeftLat, LowerLeftLong);
+        return new Point<double>(LowerLeftLat, LowerLeftLong);
     }
 
-    public Point<float> GrabUpperLeft()
+    public Point<double> GrabUpperLeft()
     {
-        return new Point<float>(UpperRightLat, LowerLeftLong);
+        return new Point<double>(UpperRightLat, LowerLeftLong);
     }
 
-    public Point<float> GrabLowerRight()
+    public Point<double> GrabLowerRight()
     {
-        return new Point<float>(LowerLeftLat, UpperRightLong);
+        return new Point<double>(LowerLeftLat, UpperRightLong);
     }
     
 }
