@@ -16,7 +16,7 @@ public class AirQualityProduct : Base
         return await GetData<AirQualityResponse>(locations);
     }
 
-    public async Task<GenericResponse<AirQualityResponse>> Receive(LFRecordLocation locations)
+    public async Task<GenericResponse<AirQualityResponse>?> Receive(LFRecordLocation locations)
     {
         return await GetDataLFR<AirQualityResponse>(locations);
     }
