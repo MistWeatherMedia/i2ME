@@ -6,13 +6,13 @@ namespace MistWX_i2Me.Schema.twc;
 public class Arrival
 {
     [XmlAttribute(AttributeName="cancellations")]
-    public int? Cancellations { get; set; }
+    public int Cancellations { get; set; }
 
     [XmlAttribute(AttributeName="percentage_cancelled")]
-    public int? PercentCancelled { get; set; }
+    public int PercentCancelled { get; set; }
 
     [XmlAttribute(AttributeName="total")]
-    public int? Total { get; set; }
+    public int Total { get; set; }
 }
 
 [XmlRoot(ElementName="AirportDelays")]
@@ -43,5 +43,5 @@ public class AirportDelays
     public Arrival? Departure { get; set; }
 
     [XmlAttribute(AttributeName="process_time_gmt")]
-    public int? ProcessTimeGmt { get; set; }
+    public int ProcessTimeGmt { get; set; }
 }
