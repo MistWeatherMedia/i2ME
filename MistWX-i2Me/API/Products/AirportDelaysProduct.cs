@@ -1,4 +1,4 @@
-using MistWX_i2Me.Schema.ibm;
+using MistWX_i2Me.Schema.faa;
 
 namespace MistWX_i2Me.API.Products;
 
@@ -11,8 +11,8 @@ public class AirportDelaysProduct : Base
             "https://nasstatus.faa.gov/api/airport-events";
     }
 
-    public async Task<List<GenericResponse<AirportDelaysResponse>>> Populate(string[] locations)
+    public async Task<List<GenericResponse<AirportEventsResponse>>> Populate(string[] locations)
     {
-        return await GetJsonData<AirportDelaysResponse>(locations);
+        return await GetJsonData<AirportEventsResponse>(locations);
     }
 }
