@@ -4,6 +4,7 @@ using MistWX_i2Me.API;
 using MistWX_i2Me.API.Products;
 using MistWX_i2Me.Communication;
 using MistWX_i2Me.RecordGeneration;
+using MistWX_i2Me.Schema.faa;
 using MistWX_i2Me.Schema.ibm;
 using MistWX_i2Me.Schema.twc;
 
@@ -245,6 +246,13 @@ public class TimedTasks
                 HolidayMappingResponse wns = await new HolidayMappingProduct().Populate();
                 string wnsRecord = await new HolidayMapping().MakeRecord(wns);
                 sender.SendFile(wnsRecord, "storeData(QGROUP=__Mapping__,Feed=Mapping)");
+            }
+
+            if (dataConfig.AirportDelays)
+            {
+                Log.Info("Building AirportDelays I2 record..");
+                GenericResponse<List<AirportEvent>>? AD = await new AirportDelaysProduct().Populate();
+                await new RecordGeneration.AirportDelays().MakeRecord(AD, sender);
             }
 
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
