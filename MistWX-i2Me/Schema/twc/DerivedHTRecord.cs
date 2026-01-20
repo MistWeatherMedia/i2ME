@@ -35,13 +35,32 @@ public class DerivedHTRecordAdvsTmLcl
 public class DerivedHTRecordHeader
 {
     [XmlElement(ElementName = "HTPil")]
-    public int Pil { get; set; }
+    public string? Pil { get; set; }
 
     [XmlElement(ElementName = "HTStrmId")]
-    public DerivedHTRecordStrmId? StrnId { get; set; }
+    public DerivedHTRecordStrmId? StrmId { get; set; }
 
     [XmlElement(ElementName = "HTAdvsTmUTC")]
     public string? AdvsTmUTC { get; set; }
+
+    [XmlElement(ElementName = "procTm")]
+    public string? ProcTm { get; set; }
+}
+
+[XmlRoot(ElementName="HTData")]
+public class DerivedHTRecordData
+{
+    [XmlElement(ElementName = "HTSgmntChksum")]
+    public string? SgmntChksum { get; set; }
+
+    [XmlElement(ElementName = "HTWMOHdr")]
+    public string? WMOHdr { get; set; }
+
+    [XmlElement(ElementName = "HTIssueTmUTC")]
+    public string? IssueTmUTC { get; set; }
+
+    [XmlElement(ElementName = "HTIssueOffc")]
+    public string? IssueOffc { get; set; }
 
     [XmlElement(ElementName = "HTAdvsTmLcl")]
     public DerivedHTRecordAdvsTmLcl? AdvsTmLcl { get; set; }
@@ -113,25 +132,6 @@ public class DerivedHTRecordHeader
     public int? LastUpdate { get; set; }
 }
 
-[XmlRoot(ElementName="HTData")]
-public class DerivedHTRecordData
-{
-    [XmlElement(ElementName = "HTSgmntChksum")]
-    public string? SgmntChksum { get; set; }
-
-    [XmlElement(ElementName = "HTWMOHdr")]
-    public string? WMOHdr { get; set; }
-
-    [XmlElement(ElementName = "HTIssueTmUTC")]
-    public string? IssueTmUTC { get; set; }
-
-    [XmlElement(ElementName = "HTIssueOffc")]
-    public string? IssueOffc { get; set; }
-
-    [XmlElement(ElementName = "HTAdvsTmLcl")]
-    public string? IssueOffc { get; set; }
-}
-
 [XmlRoot(ElementName="DerivedHTRecord")]
 public class DerivedHTRecordResponse
 {
@@ -140,4 +140,10 @@ public class DerivedHTRecordResponse
 
     [XmlElement(ElementName = "action")]
     public int Action { get; set; }
+
+    [XmlElement(ElementName = "HTHdr")]
+    public DerivedHTRecordHeader? Header { get; set; }
+
+    [XmlElement(ElementName = "HTData")]
+    public DerivedHTRecordData? Data { get; set; }
 }
