@@ -224,12 +224,21 @@ public class TimedTasks
                 sender.SendFile(wnsRecord, "storeData(QGROUP=__PollenObs__,Feed=PollenObs)");
             }
 
-            if (dataConfig.TropicalAdvisory)
+            if (dataConfig.TropicalAdvisory || dataConfig.DerivedHTRecord)
             {
-                Log.Info($"Building Tropical Advisory I2 record..");
                 List<GenericResponse<TropicalAdvisoryResponse>> wns = await new TropicalAdvisoryProduct().Populate();
-                string wnsRecord = await new TropicalAdvisoryRecord().MakeRecord(wns);
-                sender.SendFile(wnsRecord, "storeData(QGROUP=__TropicalAdvisory__,Feed=TropicalAdvisory)");
+                if (dataConfig.TropicalAdvisory)
+                {
+                    Log.Info($"Building Tropical Advisory I2 record..");
+                    string wnsRecord = await new TropicalAdvisoryRecord().MakeRecord(wns);
+                    sender.SendFile(wnsRecord, "storeData(QGROUP=__TropicalAdvisory__,Feed=TropicalAdvisory)");
+                }
+                if (dataConfig.DerivedHTRecord)
+                {
+                    Log.Info($"Building DerivedHTRecord I2 record..");
+                    string wnsRecord = await new DerivedHTRecord().MakeRecord(wns);
+                    sender.SendFile(wnsRecord, "storeData(QGROUP=__DerivedHTRecord__,Feed=DerivedHTRecord)");
+                }
             }
 
             if (dataConfig.ClimatologyRecord)

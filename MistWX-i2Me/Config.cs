@@ -505,5 +505,6 @@ public class Config
         [XmlElement] public bool HolidayMapping { get; set; } = true;
         [XmlElement] public bool TIRecord { get; set; } = true;
         [XmlElement] public bool AirportDelays { get; set; } = true;
+        [XmlElement] public bool DerivedHTRecord { get; set; } = true;
     }
 }
