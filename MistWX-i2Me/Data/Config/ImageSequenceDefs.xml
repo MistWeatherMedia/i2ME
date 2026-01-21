@@ -1,0 +1,191 @@
+<ImageSequenceDefs>
+	<ImageSequenceDef type="Radar" area="US" >
+	
+		<LowerLeftLong>-126.834935</LowerLeftLong>
+		<LowerLeftLat>22.197152</LowerLeftLat>
+		<UpperRightLong>-65.178922</UpperRightLong>
+		<UpperRightLat>50.231604</UpperRightLat>
+		<VerticalAdjustment>1.1985928</VerticalAdjustment>
+		
+		<OriginalImageWidth>4096</OriginalImageWidth>
+		<OriginalImageHeight>1968</OriginalImageHeight>
+		<MaxImages>36</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>300</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="Radar" area="PR">
+	
+		<LowerLeftLong>-73.427336</LowerLeftLong>
+		<LowerLeftLat>14.558724</LowerLeftLat>
+		<UpperRightLong>-59.620365</UpperRightLong>
+		<UpperRightLat>21.826707</UpperRightLat>				
+		<VerticalAdjustment>1.199</VerticalAdjustment>
+		
+		<OriginalImageWidth>1300</OriginalImageWidth>
+		<OriginalImageHeight>600</OriginalImageHeight>
+		<MaxImages>12</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>900</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="Radar" area="HI">
+	
+		<LowerLeftLong>-162.633484</LowerLeftLong>
+		<LowerLeftLat>16.569253</LowerLeftLat>
+		<UpperRightLong>-151.702146</UpperRightLong>
+		<UpperRightLat>24.773036</UpperRightLat>
+		<VerticalAdjustment>1.1985928</VerticalAdjustment>
+		
+		<OriginalImageWidth>1500</OriginalImageWidth>
+		<OriginalImageHeight>1000</OriginalImageHeight>
+		<MaxImages>36</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>300</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="Radar" area="AK">
+
+		<LowerLeftLong>-178.505920</LowerLeftLong>
+		<LowerLeftLat>51.379081</LowerLeftLat>
+		<UpperRightLong>-124.517227</UpperRightLong>
+		<UpperRightLat>71.504753</UpperRightLat>
+		<VerticalAdjustment>1.0175897</VerticalAdjustment>		
+
+		<OriginalImageWidth>2000</OriginalImageWidth>
+		<OriginalImageHeight>1600</OriginalImageHeight>
+		<MaxImages>36</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>300</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="SatRad" area="US">
+		
+		<LowerLeftLong>-132.960807</LowerLeftLong>
+		<LowerLeftLat>20.170198</LowerLeftLat>
+		<UpperRightLong>-56.707770</UpperRightLong>
+		<UpperRightLat>53.410859</UpperRightLat>
+		<VerticalAdjustment>1.0</VerticalAdjustment>
+		
+		<OriginalImageWidth>1920</OriginalImageWidth>
+		<OriginalImageHeight>1080</OriginalImageHeight>
+		<MaxImages>12</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>900</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="SatRad" area="HI">
+		
+		<LowerLeftLong>-162.189117</LowerLeftLong>
+		<LowerLeftLat>17.343814</LowerLeftLat>
+		<UpperRightLong>-152.266452</UpperRightLong>
+		<UpperRightLat>23.510491</UpperRightLat>
+		<VerticalAdjustment>1.000</VerticalAdjustment>
+		
+		<OriginalImageWidth>1500</OriginalImageWidth>
+		<OriginalImageHeight>1000</OriginalImageHeight>
+		<MaxImages>12</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>900</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="SatRad" area="CB">
+		
+		<LowerLeftLong>-72.892044</LowerLeftLong>
+		<LowerLeftLat>14.980960</LowerLeftLat>
+		<UpperRightLong>-59.595772</UpperRightLong>
+		<UpperRightLat>21.136936</UpperRightLat>
+		<VerticalAdjustment>1.0</VerticalAdjustment>
+		
+		<OriginalImageWidth>1300</OriginalImageWidth>
+		<OriginalImageHeight>600</OriginalImageHeight>
+		<MaxImages>12</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>900</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="SatRad" area="AK">
+	
+		<LowerLeftLong>-178.062851</LowerLeftLong>
+		<LowerLeftLat>50.743195</LowerLeftLat>
+		<UpperRightLong>-122.957962</UpperRightLong>
+		<UpperRightLat>71.259186</UpperRightLat>
+		<VerticalAdjustment>1.0025</VerticalAdjustment>
+		
+		<OriginalImageWidth>2000</OriginalImageWidth>
+		<OriginalImageHeight>1600</OriginalImageHeight>
+		<MaxImages>12</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>900</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	
+	<ImageSequenceDef type="Satellite" area="AK">
+	
+		<LowerLeftLong>-178.652390</LowerLeftLong>
+		<LowerLeftLat>47.625462</LowerLeftLat>
+		<UpperRightLong>-118.209671</UpperRightLong>
+		<UpperRightLat>71.732681</UpperRightLat>
+		<VerticalAdjustment>0.998</VerticalAdjustment>
+		
+		<OriginalImageWidth>2000</OriginalImageWidth>
+		<OriginalImageHeight>1600</OriginalImageHeight>
+		<MaxImages>12</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>900</ImagesInterval>
+		<Expiration>10800</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	
+	<ImageSequenceDef type="Satellite" area="US">
+	
+		<LowerLeftLong>-137.991287</LowerLeftLong>
+		<LowerLeftLat>9.910865</LowerLeftLat>
+		<UpperRightLong>-55.674454</UpperRightLong>
+		<UpperRightLat>54.864590</UpperRightLat>
+		<VerticalAdjustment>1.0</VerticalAdjustment>
+	
+		<OriginalImageWidth>1950</OriginalImageWidth>
+		<OriginalImageHeight>1325</OriginalImageHeight>
+		<MaxImages>20</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>1800</ImagesInterval>
+		<Expiration>36000</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+	<ImageSequenceDef type="Satellite" area="HI">
+	
+		<LowerLeftLong>-168.045456</LowerLeftLong>
+		<LowerLeftLat>14.790591</LowerLeftLat>
+		<UpperRightLong>-145.243256</UpperRightLong>
+		<UpperRightLat>25.516115</UpperRightLat>
+		<VerticalAdjustment>1.001</VerticalAdjustment>
+	
+		<OriginalImageWidth>1600</OriginalImageWidth>
+		<OriginalImageHeight>850</OriginalImageHeight>
+		<MaxImages>20</MaxImages>
+		<Gap>4</Gap>
+		<ImagesInterval>1800</ImagesInterval>
+		<Expiration>36000</Expiration>
+		<DeletePadding>1800</DeletePadding>
+		<FileNameDateFormat>yyyyMMddHHmm</FileNameDateFormat>
+	</ImageSequenceDef>
+</ImageSequenceDefs>
