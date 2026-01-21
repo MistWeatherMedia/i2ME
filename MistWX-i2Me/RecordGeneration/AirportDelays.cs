@@ -156,6 +156,8 @@ public class AirportDelays : I2Record
                 string ADIdx = "";
                 string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "AirportDelays.xml");
                 string recordScript = "<Data type=\"AirportDelays\">";
+                DateTime expiration = DateTime.UtcNow;
+                expiration.AddHours(2);
                 foreach (AirportEvent AE in result.ParsedData)
                 { 
                     Schema.twc.AirportDelays product = new()
@@ -179,7 +181,7 @@ public class AirportDelays : I2Record
                             PercentCancelled = 100,
                             Total = 1000
                         },
-                        ProcessTimeGmt = (int)((DateTimeOffset)DateTime.UtcNow).ToUnixTimeSeconds(),
+                        ProcessTimeGmt = (int)((DateTimeOffset)expiration).ToUnixTimeSeconds(),
                     };
                     ADIdx += $"{AE.airportId},";
                     XmlSerializer serializer = new(typeof(Schema.twc.AirportDelays));
