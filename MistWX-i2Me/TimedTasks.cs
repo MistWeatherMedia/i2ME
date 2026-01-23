@@ -291,8 +291,6 @@ public class TimedTasks
             await Task.Delay(generationInterval * 1000);
             watch.Restart();
             
-            List<Task> taskList = new();
-            
             Log.Info("Running scheduled radar/satrad collection");
             
             // start grabbing all timestamps
@@ -310,7 +308,7 @@ public class TimedTasks
                         {
                             if (rdi.ParsedData.seriesInfo.twcRadarMosaic.series != null)
                             {
-                                taskList.Add(new RadarProcess().Run(radarConfig.RadarDef, rdi.ParsedData.seriesInfo.twcRadarMosaic.series.Select(ts => ts.ts).ToArray(), sender, "twcRadarMosaic"));
+                                await new RadarProcess().Run(radarConfig.RadarDef, rdi.ParsedData.seriesInfo.twcRadarMosaic.series.Select(ts => ts.ts).ToArray(), sender, "twcRadarMosaic");
                             } else {
                                 Log.Warning("No radar timestamps.");
                                 Log.Debug("No series!");
@@ -333,7 +331,7 @@ public class TimedTasks
                         {
                             if (rdi.ParsedData.seriesInfo.sat.series != null)
                             {
-                                taskList.Add(new RadarProcess().Run(radarConfig.SatRadDef, rdi.ParsedData.seriesInfo.sat.series.Select(ts => ts.ts).ToArray(), sender, "sat"));
+                                await new RadarProcess().Run(radarConfig.SatRadDef, rdi.ParsedData.seriesInfo.sat.series.Select(ts => ts.ts).ToArray(), sender, "sat");
                             } else {
                                 Log.Warning("No satrad timestamps.");
                                 Log.Debug("No series!");
@@ -350,8 +348,6 @@ public class TimedTasks
             } else {
                 Log.Warning("No radar/satrad timestamps.");
             }
-
-            await Task.WhenAll(taskList);
             
 
             string nextTimestamp = DateTime.Now.AddSeconds(generationInterval).ToString("h:mm tt");
