@@ -263,7 +263,7 @@ public class RadarProcess
         string[] splitRadarType = radar_type.Split("-");
 
         // Send command to i2 to ingest radar frame.
-        sender.SendFile(framePath, $"storePriorityImage(FileExtension=.tiff,Location={splitRadarType[1]},ImageType={splitRadarType[0]},IssueTime={ts})");
+        sender.SendFile(framePath, $"storePriorityImage(FileExtension=.tiff,Location={splitRadarType[1]},ImageType={splitRadarType[0]},IssueTime={DateTimeOffset.FromUnixTimeSeconds(ts).UtcDateTime.ToString("MM/dd/yyyy HH:mm:ss")})");
         Log.Debug($"Frame {ts} sent");
     }
 
