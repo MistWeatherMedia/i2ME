@@ -50,7 +50,7 @@ public class DerivedHTRecord : I2Record
                                         StrmNm = $"{(result.CurrentPosition ?? new TropicalAdvisoryCurrentPosition()).StormType ?? "".ToUpper()} {result.StormName ?? "".ToUpper()}",
                                         StrmId = result.StormID,
                                     },
-                                    AdvsTmUTC = advDt.ToUniversalTime().ToString("yyyyMMddHHmm"),
+                                    AdvsTmUTC = DateTime.UtcNow.ToString("yyyyMMddHHmm"),
                                     ProcTm = DateTime.Now.ToString("yyyyMMddHHmmss")
                                 },
                                 Data = new DerivedHTRecordData()
