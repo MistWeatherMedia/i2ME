@@ -352,6 +352,7 @@ public class AlertBulletin : I2Record
         { "WV", "West Virginia" },
         { "WI", "Wisconsin" },
         { "WY", "Wyoming" },
+        { "INTL", "International" },
     };
 
 
@@ -362,10 +363,19 @@ public class AlertBulletin : I2Record
     /// <returns>The vocal code as a string</returns>
     private string? MapVocalCode(string vocalCheck)
     {
+        string? output = "";
         try
         {
-            string vocalKey = _vocalCodes[vocalCheck];
-            return vocalKey;
+            if (_vocalCodes.TryGetValue(vocalCheck, out output))
+            {
+                string vocalKey = output;
+                return vocalKey;
+            }
+            else
+            {
+                Log.Warning($"Vocal check failed for key {vocalCheck}.");
+                return "";
+            }
         }
         catch (Exception ex)
         {
@@ -404,12 +414,12 @@ public class AlertBulletin : I2Record
             // Timestamp parsing
             if (detail != null)
             {
-                string endTime = DateTimeOffset.FromUnixTimeSeconds(detail.endTimeUTC).ToString("yyyy MM dd HH mm").Replace(" ", "");
-                string expireTime = DateTimeOffset.FromUnixTimeSeconds(detail.expireTimeUTC).ToString("yyyy MM dd HH mm").Replace(" ", "");
+                string endTime = DateTimeOffset.FromUnixTimeSeconds((int)(detail.expireTimeUTC ?? 0)).ToString("yyyy MM dd HH mm").Replace(" ", "");
+                string expireTime = DateTimeOffset.FromUnixTimeSeconds((int)(detail.expireTimeUTC?? 0)).ToString("yyyy MM dd HH mm").Replace(" ", "");
                 string issueTime = DateTime.Parse(detail.issueTimeLocal ?? "").ToString("yyyy MM dd HH mm").Replace(" ", "");
-                string processTime = DateTimeOffset.FromUnixTimeSeconds(detail.processTimeUTC).ToString("yyyy MM dd HH mm ss").Replace(" ", "");
+                string processTime = DateTimeOffset.FromUnixTimeSeconds((int)(detail.processTimeUTC ?? 0)).ToString("yyyy MM dd HH mm ss").Replace(" ", "");
 
-                EActionCd eActionCd = new() {EActionPriority = detail.messageTypeCode};
+                EActionCd eActionCd = new() {EActionPriority = (int)(detail.messageTypeCode ?? 0)};
 
                 switch (detail.messageType)
                 {
@@ -433,16 +443,31 @@ public class AlertBulletin : I2Record
                     EETN = detail.eventTrackingNumber,
                     EDesc = detail.eventDescription,
                     EEndTmUTC = endTime,
-                    ESvrty = detail.severityCode,
+                    ESvrty = (int)(detail.severityCode ?? 0),
                     EExpTmUTC = expireTime,
                     EStTmUTC = locationInfo.gmtDiff ?? ""
                 };
-                
                 BStCd stateInfo = new()
+                    {
+                        BSt = _states["INTL"],
+                        Text = "INTL"
+                    };
+                try
                 {
-                    BSt = _states[locationInfo.stCd],
-                    Text = locationInfo.stCd
-                };
+                    stateInfo = new()
+                    {
+                        BSt = _states[locationInfo.stCd],
+                        Text = locationInfo.stCd
+                    };
+                } catch
+                {
+                    stateInfo = new()
+                    {
+                        BSt = _states["INTL"],
+                        Text = "INTL"
+                    };
+                }
+                
 
                 BLocCd loc = new()
                 {

@@ -3,7 +3,7 @@ namespace MistWX_i2Me.Schema.ibm;
 public class AlertDetail
 {
     public string? detailKey { get; set; }
-    public int messageTypeCode { get; set; }
+    public long? messageTypeCode { get; set; }
     public string? messageType { get; set; }
     public string? productIdentifier { get; set; }
     public string? phenomena { get; set; }
@@ -15,20 +15,20 @@ public class AlertDetail
     public string? officeAdminDistrictCode { get; set; }
     public string? officeCountryCode { get; set; }
     public string? eventDescription { get; set; }
-    public int severityCode { get; set; }
+    public long? severityCode { get; set; }
     public string? severity { get; set; }
     public List<Category>? categories { get; set; }
     public List<ResponseType>? responseTypes { get; set; }
     public string? urgency { get; set; }
-    public string? urgencyCode { get; set; }
+    public long? urgencyCode { get; set; }
     public string? certainty { get; set; }
-    public string? certaintyCode { get; set; }
-    public DateTime? effectiveTimeLocal { get; set; }
+    public long? certaintyCode { get; set; }
+    public string? effectiveTimeLocal { get; set; }
     public string? effectiveTimeLocalTimeZone { get; set; }
-    public DateTime? expireTimeLocal { get; set; }
+    public string? expireTimeLocal { get; set; }
     public string? expireTimeLocalTimeZone { get; set; }
-    public long expireTimeUTC { get; set; }
-    public DateTime? onsetTimeLocal { get; set; }
+    public long? expireTimeUTC { get; set; }
+    public string? onsetTimeLocal { get; set; }
     public string? onsetTimeLocalTimeZone { get; set; }
     public Flood? flood { get; set; }
     public string? areaTypeCode { get; set; }
@@ -47,10 +47,9 @@ public class AlertDetail
     public string? issueTimeLocal { get; set; }
     public string? issueTimeLocalTimeZone { get; set; }
     public string? identifier { get; set; }
-    public long processTimeUTC { get; set; }
-    public DateTime? endTimeLocal { get; set; }
+    public long? processTimeUTC { get; set; }
+    public string? endTimeLocal { get; set; }
     public string? endTimeLocalTimeZone { get; set; }
-    public long endTimeUTC { get; set; }
     public List<Text>? texts { get; set; }
     public List<Polygon>? polygon { get; set; }
     public string? synopsis { get; set; }
@@ -60,7 +59,7 @@ public class AlertDetail
 public class Category
 {
     public string? category { get; set; }
-    public int? categoryCode { get; set; }
+    public long? categoryCode { get; set; }
 }
 
 public class Flood
@@ -90,7 +89,7 @@ public class Polygon
 public class ResponseType
 {
     public string? responseType { get; set; }
-    public int? responseTypeCode { get; set; }
+    public long? responseTypeCode { get; set; }
 }
 
 public class AlertDetailResponse

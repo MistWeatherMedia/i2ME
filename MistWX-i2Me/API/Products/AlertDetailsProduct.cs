@@ -5,6 +5,7 @@ using MistWX_i2Me.Schema.ibm;
 using System.Data.SqlTypes;
 using System.Data.SQLite;
 using MistWX_i2Me.Schema.System;
+using System.Text.Json.Serialization;
 
 namespace MistWX_i2Me.API.Products;
 
@@ -42,7 +43,7 @@ public class AlertDetailsProduct : Base
 
                     using (var stream = StreamFromString(res))
                     {
-                        AlertDetailResponse? response = await JsonSerializer.DeserializeAsync<AlertDetailResponse?>(stream);
+                        AlertDetailResponse? response = await JsonSerializer.DeserializeAsync<AlertDetailResponse?>(stream, new JsonSerializerOptions() {DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull});
                         if (response != null)
                         {
                             results.Add(new GenericResponse<AlertDetailResponse>(headline.Location, res, response));
