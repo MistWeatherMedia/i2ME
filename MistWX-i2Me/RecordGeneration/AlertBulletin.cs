@@ -442,10 +442,12 @@ public class AlertBulletin : I2Record
                     EPhenom = detail.phenomena,
                     EETN = detail.eventTrackingNumber,
                     EDesc = detail.eventDescription,
+                    ESpnshDesc = detail.eventDescription,
                     EEndTmUTC = endTime,
                     ESvrty = (int)(detail.severityCode ?? 0),
                     EExpTmUTC = expireTime,
-                    EStTmUTC = locationInfo.gmtDiff ?? ""
+                    EStTmUTC = locationInfo.gmtDiff ?? "",
+                    ESgnfcnc = detail.significance
                 };
                 BStCd stateInfo = new()
                     {

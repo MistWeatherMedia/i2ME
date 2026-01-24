@@ -46,6 +46,9 @@ public class BEvent
     [XmlElement(ElementName = "eDesc")]
     public string? EDesc { get; set; }
 
+    [XmlElement(ElementName = "eSpnshDesc")]
+    public string? ESpnshDesc { get; set; }
+
     [XmlElement(ElementName = "eStTmUTC")]
     public string? EStTmUTC = "NOT_USED";
 
