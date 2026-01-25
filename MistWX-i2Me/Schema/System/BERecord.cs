@@ -126,7 +126,7 @@ public class BEHdr
     [XmlElement(ElementName = "bLocations")]
     public BLocations? BLocations { get; set; }
 
-    [XmlElement(ElementName = "bSgmntChksum")]
+    [XmlElement(ElementName = "bSgmtChksum")]
     public string? BSgmntChksum { get; set; }
 
     [XmlElement(ElementName = "procTm")]
