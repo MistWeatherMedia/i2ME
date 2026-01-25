@@ -98,7 +98,7 @@ public class BulletinCrawlsGen : I2Record
         }
             
 
-        XmlSerializer serializer = new(typeof(HeadlinesResponse));
+        XmlSerializer serializer = new(typeof(BulletinCrawlsResponse));
         StringWriter sw = new();
         XmlWriter xw = XmlWriter.Create(sw, new XmlWriterSettings
         {
