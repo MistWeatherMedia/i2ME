@@ -117,6 +117,7 @@ public class BulletinCrawlsGen : I2Record
         sender.SendFile(recordPath, "storeData(QGROUP=__BulletinCrawls__,Feed=BulletinCrawls)");
         // Delay sending the presentation
         await Task.Delay(2000);
-        sender.SendCommand($"loadRunPres(Duration={durations[response.BulletinCrawls.Bulletins.First().Significance]},PresentationId=BCrawl1,Flavor=BulletinCrawl)");
+        sender.SendCommand($"loadRunPres(Duration={durations[response.BulletinCrawls.Bulletins.First().Significance]},PresentationId=BCrawl1,Flavor=domestic/BulletinCrawl)");
+        sender.SendCommand($"loadRunPres(Duration={durations[response.BulletinCrawls.Bulletins.First().Significance]},PresentationId=BCrawl1,Flavor=domesticSD/BulletinCrawl)");
     }
 }
