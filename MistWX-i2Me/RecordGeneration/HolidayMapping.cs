@@ -40,6 +40,8 @@ public class HolidayMapping : I2Record
                 holiday.Date = dateNew.ToString("yyyyMMdd");
                 holiday.DateFormatted = dateNew.ToString("MM/dd/yyyy");
             }
+            // Sort by how recent the event was
+            result.Holidays = result.Holidays.OrderBy(a => DateTime.ParseExact(a.Date, "yyyyMMdd", CultureInfo.InvariantCulture).ToString("MMddyyyy")).ToList();
         }
         
 
