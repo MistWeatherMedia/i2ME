@@ -22,9 +22,9 @@ Precipitation & Satellite radar images, while not finished, will be added in the
 - [x] Current Observations
 - [x] Daily Forecast
 - [x] Hourly Forecast
-- [x] Air Quality
+- [x] Air Quality (currently broken, unknown)
 - [x] Tide Forecast
-- [ ] Airport Delays (Requires complete ground-up rewrite)
+- [x] Airport Delays (currently broken, i2 rejects it)
 - [x] Pollen Forecast
 - [x] Heating & Cooling
 - [x] Aches & Pains
@@ -35,6 +35,9 @@ Precipitation & Satellite radar images, while not finished, will be added in the
 - [x] Pollen Observations
 - [x] Mapping
 - [x] Dry Skin
+- [x] Location Info
+- [x] Radar
+- [x] Satellite Radar
 
 **This list is subject to change.**
 
