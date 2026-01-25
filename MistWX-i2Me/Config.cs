@@ -300,6 +300,37 @@ public class Config
                         );
                     }
                 }
+                // add summer getaway locations
+                if (cfg.LocationConfig.UseSummerGLocs)
+                {
+                    cfg.LocationConfig.LocationList.AddRange(new List<string>
+                    {
+                        "SummerGetawayLocation1",
+                        "SummerGetawayLocation2",
+                        "SummerGetawayLocation3",
+                    }
+                    );
+                    if (cfg.LocationConfig.UseSubset1Locs)
+                    {
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
+                        {
+                            "SummerGetawayLocation1_1",
+                            "SummerGetawayLocation2_1",
+                            "SummerGetawayLocation3_1",
+                        }
+                        );
+                    }
+                    if (cfg.LocationConfig.UseSubset2Locs)
+                    {
+                        cfg.LocationConfig.LocationList.AddRange(new List<string>
+                        {
+                            "SummerGetawayLocation2_1",
+                            "SummerGetawayLocation2_2",
+                            "SummerGetawayLocation3_2",
+                        }
+                        );
+                    }
+                }
                 return config;
             }
 
