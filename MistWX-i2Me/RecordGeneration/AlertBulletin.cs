@@ -525,13 +525,13 @@ public class AlertBulletin : I2Record
 
                 if (detail.texts != null)
                 {
-                    string narrtxt = detail.texts[0].description ?? "".Replace("\n", "");
+                    string narrtxt = (detail.texts[0].description ?? "").Replace("\n", "");
                     if (narrtxt.Count() >= 764)
                     {
                         narrtxt = narrtxt.Substring(0, 764);
                         narrtxt += "...";
                     }
-                    narrative.BLn = detail.texts[0].description ?? "".Replace("\n", "");
+                    narrative.BLn = (detail.texts[0].description ?? "").Replace("\n", "");
                 }
                 
                 
