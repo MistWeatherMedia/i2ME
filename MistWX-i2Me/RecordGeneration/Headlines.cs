@@ -133,7 +133,7 @@ public class Headlines : I2Record
                             code = "HE",
                             audioClip = new()
                             {
-                                path = "domestic/vocalLocal/Cantore/Headline_Event_Phrases\\" + _vocalCodes[((result.BEData ?? new BEData()).BHdln ?? new BHdln()).BVocHdlnCd ?? ""]
+                                path = "domestic/vocalLocal/Cantore/Headline_Event_Phrases\\" + _vocalCodes[((result.BEData ?? new BEData()).BHdln ?? new BHdln()).BVocHdlnCd ?? ""] + ".wav"
                             }
                         }
                     }
