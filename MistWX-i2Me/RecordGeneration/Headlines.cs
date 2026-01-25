@@ -141,6 +141,8 @@ public class Headlines : I2Record
                 HlList.Add(headline);
                 key += 1;
             }
+            // Sort by priority
+            HlList = HlList.OrderByDescending(a => a.priority).ToList();
         }
             
 
