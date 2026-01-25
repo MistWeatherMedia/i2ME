@@ -67,17 +67,14 @@ public class Delays
     public ReasonsAll? ReasonsAll { get; set; }
 }
 
-[XmlRoot(ElementName="AirportDelays")]
-public class AirportDelays
+[XmlRoot(ElementName="airport_result")]
+public class AirportResult
 {
-    [XmlAttribute(AttributeName = "process_time_gmt")] 
-    public int ProcessTimeGmtAttr {get; set;}
+    [XmlElement(ElementName = "class")] 
+    public string Class = "airport_delays";
 
-    [XmlAttribute(AttributeName = "locationKey")] 
-    public string? locationKey {get; set;}
-
-    [XmlAttribute(AttributeName = "key")] 
-    public string? KeyAttr {get; set;}
+    [XmlElement(ElementName = "source")] 
+    public string Source = "flightaware.com";
 
     [XmlElement(ElementName="key")]
     public string? Key { get; set; }
@@ -108,6 +105,50 @@ public class AirportDelays
 
     [XmlElement(ElementName="process_time_gmt")]
     public int ProcessTimeGmt { get; set; }
+
+    [XmlElement(ElementName="expire_time_gmt")]
+    public int ExpireTimeGmt { get; set; }
+    
+}
+
+public class AirportDelaysMetadata
+{
+    [XmlElement(ElementName="language")]
+    public string language = "en-US";
+
+    [XmlElement(ElementName="transaction_id")]
+    public string transaction_id = "i2ME";
+
+    [XmlElement(ElementName="version")]
+    public string version = "1";
+
+    [XmlElement(ElementName="airport_code")]
+    public string airport_code {get; set;}
+
+    [XmlElement(ElementName="expire_time_gmt")]
+    public int expire_time_gmt {get; set;}
+
+    [XmlElement(ElementName="status_code")]
+    public int status_code = 200;
+}
+
+[XmlRoot(ElementName="AirportDelays")]
+public class AirportDelays
+{
+    [XmlAttribute(AttributeName = "process_time_gmt")] 
+    public int ProcessTimeGmtAttr {get; set;}
+
+    [XmlAttribute(AttributeName = "locationKey")] 
+    public string? locationKey {get; set;}
+
+    [XmlAttribute(AttributeName = "key")] 
+    public string? KeyAttr {get; set;}
+
+    [XmlElement(ElementName="airport_result")]
+    public AirportResult? airport_result { get; set; }
+
+    [XmlElement(ElementName="metadata")]
+    public AirportDelaysMetadata? metadata { get; set; }
 
     [XmlElement(ElementName="clientKey")]
     public string? clientKey { get; set; }

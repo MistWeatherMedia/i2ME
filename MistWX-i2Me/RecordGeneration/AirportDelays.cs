@@ -157,13 +157,11 @@ public class AirportDelays : I2Record
                 string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "AirportDelays.xml");
                 string recordScript = "<Data type=\"AirportDelays\" >";
                 DateTime expiration = DateTime.UtcNow;
+                expiration.AddHours(2);
                 foreach (AirportEvent AE in result.ParsedData)
                 { 
-                    Schema.twc.AirportDelays product = new()
+                    AirportResult apresult = new()
                     {
-                        ProcessTimeGmtAttr = (int)((DateTimeOffset)expiration).ToUnixTimeSeconds(),
-                        KeyAttr = AE.airportId,
-                        locationKey = AE.airportId,
                         Key = AE.airportId,
                         ICAOCode = $"K{AE.airportId}",
                         IATACode = AE.airportId,
@@ -183,7 +181,20 @@ public class AirportDelays : I2Record
                             PercentCancelled = 100,
                             Total = 1000
                         },
-                        ProcessTimeGmt = (int)((DateTimeOffset)expiration).ToUnixTimeSeconds(),
+                        ProcessTimeGmt = (int)((DateTimeOffset)DateTime.UtcNow).ToUnixTimeSeconds(),
+                        ExpireTimeGmt = (int)((DateTimeOffset)expiration).ToUnixTimeSeconds()
+                    };
+                    AirportDelaysMetadata metadata = new()
+                    {
+                        airport_code = AE.airportId,
+                        expire_time_gmt = (int)((DateTimeOffset)expiration).ToUnixTimeSeconds()
+                    };
+                    Schema.twc.AirportDelays product = new()
+                    {
+                        ProcessTimeGmtAttr = (int)((DateTimeOffset)expiration).ToUnixTimeSeconds(),
+                        KeyAttr = AE.airportId,
+                        locationKey = AE.airportId,
+                        airport_result = apresult,
                         clientKey = AE.airportId
                     };
                     ADIdx += $"{AE.airportId},";

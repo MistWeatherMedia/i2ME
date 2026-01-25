@@ -6,7 +6,7 @@ public class ArrivalDelay
 {
     public string? impactingCondition { get; set; }
 
-    public string? averageDelay { get; set; }
+    public float averageDelay { get; set; }
 }
 
 public class GroundStop
@@ -18,7 +18,7 @@ public class GroundDelay
 {
     public string? impactingCondition { get; set; }
 
-    public string? avgDelay { get; set; }
+    public float avgDelay { get; set; }
 }
 
 public class FreeForm
