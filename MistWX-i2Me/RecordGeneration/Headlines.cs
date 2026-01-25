@@ -122,7 +122,7 @@ public class Headlines : I2Record
                 {
                     key = key,
                     procTm = System.DateTime.Now.ToString("yyyyMMddHHmmss"),
-                    expiration = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EExpTmUTC ?? "0",
+                    expiration = (((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EExpTmUTC ?? "0") + "00",
                     vocalCd = ((result.BEData ?? new BEData()).BHdln ?? new BHdln()).BVocHdlnCd ?? "",
                     priority = priorities[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
                     significance = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A",
