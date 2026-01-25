@@ -370,6 +370,10 @@ public class Config
         public XmlComment Subset2Comment { get { return new XmlDocument().CreateComment("Grab Subset 2/_2 locations."); } set { } }
         [XmlElement] public bool UseSubset2Locs { get; set; } = false;
 
+        [XmlAnyElement("AreaServedComment")]
+        public XmlComment AreaServedComment { get { return new XmlDocument().CreateComment("Grab AreaServed locations. Not turned on by default because it will spam a bunch of API calls to TWC API."); } set { } }
+        [XmlElement] public bool UseAreaServedLocs { get; set; } = false;
+
 
         [XmlAnyElement("NationalComment")]
         public XmlComment NationalComment { get { return new XmlDocument().CreateComment("Grab all the national locations, not the ones from the MachineProductCfg."); } set { } }
