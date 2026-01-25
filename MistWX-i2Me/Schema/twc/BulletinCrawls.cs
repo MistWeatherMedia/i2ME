@@ -43,6 +43,9 @@ public class BulletinCrawls {
     [XmlAttribute(AttributeName="key")] 
 	public string key = "active";
 
+    [XmlAttribute(AttributeName="expiration")] 
+	public string expiration { get; set; }
+
     [XmlElement(ElementName="Bulletin")]
     public List<Bulletin> Bulletins { get; set; }
 

@@ -95,6 +95,10 @@ public class BulletinCrawlsGen : I2Record
             }
             // Sort by priority
             bCrawls.Bulletins = bCrawls.Bulletins.OrderByDescending(a => a.Priority).ToList();
+            // Set expiration date to now + 4 hours
+            DateTime expiration = DateTime.UtcNow;
+            expiration.AddHours(4);
+            bCrawls.expiration = expiration.ToString("yyyyMMddHHmmss");
         }
             
 
