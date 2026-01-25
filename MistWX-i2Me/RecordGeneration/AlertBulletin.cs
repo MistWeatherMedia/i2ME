@@ -1,6 +1,5 @@
 using System.Security.Cryptography.X509Certificates;
-using System.Xml;
-using System.Xml.Serialization;
+
 using Dapper;
 using MistWX_i2Me.API;
 using MistWX_i2Me.API.Products;
@@ -14,7 +13,7 @@ public class AlertBulletin : I2Record
     /// <summary>
     /// Dictionary converting alert type keys into IntelliStar 2 vocal keys.
     /// </summary>
-    private static Dictionary<string, string> _vocalCodes = new Dictionary<string, string>()
+    private readonly static Dictionary<string, string> _vocalCodes = new Dictionary<string, string>()
     {
         { "HU_W", "HE001" },
         { "HU_S", "HE001" }, // USA (not defined)
@@ -299,7 +298,7 @@ public class AlertBulletin : I2Record
     /// <summary>
     /// Dictionary of state abbreviations converted into their full names.
     /// </summary>
-    private static Dictionary<string, string> _states = new Dictionary<string, string>
+    private readonly static Dictionary<string, string> _states = new Dictionary<string, string>
     {
         { "AL", "Alabama" },
         { "AK", "Alaska" },
@@ -389,9 +388,9 @@ public class AlertBulletin : I2Record
         }
     }
 
-    public async Task<string?> MakeRecord(List<GenericResponse<AlertDetailResponse>> alertDetails)
+    public async Task<BERecordRoot?> MakeRecord(List<GenericResponse<AlertDetailResponse>> alertDetails)
     {
-        string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "BERecord.xml");
+        
         List<BERecord> alerts = new();
         BERecordRoot root = new()
         {
@@ -542,17 +541,11 @@ public class AlertBulletin : I2Record
             
         }
 
-        XmlSerializer serializer = new XmlSerializer(typeof(BERecordRoot));
-        XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
         
-        ns.Add("", "");
-        using (StreamWriter sw = new StreamWriter(recordPath))
-        {
-            serializer.Serialize(sw, root, ns);
-            sw.Close();
-        }
+        
+        
 
-        return recordPath;
+        return root;
     }
     
 }

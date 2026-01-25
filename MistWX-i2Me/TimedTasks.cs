@@ -7,6 +7,8 @@ using MistWX_i2Me.RecordGeneration;
 using MistWX_i2Me.Schema.faa;
 using MistWX_i2Me.Schema.ibm;
 using MistWX_i2Me.Schema.twc;
+using System.Xml.Serialization;
+using MistWX_i2Me.Schema.System;
 
 namespace MistWX_i2Me;
 
@@ -40,11 +42,22 @@ public class TimedTasks
 
             List<GenericResponse<AlertDetailResponse>> alerts = await new AlertDetailsProduct().Populate(headlines);
 
-            string? bulletinRecord = await new AlertBulletin().MakeRecord(alerts);
+            BERecordRoot? bulletinRecord = await new AlertBulletin().MakeRecord(alerts);
             
             if (bulletinRecord != null)
             {
-                sender.SendFile(bulletinRecord, "storeData(QGROUP=__BERecord__,Feed=BERecord)");
+                string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "BERecord.xml");
+                XmlSerializer serializer = new XmlSerializer(typeof(BERecordRoot));
+                XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+                ns.Add("", "");
+                using (StreamWriter sw = new StreamWriter(recordPath))
+                {
+                    serializer.Serialize(sw, bulletinRecord, ns);
+                    sw.Close();
+                }
+                sender.SendFile(recordPath, "storeData(QGROUP=__BERecord__,Feed=BERecord)");
+                sender.SendFile(await new Headlines().MakeRecord(bulletinRecord), "storeData(QGROUP=__Headline__,Feed=Headline)");
+                await new BulletinCrawlsGen().MakeRecord(bulletinRecord, sender);
             }
             
             await Task.Delay(checkInterval * 1000);

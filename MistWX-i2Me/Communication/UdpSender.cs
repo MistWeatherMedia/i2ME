@@ -33,7 +33,7 @@ public class UdpSender
         Log.Info($"UDP Socket established at port {port}.");
     }
 
-    public void SendFile(string fileName, string command, bool gZipEncode = true, string? headendId = null)
+    public void SendFile(string fileName, string command, bool gZipEncode = true, string? headendId = null, bool notfile = false)
     {
         
         if (!Config.config.UnitConfig.UseExecInstead)
@@ -94,7 +94,14 @@ public class UdpSender
         } else
         {
             ProcessStartInfo procStartInfo = new ProcessStartInfo("C:/Program Files (x86)/TWC/i2/exec.exe");
-            procStartInfo.Arguments = $"-async {$"{command.Remove(command.Length - 1, 1)},File={fileName})"}";
+            if (!notfile)
+            {
+                procStartInfo.Arguments = $"-async {$"{command.Remove(command.Length - 1, 1)},File={fileName})"}";
+            } else
+            {
+                procStartInfo.Arguments = $"-async {$"{command}"}";
+            }
+            
             Log.Info($"Sending new file\nCommand: {command}\nFileName: {fileName}");
             Log.Debug($"Exec arguments: {procStartInfo.Arguments}");
             Process.Start(procStartInfo);
