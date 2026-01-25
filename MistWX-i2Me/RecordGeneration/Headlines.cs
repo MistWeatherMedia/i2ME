@@ -126,6 +126,8 @@ public class Headlines : I2Record
                     vocalCd = ((result.BEData ?? new BEData()).BHdln ?? new BHdln()).BVocHdlnCd ?? "",
                     priority = priorities[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
                     significance = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A",
+                    text = ((result.BEData ?? new BEData()).BHdln ?? new BHdln()).BHdlnTxt ?? "",
+                    phenomena = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? "",
                     vocalSeq = new()
                     {
                         audioSeq = new ()
