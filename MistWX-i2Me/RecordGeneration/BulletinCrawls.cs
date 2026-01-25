@@ -111,6 +111,8 @@ public class BulletinCrawlsGen : I2Record
 
         await File.WriteAllTextAsync(recordPath, ValidateXml(sw.ToString()));
         sender.SendFile(recordPath, "storeData(QGROUP=__BulletinCrawls__,Feed=BulletinCrawls)");
+        // Delay sending the presentation
+        await Task.Delay(2000);
         sender.SendCommand($"loadRunPres(Duration={durations[response.BulletinCrawls.Bulletins.First().Significance]},PresentationId=BCrawl1,Flavor=BulletinCrawl)");
     }
 }
