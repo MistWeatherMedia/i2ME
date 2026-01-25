@@ -334,6 +334,34 @@ public class Program
                                             Log.Debug(ex.StackTrace);
                                         }
                                     }
+                                } else if (i.Key == "AreaServed")
+                                {
+                                    if (i.Value != null)
+                                    {
+                                        if (config.LocationConfig.UseAreaServedLocs)
+                                        {
+                                            string[] split = i.Value.Split(",");
+                                            string cntryCd = "US";
+                                            // get country code
+                                            foreach (ConfigItem cc in mpc.ConfigDef.ConfigItems.ConfigItem)
+                                            {
+                                                if (cc.Key != null)
+                                                {
+                                                    if (cc.Key == "CountryCode")
+                                                    {
+                                                        if (cc.Value != null)
+                                                        {
+                                                            cntryCd = cc.Value[0..2];
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            foreach (string zipCode in split)
+                                            {
+                                                locations.Add(new string[] {"4", cntryCd, zipCode});
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -345,6 +373,8 @@ public class Program
         
         return locations.ToArray();
     }
+
+    
 
     /// <summary>
     /// Generate LFRecord values for unknown locations.
