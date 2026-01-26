@@ -55,9 +55,14 @@ public class TimedTasks
                     serializer.Serialize(sw, bulletinRecord, ns);
                     sw.Close();
                 }
-                //sender.SendFile(recordPath, "storeData(QGROUP=__BERecord__,Feed=BERecord)");
-                sender.SendFile(await new Headlines().MakeRecord(bulletinRecord), "storeData(QGROUP=__Headline__,Feed=Headline)");
-                await new BulletinCrawlsGen().MakeRecord(bulletinRecord, sender);
+                if (Config.config.AConfig.DirectSend)
+                {
+                    sender.SendFile(await new Headlines().MakeRecord(bulletinRecord), "storeData(QGROUP=__Headline__,Feed=Headline)");
+                    await new BulletinCrawlsGen().MakeRecord(bulletinRecord, sender);
+                } else
+                {
+                    sender.SendFile(recordPath, "storeData(QGROUP=__BERecord__,Feed=BERecord)");
+                }
             }
             
             await Task.Delay(checkInterval * 1000);
