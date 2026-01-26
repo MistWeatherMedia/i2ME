@@ -112,6 +112,8 @@ public class Headlines : I2Record
         HeadlinesResponse response = new();
         List<Headline> HlList = new();
         response.Headlines = HlList;
+        // Grab a list of significances Headlines should receive.
+        string[] significances = Config.config.AConfig.HeadlineSig.Split(",");
 
         int key = 0;
         if (results.BERecord != null)
@@ -121,6 +123,10 @@ public class Headlines : I2Record
             {
                 string alertCheck = (((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? "") + "_" + (((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A");
                 if (!addedAlerts.Contains(alertCheck)) {
+                    if (!significances.Contains(((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"))
+                    {
+                        continue;
+                    }
                     Headline headline = new()
                     {
                         key = key,

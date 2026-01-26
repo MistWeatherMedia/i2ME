@@ -1,3 +1,4 @@
+using System.Net;
 using System.Xml;
 using System.Xml.Serialization;
 using MistWX_i2Me.API;
@@ -67,6 +68,9 @@ public class BulletinCrawlsGen : I2Record
         Log.Info("Creating BulletinRecords.");
         string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "BulletinRecords.xml");
 
+        // Grab a list of significances BulletinCrawls should receive.
+        string[] significances = Config.config.AConfig.BulletinSig.Split(",");
+
         BulletinCrawlsResponse response = new();
         BulletinCrawls bCrawls = new()
         {
@@ -76,28 +80,37 @@ public class BulletinCrawlsGen : I2Record
 
         if (results.BERecord != null)
         {
+
             // Sort by priority
             results.BERecord = results.BERecord.OrderByDescending(a => priorities[((a.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"]).ToList();
-            BERecord result = results.BERecord.First();
-            Bulletin bulletin = new()
+            foreach (BERecord result in results.BERecord)
             {
-                Index = 0,
-                Label = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EDesc ?? "",
-                Text = ((result.BEData ?? new BEData()).BNarrTxt ?? new BNarrTxt()).BLn ?? "",
-                VisualStyle = visualstyles[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
-                AudioStyle = audiostyles[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
-                Priority = priorities[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
-                Significance = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A",
-                Phenomena = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? "CF"
-            };
-            bCrawls.Bulletins.Add(bulletin);
+                if (!significances.Contains(((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"))
+                {
+                    continue;
+                }
+                Bulletin bulletin = new()
+                {
+                    Index = 0,
+                    Label = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EDesc ?? "",
+                    Text = ((result.BEData ?? new BEData()).BNarrTxt ?? new BNarrTxt()).BLn ?? "",
+                    VisualStyle = visualstyles[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
+                    AudioStyle = audiostyles[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
+                    Priority = priorities[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A"],
+                    Significance = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A",
+                    Phenomena = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? "CF"
+                };
+                bCrawls.Bulletins.Add(bulletin);
+                
+                
+                
+                // Set expiration date to now + 4 hours
+                DateTime expiration = DateTime.UtcNow;
+                expiration.AddHours(4);
+                bCrawls.expiration = expiration.ToString("yyyyMMddHHmmss");
+                break;
+            }
             
-            
-            
-            // Set expiration date to now + 4 hours
-            DateTime expiration = DateTime.UtcNow;
-            expiration.AddHours(4);
-            bCrawls.expiration = expiration.ToString("yyyyMMddHHmmss");
         }
             
 

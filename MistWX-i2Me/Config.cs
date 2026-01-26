@@ -489,6 +489,14 @@ public class Config
         [XmlAnyElement("DirectSendComment")]
         public XmlComment DirectSendComment { get { return new XmlDocument().CreateComment("Should i2ME directly send Headline/BulletinCrawls records instead of the default BERecord? This is NOT the option if you're aiming for accuracy, but it does help with getting alerts for international locations or having your i2 display a unknown alert as a headline/bulletin."); } set { } }
         [XmlElement] public bool DirectSend { get; set; } = false;
+
+        [XmlAnyElement("HeadlineSigComment")]
+        public XmlComment HeadlineSigComment { get { return new XmlDocument().CreateComment("THIS ONLY APPLIES IF DIRECTSEND IS ENABLED! What significance(s) should be sent to the i2's Headline? Default is every one of them. For more information, check out https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-alert-headlines."); } set { } }
+        [XmlElement] public string HeadlineSig { get; set; } = "A,B,L,M,O,R,S,W,Y,E";
+
+        [XmlAnyElement("BulletinSigComment")]
+        public XmlComment BulletinSigComment { get { return new XmlDocument().CreateComment("THIS ONLY APPLIES IF DIRECTSEND IS ENABLED! What significance(s) should be sent to the i2's BulletinCrawls? Default is every one of them. For more information, check out https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-alert-headlines."); } set { } }
+        [XmlElement] public string BulletinSig { get; set; } = "A,B,L,M,O,R,S,W,Y,E";
     }
 
     [XmlRoot("LocalConfig")]
