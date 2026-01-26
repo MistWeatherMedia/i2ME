@@ -583,13 +583,17 @@ public class AlertBulletin : I2Record
             // Timestamp parsing
             if (detail != null)
             {
-                if (
-                    !allowedZones.Contains(detail.areaId ?? "")
-                )
+                if (!Config.config.LocationConfig.UseNationalLocations)
                 {
-                    Log.Warning($"Alert {detail.areaId}_{detail.phenomena}_{(detail.significance ?? "")[0..1]}_{detail.eventTrackingNumber}_{detail.officeCode} is not part of the primaryCounty, primaryZone, primaryMarineZone, secondaryCounties, or secondaryZones in the MPC.");
-                    continue;
+                    if (
+                        !allowedZones.Contains(detail.areaId ?? "")
+                    )
+                    {
+                        Log.Warning($"Alert {detail.areaId}_{detail.phenomena}_{(detail.significance ?? "")[0..1]}_{detail.eventTrackingNumber}_{detail.officeCode} is not part of the primaryCounty, primaryZone, primaryMarineZone, secondaryCounties, or secondaryZones in the MPC.");
+                        continue;
+                    }
                 }
+                
                 string endTime = DateTimeOffset.FromUnixTimeSeconds((int)(detail.expireTimeUTC ?? 0)).ToString("yyyy MM dd HH mm").Replace(" ", "");
                 string expireTime = DateTimeOffset.FromUnixTimeSeconds((int)(detail.expireTimeUTC?? 0)).ToString("yyyy MM dd HH mm").Replace(" ", "");
                 string issueTime = DateTime.Parse(detail.issueTimeLocal ?? "").ToString("yyyy MM dd HH mm").Replace(" ", "");
