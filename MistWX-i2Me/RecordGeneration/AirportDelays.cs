@@ -197,7 +197,8 @@ public class AirportDelays : I2Record
                         KeyAttr = AE.airportId,
                         locationKey = AE.airportId,
                         airport_result = apresult,
-                        clientKey = AE.airportId
+                        clientKey = AE.airportId,
+                        metadata = metadata
                     };
                     ADIdx += $"{AE.airportId},";
                     XmlSerializer serializer = new(typeof(Schema.twc.AirportDelays));

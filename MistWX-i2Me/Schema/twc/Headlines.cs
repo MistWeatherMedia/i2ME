@@ -53,6 +53,9 @@ public class Headline {
     [XmlElement(ElementName="significance")] 
 	public string significance { get; set; } 
 
+    [XmlElement(ElementName="lficon")] 
+	public string lficon { get; set; } 
+
     [XmlElement(ElementName="vocalSeq")] 
 	public HeadlinesVocalSeq vocalSeq { get; set; }
 }

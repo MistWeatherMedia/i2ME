@@ -588,7 +588,6 @@ public class Program
                 if (point.ParsedData.location.countryCode != null)
                 {
                     tempLF.siteId = point.ParsedData.location.countryCode;
-                    tempLF.cntryCd = point.ParsedData.location.countryCode;
                 }
 
                 // Set timezone
@@ -617,7 +616,6 @@ public class Program
                 GenericResponse<LocServNearSkiResponse>? ski = await new LocServNearSki().Receive(tempLF);
                 GenericResponse<LocServNearObsResponse>? obs = await new LocServNearObs().Receive(tempLF);
                 GenericResponse<Almanac1DayResponse>? al = await new Almanac1DayProduct().Receive(tempLF);
-                GenericResponse<CurrentObservations2Response>? cc = await new CurrentObservationsProduct2().Receive(tempLF);
 
                 if (airport != null)
                 {
@@ -695,15 +693,6 @@ public class Program
                     if (al.ParsedData.stationId != null)
                     {
                         tempLF.cliStn = al.ParsedData.stationId.First();
-                    }
-                }
-
-                if (cc != null)
-                {
-                    if (cc.ParsedData.observation != null && cc.ParsedData.observation.key != null)
-                    {
-                        tempLF.coopId = cc.ParsedData.observation.key;
-                        tempLF.primTecci = cc.ParsedData.observation.key;
                     }
                 }
 
