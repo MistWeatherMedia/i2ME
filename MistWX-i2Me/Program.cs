@@ -417,6 +417,7 @@ public class Program
         tempLF.dySTAct = "0.00";
         tempLF.elev = "0";
         tempLF.dmaCd = null;
+        tempLF.siteId = loc[1];
 
         // Grab data.
         GenericResponse<LocServPointResponse>? point = await new LocServPointProduct().Receive(tempLF);
@@ -582,12 +583,6 @@ public class Program
                 if (point.ParsedData.location.postalCode != null)
                 {
                     tempLF.zip2locId = point.ParsedData.location.postalCode;
-                }
-
-                // Set siteId and cntryCd
-                if (point.ParsedData.location.countryCode != null)
-                {
-                    tempLF.siteId = point.ParsedData.location.countryCode;
                 }
 
                 // Set timezone
