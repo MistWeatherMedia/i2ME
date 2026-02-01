@@ -65,8 +65,8 @@ public class BulletinCrawlsGen : I2Record
     };
     public async Task MakeRecord(BERecordRoot results, UdpSender sender)
     {
-        Log.Info("Creating BulletinRecords.");
-        string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "BulletinRecords.xml");
+        Log.Info("Creating BulletinCrawls.");
+        string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "BulletinCrawls.xml");
 
         // Grab a list of significances BulletinCrawls should receive.
         string[] significances = Config.config.AConfig.BulletinSig.Split(",");
