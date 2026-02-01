@@ -135,7 +135,7 @@ public class AirportDelaysMetadata
     public int expire_time_gmt {get; set;}
 
     [XmlElement(ElementName="status_code")]
-    public int status_code = 200;
+    public string status_code = "200";
 }
 
 [XmlRoot(ElementName="AirportDelays")]
