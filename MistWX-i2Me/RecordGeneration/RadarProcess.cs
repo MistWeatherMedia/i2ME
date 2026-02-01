@@ -253,7 +253,8 @@ public class RadarProcess
         frame = frame.Crop(bounds.UpperLeftX, bounds.UpperLeftY, bounds.LowerRightX - bounds.UpperLeftX, bounds.LowerRightY - bounds.UpperLeftY);
         // Frame resize.
         frame = frame.ThumbnailImage(OGSize.X, OGSize.Y, size: Enums.Size.Force);
-        
+        // Flatten frame.
+        frame = frame.Flatten();
         // Save frame.
         string framePath = Path.Combine(dir_path, $"{ts}.tiff");
         frame.Tiffsave(framePath, compression: Enums.ForeignTiffCompression.Lzw);
