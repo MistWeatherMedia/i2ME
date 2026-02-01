@@ -386,7 +386,7 @@ public class Program
         tempLF.locType = loc[0];
         tempLF.cntryCd = loc[1];
         tempLF.locId = loc[2];
-        string genTecci = tempLF.locType + "-" + tempLF.cntryCd + "-" + tempLF.locId;
+        string genTecci = tempLF.locType + tempLF.cntryCd + tempLF.locId;
         tempLF.primTecci = "T" + genTecci;
         tempLF.coopId = genTecci;
 
