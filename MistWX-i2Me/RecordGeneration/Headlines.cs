@@ -369,10 +369,12 @@ public class Headlines : I2Record
                         continue;
                     }
                     string alerticon = "alertgeneric";
+                    /*
                     if (alerttolficon.ContainsKey(((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? ""))
                     {
                         alerticon = alerttolficon[((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? ""];
                     }
+                    */
 
                     Headline headline = new()
                     {
@@ -384,6 +386,7 @@ public class Headlines : I2Record
                         significance = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).ESgnfcnc ?? "A",
                         text = ((result.BEData ?? new BEData()).BHdln ?? new BHdln()).BHdlnTxt ?? "",
                         phenomena = ((result.BEHdr ?? new BEHdr()).BEvent ?? new BEvent()).EPhenom ?? "",
+                        lficon = alerticon,
                         vocalSeq = new()
                         {
                             audioSeq = new ()
@@ -395,7 +398,7 @@ public class Headlines : I2Record
                                 }
                             }
                         },
-                        lficon = alerticon
+                        
                     };
                     HlList.Add(headline);
                     key += 1;
