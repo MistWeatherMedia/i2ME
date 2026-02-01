@@ -1,7 +1,6 @@
 using System.Xml;
 using System.Xml.Serialization;
-using MistWX_i2Me.API;
-using MistWX_i2Me.Schema.ibm;
+using System.Text.RegularExpressions;
 using MistWX_i2Me.Schema.System;
 using MistWX_i2Me.Schema.twc;
 
@@ -16,7 +15,7 @@ public class LFRecord : I2Record
             Directory.CreateDirectory(Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords"));
         }
         Log.Info($"Creating LFRecord for {result.prsntNm}.");
-        string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords", $"LFRecord-{result.cntryCd}-{result.locType}-{result.locId}-{result.cityNm}.xml");
+        string recordPath = Path.Combine(AppContext.BaseDirectory, "temp", "LFRecords", Regex.Replace($"LFRecord-{result.cntryCd}-{result.locType}-{result.locId}-{result.cityNm}.xml", @"\s+", ""));
         string recordScript = "<Data type=\"LFRecord\">";
 
         LFRecordResponse LFRecRes = new()
