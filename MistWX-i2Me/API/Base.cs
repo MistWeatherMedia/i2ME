@@ -255,7 +255,18 @@ public class Base
         return stream;
     }
 
-    public static string vocalKeyBuilder(int temp, int iconCodeExt)
+    private static string? GetXmlValue(string xml, string tagName)
+    {
+        string startTag = $"<{tagName}>";
+        int start = xml.IndexOf(startTag);
+        if (start == -1) return null;
+        start += startTag.Length;
+        int end = xml.IndexOf($"</{tagName}>", start);
+        if (end == -1) return null;
+        return xml.Substring(start, end - start);
+    }
+
+    private static string vocalKeyBuilder(int temp, int iconCodeExt)
     {
         // for some reason, the TWC api still returns imperial vocal local even when metric units are requested. this causes the display of metric temperatures
         // to be accompanied by imperial vocals. we can give this method a temperature and icon code to generate a vocalKey with metric vocals. as lordtheythem Rai intended.
@@ -266,7 +277,37 @@ public class Base
         // why is the damn comment longer than the code itself
     }
 
-    public async Task<List<GenericResponse<T>>> GetData<T>(string[] locations)
+    private static string fixNonImperialUnits(string response)
+    {
+        List<string> unitTags = new List<string> { "metric", "metric_si", "uk_hybrid" };
+
+        string? tempVal = GetXmlValue(response, "temp");
+        string? iconVal = GetXmlValue(response, "iconCodeExt") ?? GetXmlValue(response, "icon_extd");
+        string? vocalKeyVal = GetXmlValue(response, "vocalKey") ?? GetXmlValue(response, "vocal_key");
+
+        int temp = 0;
+        int iconCodeExt = 0;
+        
+        if (int.TryParse(tempVal, out int t)) temp = t;
+        if (int.TryParse(iconVal, out int i)) iconCodeExt = i;
+        foreach (string unitTag in unitTags)
+        {
+            if (response.Contains($"<{unitTag}>"))
+            {
+                response = response.Replace(unitTag, "imperial");
+                response = response.Replace($"</{unitTag}>", "</imperial>");
+            }
+        }
+        if (vocalKeyVal != null)
+            {
+                string newVocalKey = vocalKeyBuilder(temp, iconCodeExt);
+                response = response.Replace(vocalKeyVal, newVocalKey);
+            }
+
+        return response;
+    }
+
+    public async Task<List<GenericResponse<T>>> GetData<T>(string[] locations) // GetData ///
     {
         List<GenericResponse<T>> results = new List<GenericResponse<T>>();
 
@@ -282,53 +323,11 @@ public class Base
                 continue;
             }
 
-            // Start Fix
-            string? GetXmlValue(string xml, string tagName)
+            if (RecordName == "Current Observations")
             {
-                string startTag = $"<{tagName}>";
-                int start = xml.IndexOf(startTag);
-                if (start == -1) return null;
-                start += startTag.Length;
-                int end = xml.IndexOf($"</{tagName}>", start);
-                if (end == -1) return null;
-                return xml.Substring(start, end - start);
+                response = fixNonImperialUnits(response);
             }
 
-            string? tempVal = GetXmlValue(response, "temp");
-            string? iconVal = GetXmlValue(response, "iconCodeExt") ?? GetXmlValue(response, "icon_extd");
-            string? vocalKeyVal = GetXmlValue(response, "vocalKey") ?? GetXmlValue(response, "vocal_key");
-
-            int temp = 0;
-            int iconCodeExt = 0;
-            
-            if (int.TryParse(tempVal, out int t)) temp = t;
-            if (int.TryParse(iconVal, out int i)) iconCodeExt = i;
-
-            List<string> unitTags = new List<string> { "metric", "metric_si", "uk_hybrid" };
-
-            // For Current Observations they change the format of the XML depending on what unit you have - no go for i2
-            if (! response.Contains("<imperial>"))
-            {
-                foreach (string unitTag in unitTags)
-                {
-                    if (response.Contains($"<{unitTag}>"))
-                    {
-                        response = response.Replace(unitTag, "imperial");
-                        response = response.Replace($"</{unitTag}>", "</imperial>");
-                        
-                        if (vocalKeyVal != null)
-                        {
-                            string newVocalKey = vocalKeyBuilder(temp, iconCodeExt);
-                            response = response.Replace(vocalKeyVal, newVocalKey);
-                        }
-                    }
-                    
-                }
-            
-
-                
-            }
-            
             string data = GetInnerXml(response);
 
             try
@@ -362,10 +361,8 @@ public class Base
         return results;
     }
 
-    public async Task<GenericResponse<T>?> GetDataLFR<T>(LFRecordLocation location)
+    public async Task<GenericResponse<T>?> GetDataLFR<T>(LFRecordLocation location)  // GetData LFR //
     {
-
-
         LFRecordLocation locationInfo = location;
         string? response = await DownloadLocationData(locationInfo);
 
@@ -374,67 +371,26 @@ public class Base
             throw new Exception("Response was null!");
         }
 
-        // Start Fix
-        string? GetXmlValue(string xml, string tagName)
+        if (RecordName == "Current Observations")
         {
-            string startTag = $"<{tagName}>";
-            int start = xml.IndexOf(startTag);
-            if (start == -1) return null;
-            start += startTag.Length;
-            int end = xml.IndexOf($"</{tagName}>", start);
-            if (end == -1) return null;
-            return xml.Substring(start, end - start);
+            response = fixNonImperialUnits(response);
         }
 
-        string? tempVal = GetXmlValue(response, "temp");
-        string? iconVal = GetXmlValue(response, "iconCodeExt") ?? GetXmlValue(response, "icon_extd");
-        string? vocalKeyVal = GetXmlValue(response, "vocalKey") ?? GetXmlValue(response, "vocal_key");
-
-        int temp = 0;
-        int iconCodeExt = 0;
-            
-        if (int.TryParse(tempVal, out int t)) temp = t;
-        if (int.TryParse(iconVal, out int i)) iconCodeExt = i;
-
-        List<string> unitTags = new List<string> { "metric", "metric_si", "uk_hybrid" };
-
-        // For Current Observations they change the format of the XML depending on what unit you have - no go for i2
-        if (! response.Contains("<imperial>"))
-        {
-            foreach (string unitTag in unitTags)
-            {
-                if (response.Contains($"<{unitTag}>"))
-                {
-                    response = response.Replace(unitTag, "imperial");
-                    response = response.Replace($"</{unitTag}>", "</imperial>");
-                }
-            }
-            
-
-            if (vocalKeyVal != null)
-            {
-                string newVocalKey = vocalKeyBuilder(temp, iconCodeExt);
-                response = response.Replace(vocalKeyVal, newVocalKey);
-            }
-        }
-            
-        string data = GetInnerXml(response);
+        _ = GetInnerXml(response);
 
         try
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            XmlSerializer serializer = new(typeof(T));
 
-            using (StringReader reader = new StringReader(response))
+            using StringReader reader = new(response);
+            var deserializedData = (T?)serializer.Deserialize(reader);
+
+            if (deserializedData == null)
             {
-                var deserializedData = (T?)serializer.Deserialize(reader);
-
-                if (deserializedData == null)
-                {
-                    Log.Warning($"Failed to deserialize {RecordName} for location {location}");
-                }
-
-                return null;
+                Log.Warning($"Failed to deserialize {RecordName} for location {location}");
             }
+
+            return null;
         }
             catch (InvalidOperationException ex)
             {
