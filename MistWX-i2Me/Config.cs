@@ -10,11 +10,11 @@ namespace MistWX_i2Me;
 [XmlRoot("Config")]
 public class Config
 {
-    
+
     [XmlAnyElement("VersionComment")]
     public XmlComment VersionComment { get { return new XmlDocument().CreateComment("DO NOT CHANGE THIS!"); } set { } }
     [XmlElement]
-    public int Version {get; set;} = 1;
+    public int Version { get; set; } = 1;
 
     [XmlAnyElement("LLevelComment")]
     public XmlComment LLevelComment { get { return new XmlDocument().CreateComment("This sets how verbose you would like i2ME to be. (ex: debug, info, warning, error)"); } set { } }
@@ -25,7 +25,7 @@ public class Config
     public XmlComment MPCComment { get { return new XmlDocument().CreateComment("Path to your MachineProductCfg."); } set { } }
     public string MachineProductConfig { get; set; } =
         "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Config\\MachineProductCfg.xml";
-    
+
     // incase you need custom maps for locations outside of the US
     [XmlAnyElement("ImageSequenceDefsComment")]
     public XmlComment ImageSequenceDefsComment { get { return new XmlDocument().CreateComment("Path to your ImageSequenceDefs."); } set { } }
@@ -44,12 +44,12 @@ public class Config
     [XmlElement("RecordConfig")] public DataEndpointConfig EndpointConfig { get; set; } = new DataEndpointConfig();
 
     // Actual configuration setup \\
-    
+
     public static Config config = new Config();
 
 
 
-    
+
     /// <summary>
     /// Loads values from the configuration file into the software
     /// </summary>
@@ -60,15 +60,15 @@ public class Config
         XmlSerializer serializer = new XmlSerializer(typeof(Config));
         XmlSerializerNamespaces namespaces = new XmlSerializerNamespaces();
         namespaces.Add("", "");
-        
-        
+
+
 
         // Create the temp directory if none exists
         if (!Directory.Exists(Path.Combine(AppContext.BaseDirectory, "temp")))
         {
             Directory.CreateDirectory(Path.Combine(AppContext.BaseDirectory, "temp"));
         }
-        
+
         // Create a base config if none exists
         if (!File.Exists(path))
         {
@@ -343,7 +343,7 @@ public class Config
 
             return new Config();
         }
-        
+
     }
 
     [XmlRoot("LocationConfig")]
@@ -386,7 +386,7 @@ public class Config
         public XmlComment NationalComment { get { return new XmlDocument().CreateComment("Grab all the national locations, not the ones from the MachineProductCfg."); } set { } }
         [XmlElement] public bool UseNationalLocations { get; set; } = false;
 
-        [XmlIgnore] 
+        [XmlIgnore]
         // Base locations.
         public List<string> LocationList = new List<string> {
             "PrimaryLocation",
@@ -485,7 +485,7 @@ public class Config
         [XmlAnyElement("CheckAlertTimeComment")]
         public XmlComment CheckAlertTimeComment { get { return new XmlDocument().CreateComment("Sets how long should i2ME wait before grabbing alerts."); } set { } }
         [XmlElement] public int CheckAlertTimeSeconds { get; set; } = 600;      // Defaults to 10 minutes
-    
+
         [XmlAnyElement("DirectSendComment")]
         public XmlComment DirectSendComment { get { return new XmlDocument().CreateComment("Should i2ME directly send Headline/BulletinCrawls records instead of the default BERecord? This is NOT the option if you're aiming for accuracy, but it does help with getting alerts for international locations or having your i2 display a unknown alert as a headline/bulletin."); } set { } }
         [XmlElement] public bool DirectSend { get; set; } = false;
@@ -509,7 +509,7 @@ public class Config
         [XmlAnyElement("Unit2Comment")]
         public XmlComment Unit2Comment { get { return new XmlDocument().CreateComment("Values can be e, m, h, or s. For more information, check out the Weather Company Data API Common Usage Guide: https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-weather-company-data-api-common-usage-guide"); } set { } }
         [XmlElement] public string Unit { get; set; } = "e";
-        
+
         [XmlAnyElement("LangComment")]
         public XmlComment LangComment { get { return new XmlDocument().CreateComment("Sets the language of the data sent to the i2."); } set { } }
         [XmlAnyElement("Lang1Comment")]
@@ -533,6 +533,42 @@ public class Config
         [XmlAnyElement("RecordGenTimeComment")]
         public XmlComment RecordGenTimeComment { get { return new XmlDocument().CreateComment("Sets how long should i2ME wait before grabbing data."); } set { } }
         [XmlElement] public int RecordGenTimeSeconds { get; set; } = 1800;      // Defaults to 30 minutes
+    }
+
+    [XmlRoot("EventsConfig")]
+    public class EventsConfig
+    {
+        [XmlAnyElement("AffiliateAdsComment")]
+        public XmlComment AffiliateAdsComment { get { return new XmlDocument().CreateComment("Set AffiliateAds from JSON provided."); } set { } }
+        [XmlElement] public bool AffiliateAds { get; set; } = false;
+
+        [XmlAnyElement("AffiliateAdsPathComment")]
+        public XmlComment AffiliateAdsPathComment { get { return new XmlDocument().CreateComment("Path to AffiliateAds."); } set { } }
+        [XmlElement] public string AffiliateAdsPath { get; set; } = "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Events\\AffiliateAds.xml";
+
+        [XmlAnyElement("AffiliateAdsSourceComment")]
+        public XmlComment AffiliateAdsSourceComment { get { return new XmlDocument().CreateComment("Source. Must be an JSON array of strings."); } set { } }
+        [XmlElement] public string AffiliateAdsSource { get; set; } = "https://example.com/affiliateads.json";
+
+        [XmlAnyElement("WxDotComPromoTextComment")]
+        public XmlComment WxDotComPromoTextComment { get { return new XmlDocument().CreateComment("Set WxDotComPromoText from JSON provided."); } set { } }
+        [XmlElement] public bool WxDotComPromoText { get; set; } = false;
+
+        [XmlAnyElement("WxDotComPromoTextPathComment")]
+        public XmlComment WxDotComPromoTextPathComment { get { return new XmlDocument().CreateComment("Path to WxDotComPromoText."); } set { } }
+        [XmlElement] public string WxDotComPromoTextPath { get; set; } = "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Events\\WxDotComPromoText.xml";
+
+        [XmlAnyElement("WxDotComPromoTextSourceComment")]
+        public XmlComment WxDotComPromoTextSourceComment { get { return new XmlDocument().CreateComment("Source. Must be an JSON array of strings."); } set { } }
+        [XmlElement] public string WxDotComPromoTextSource { get; set; } = "https://example.com/wxdotcompromotext.json";
+
+        [XmlAnyElement("LOT8BackgroundsHolidaysPathComment")]
+        public XmlComment LOT8BackgroundsHolidaysPathComment { get { return new XmlDocument().CreateComment("Path to LOT8BackgroundsHolidays (THIS IS ENABLED IF HOLIDAYMAPPING DATA RECORD IS ENABLED)."); } set { } }
+        [XmlElement] public string LOT8BackgroundsHolidaysTextPath { get; set; } = "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Events\\LOT8BackgroundsHolidays.xml";
+
+        [XmlAnyElement("LOT8WelcomeProductTextPhrasesHolidaysPathComment")]
+        public XmlComment LOT8WelcomeProductTextPhrasesHolidaysPathComment { get { return new XmlDocument().CreateComment("Path to LOT8BackgroundsHolidays (THIS IS ENABLED IF HOLIDAYMAPPING DATA RECORD IS ENABLED)."); } set { } }
+        [XmlElement] public string LOT8WelcomeProductTextPhrasesHolidaysTextPath { get; set; } = "C:\\Program Files (x86)\\TWC\\i2\\Managed\\Events\\LOT8WelcomeProductTextPhrasesHolidays.xml";
     }
 
     [XmlRoot("RecordConfig")]
