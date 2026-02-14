@@ -517,6 +517,11 @@ public class Config
         [XmlAnyElement("Lang2Comment")]
         public XmlComment Lang2Comment { get { return new XmlDocument().CreateComment("Values are defined in the Weather Company Data API Common Usage Guide: https://www.ibm.com/docs/en/environmental-intel-suite?topic=apis-weather-company-data-api-common-usage-guide"); } set { } }
         [XmlElement] public string Language { get; set; } = "en-US";
+
+        [XmlAnyElement("TypeComment")]
+        public XmlComment TypeComment { get { return new XmlDocument().CreateComment("Sets the type of IntelliSTAR 2 that the encoder is sending data to. 0 for XD/HD, 1 for JR."); } set { } }
+
+        [XmlElement] public int Type { get; set; } = 0;
     }
 
     [XmlRoot("ApiKeyConfig")]
