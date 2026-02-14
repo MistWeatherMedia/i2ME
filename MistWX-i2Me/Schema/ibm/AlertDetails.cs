@@ -53,7 +53,7 @@ public class AlertDetail
     public List<Text>? texts { get; set; }
     public List<Polygon>? polygon { get; set; }
     public string? synopsis { get; set; }
-    public Dictionary<string, string>? supplement { get; set; }
+    public object? supplement { get; set; }
 }
 
 public class Category
