@@ -42,6 +42,7 @@ public class Config
     [XmlElement("LocalConfig")] public LocalConfig LocalStarConfig { get; set; } = new LocalConfig();
     [XmlElement("RadarConfig")] public RadarConfig RadarConfiguration { get; set; } = new RadarConfig();
     [XmlElement("RecordConfig")] public DataEndpointConfig EndpointConfig { get; set; } = new DataEndpointConfig();
+    [XmlElement("EventConfig")] public EventsConfig EventConfig { get; set; } = new();
 
     // Actual configuration setup \\
 
